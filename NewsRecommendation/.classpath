@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry exported="true" kind="lib" path="lib/ant-1.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/ant-launcher-1.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/aopalliance-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/archive-overlay-commons-httpclient-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bsh-2.0b5.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/com.noelios.restlet-1.1.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/com.noelios.restlet.ext.jetty-1.1.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-cli-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-codec-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-collections-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-io-1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-logging-1.0.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-net-2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/dnsjava-2.0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/fastutil-5.0.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/groovy-all-1.6.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/guava-r08.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/itext-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/javaswf-CVS-SNAPSHOT-1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/je-4.1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jericho-html-2.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jets3t-0.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-6.1.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-ajp-6.1.11.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-sslengine-6.1.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-util-6.1.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jline-0.9.94.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jna-3.2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/joda-time-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/json-20090211.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/junit-3.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/kryo-1.01.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/libidn-0.6.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mg4j-1.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/minlog-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org.restlet-1.1.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-2.5.1-final-20040804.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-scratchpad-2.5.1-final-20040804.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/reflectasm-0.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/servlet-api-2.5-6.1.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-aop-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-asm-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-beans-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-context-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-core-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-expression-3.0.5.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/rt.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/lucene-analyzers-common-4.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/lucene-core-4.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/lucene-demo-4.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/lucene-queryparser-4.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/lucene-facet-4.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/lucene-highlighter-4.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/lucene-queries-4.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mail.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mysql-connector-java.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,7 @@
+Using ad-hoc HTTPS certificate with fingerprint...
+SHA1:7C:C2:67:18:32:4D:02:9F:17:62:17:AE:0B:5B:BE:08:6B:D2:9B:C9
+Verify in browser before accepting exception.
+engine listening at port 8443
+operator login set per command-line
+NOTE: We recommend a longer, stronger password, especially if your web 
+interface will be internet-accessible.
