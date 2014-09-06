@@ -443,7 +443,7 @@ public class MirrorWriterProcessor extends Processor {
 				indexTools.createIndexByURI(uuri.toString());
 				indexTools.searchIndex();
 				if (indexTools.getCurrentScore() > 0.05f) {
-					// 根据需求将url保存至数据库
+					// 将唯一URL插入到数据库中
 					DataBaseUtil util = new DataBaseUtil();
 					util.init();
 					util.insertUrls(uuri.toString());

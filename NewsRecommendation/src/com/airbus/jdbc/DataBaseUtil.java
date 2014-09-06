@@ -20,30 +20,13 @@ import java.util.Date;
 import java.util.List;
 
 public class DataBaseUtil {
+	private static List<String> URLS;
+
 	private static final int PERIOD_WEEK = 7;
 
-	private static final String PATH = "/Users/berryjam/Documents/workspace/NewsRecommendation/record.txt";
+	private static final String PATH = "/Users/berryjam/git/NewsRecommendation/NewsRecommendation/record.txt";
 
 	private static Connection connection = null;
-
-	public static void main(String[] args) {
-		DataBaseUtil util = new DataBaseUtil();
-		util.connect("com.mysql.jdbc.Driver",
-				"jdbc:mysql://localhost:3306/Airbus", "root", "893131");
-		// System.out.println(util.getLastBatchDate());
-		try {
-			util.insertUrls("www.sina.com");
-		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
 	public void connect(String drive, String url, String username,
 			String password) {
@@ -62,39 +45,55 @@ public class DataBaseUtil {
 	public void init() {
 		connect(Constants.DRIVE, Constants.URL, Constants.USERNAME,
 				Constants.PASSWORD);
+		URLS = new ArrayList<String>();
+		PreparedStatement statement;
+		String url = null;
+		try {
+			statement = connection.prepareStatement("SELECT url FROM URLS");
+			ResultSet dateResultSet = statement.executeQuery();
+			while (dateResultSet.next()) {
+				url = dateResultSet.getString("url");
+				URLS.add(url);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void insertUrls(String url) throws NumberFormatException,
 			SQLException, IOException {
-		FileReader fr = new FileReader(new File(PATH));
-		BufferedReader br = new BufferedReader(fr);
-		String line = br.readLine();
-		br.close();
-		FileWriter fw = new FileWriter(new File(PATH));
-		try {
-			int batch = 1;
-			if (line == null) {
-				fw.write(Integer.toString(batch));
-				fw.flush();
-			} else {
-				batch = Integer.parseInt(line);
-				if (isNextBatch())
-					++batch;
-				fw.write(Integer.toString(batch));
-				fw.flush();
+		if (isUniqueURL(url)) {
+			FileReader fr = new FileReader(new File(PATH));
+			BufferedReader br = new BufferedReader(fr);
+			String line = br.readLine();
+			br.close();
+			FileWriter fw = new FileWriter(new File(PATH));
+			try {
+				int batch = 1;
+				if (line == null) {
+					fw.write(Integer.toString(batch));
+					fw.flush();
+				} else {
+					batch = Integer.parseInt(line);
+					if (isNextBatch())
+						++batch;
+					fw.write(Integer.toString(batch));
+					fw.flush();
+				}
+				String date = getCurrentDate();
+				PreparedStatement statement = connection
+						.prepareStatement("INSERT INTO URLS(url,date,batch) VALUES('"
+								+ url + "','" + date + "','" + batch + "')");
+				statement.executeUpdate();
+				fw.close();
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-			String date = getCurrentDate();
-			PreparedStatement statement = connection
-					.prepareStatement("INSERT INTO URLS(url,date,batch) VALUES('"
-							+ url + "','" + date + "','" + batch + "')");
-			statement.executeUpdate();
-			fw.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 	}
 
@@ -174,9 +173,24 @@ public class DataBaseUtil {
 		}
 		Date nextBatchDate = addDay(lastBatchDate, Constants.PERIOD_DAY);
 		Date currentDate = new Date();
+		String currentTime = f.format(currentDate);
+		try {
+			currentDate = f.parse(currentTime);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if (currentDate.before(nextBatchDate))
 			return false;
 		else
 			return true;
+	}
+
+	private boolean isUniqueURL(String url) {
+		for (String s : URLS) {
+			if (s.equals(url))
+				return false;
+		}
+		return true;
 	}
 }
