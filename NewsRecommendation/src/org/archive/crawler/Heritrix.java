@@ -91,6 +91,8 @@ import sun.security.tools.KeyTool;
  * @author Stack
  */
 public class Heritrix {
+	public static boolean JOBS_FINISHED = false;
+
 	private static final String ADHOC_PASSWORD = "password";
 
 	private static final String ADHOC_KEYSTORE = "adhoc.keystore";
@@ -193,7 +195,14 @@ public class Heritrix {
 	public static void main(String[] args) throws Exception {
 		TimerManager m = new TimerManager();
 		m.execute();
-		new Heritrix().instanceMain(args);
+		Heritrix heritrix = new Heritrix();
+		heritrix.instanceMain(args);
+	}
+
+	public void start(String[] args) throws Exception {
+		TimerManager m = new TimerManager();
+		m.execute();
+		this.instanceMain(args);
 	}
 
 	public void instanceMain(String[] args) throws Exception {

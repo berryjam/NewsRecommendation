@@ -31,6 +31,7 @@ import java.util.logging.Logger;
 
 import org.archive.checkpointing.Checkpoint;
 import org.archive.checkpointing.Checkpointable;
+import org.archive.crawler.Heritrix;
 import org.archive.crawler.event.CrawlStateEvent;
 import org.archive.crawler.reporting.AlertThreadGroup;
 import org.archive.crawler.reporting.CrawlerLoggerModule;
@@ -699,6 +700,7 @@ public class CrawlController implements Serializable, Lifecycle,
 			break;
 		case FINISH:
 			completeStop();
+			Heritrix.JOBS_FINISHED = true;
 			break;
 		default:
 			// do nothing

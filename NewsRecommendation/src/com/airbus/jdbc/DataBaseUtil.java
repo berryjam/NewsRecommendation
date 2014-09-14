@@ -22,11 +22,9 @@ import java.util.List;
 public class DataBaseUtil {
 	private static List<String> URLS;
 
-	private static final int PERIOD_WEEK = 7;
-
 	private static final String PATH = "/Users/berryjam/git/NewsRecommendation/NewsRecommendation/record.txt";
 
-	private static Connection connection = null;
+	private Connection connection = null;
 
 	public void connect(String drive, String url, String username,
 			String password) {
@@ -100,6 +98,7 @@ public class DataBaseUtil {
 	public String getLastBatchURLS() {
 		StringBuilder sb = new StringBuilder("");
 		String date = getLastBatchDate();
+		System.out.println("Last Batch Date:" + date);
 		if (date == null)
 			return sb.toString();
 		try {
@@ -172,10 +171,12 @@ public class DataBaseUtil {
 			e.printStackTrace();
 		}
 		Date nextBatchDate = addDay(lastBatchDate, Constants.PERIOD_DAY);
+		System.out.println("nextBatchDate:" + nextBatchDate);
 		Date currentDate = new Date();
 		String currentTime = f.format(currentDate);
 		try {
 			currentDate = f.parse(currentTime);
+			System.out.println("currentDate:" + currentDate);
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

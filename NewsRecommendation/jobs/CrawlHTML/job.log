@@ -4204,3 +4204,1021 @@ Blocked/Waiting On: NONE
 2014-09-06T11:27:52.046+08:00 INFO STOPPING 20140906025641
 2014-09-06T11:27:52.055+08:00 INFO EMPTY 20140906025641
 2014-09-06T11:27:54.044+08:00 INFO FINISHED 20140906025641
+2014-09-09T09:20:35.246+08:00 INFO Job instantiated
+2014-09-09T09:20:35.253+08:00 INFO Job launched
+2014-09-09T09:20:37.473+08:00 INFO PREPARING 20140909012036
+2014-09-09T09:20:37.554+08:00 INFO PAUSED 20140909012036
+2014-09-09T09:20:37.556+08:00 INFO RUNNING 20140909012036
+2014-09-09T09:26:32.823+08:00 INFO Job instantiated
+2014-09-09T09:26:32.831+08:00 INFO Job launched
+2014-09-09T09:26:35.021+08:00 INFO PREPARING 20140909012634
+2014-09-09T09:26:35.106+08:00 INFO PAUSED 20140909012634
+2014-09-09T09:26:35.107+08:00 INFO RUNNING 20140909012634
+2014-09-09T09:29:18.138+08:00 INFO STOPPING 20140909012634
+2014-09-09T09:29:18.147+08:00 INFO EMPTY 20140909012634
+2014-09-09T09:29:19.598+08:00 INFO FINISHED 20140909012634
+2014-09-09T09:42:26.872+08:00 INFO Job instantiated
+2014-09-09T09:42:26.880+08:00 INFO Job launched
+2014-09-09T09:42:28.979+08:00 INFO PREPARING 20140909014228
+2014-09-09T09:42:29.060+08:00 INFO PAUSED 20140909014228
+2014-09-09T09:42:29.062+08:00 INFO RUNNING 20140909014228
+2014-09-09T09:58:37.128+08:00 INFO Job instantiated
+2014-09-09T09:58:37.136+08:00 INFO Job launched
+2014-09-09T09:58:39.157+08:00 INFO PREPARING 20140909015838
+2014-09-09T09:58:39.235+08:00 INFO PAUSED 20140909015838
+2014-09-09T09:58:39.237+08:00 INFO RUNNING 20140909015838
+2014-09-09T10:18:04.026+08:00 INFO Job instantiated
+2014-09-09T10:18:04.045+08:00 INFO Job launched
+2014-09-09T10:18:06.277+08:00 INFO PREPARING 20140909021805
+2014-09-09T10:18:06.404+08:00 INFO PAUSED 20140909021805
+2014-09-09T10:18:06.414+08:00 INFO RUNNING 20140909021805
+2014-09-09T11:03:56.774+08:00 INFO Job instantiated
+2014-09-09T11:03:56.781+08:00 INFO Job launched
+2014-09-09T11:03:58.948+08:00 INFO PREPARING 20140909030358
+2014-09-09T11:03:59.030+08:00 INFO PAUSED 20140909030358
+2014-09-09T11:03:59.031+08:00 INFO RUNNING 20140909030358
+2014-09-09T11:08:47.743+08:00 INFO Job instantiated
+2014-09-09T11:08:47.769+08:00 INFO Job launched
+2014-09-09T11:08:49.927+08:00 INFO PREPARING 20140909030849
+2014-09-09T11:08:50.040+08:00 INFO PAUSED 20140909030849
+2014-09-09T11:08:50.044+08:00 INFO RUNNING 20140909030849
+2014-09-09T11:10:43.743+08:00 INFO Job instantiated
+2014-09-09T11:10:43.748+08:00 INFO Job launched
+2014-09-09T11:10:45.729+08:00 INFO PREPARING 20140909031045
+2014-09-09T11:10:45.791+08:00 INFO PAUSED 20140909031045
+2014-09-09T11:10:45.793+08:00 INFO RUNNING 20140909031045
+2014-09-09T11:12:52.385+08:00 INFO Job instantiated
+2014-09-09T11:12:52.391+08:00 INFO Job launched
+2014-09-09T11:12:54.367+08:00 INFO PREPARING 20140909031253
+2014-09-09T11:12:54.429+08:00 INFO PAUSED 20140909031253
+2014-09-09T11:12:54.430+08:00 INFO RUNNING 20140909031253
+2014-09-09T11:51:29.891+08:00 INFO Job instantiated
+2014-09-09T11:51:29.895+08:00 INFO Job launched
+2014-09-09T11:51:31.875+08:00 INFO PREPARING 20140909035131
+2014-09-09T11:51:31.941+08:00 INFO PAUSED 20140909035131
+2014-09-09T11:51:31.942+08:00 INFO RUNNING 20140909035131
+2014-09-09T15:53:27.449+08:00 INFO Job instantiated
+2014-09-09T15:53:27.455+08:00 INFO Job launched
+2014-09-09T15:53:29.567+08:00 INFO PREPARING 20140909075328
+2014-09-09T15:53:29.653+08:00 INFO PAUSED 20140909075328
+2014-09-09T15:53:29.654+08:00 INFO RUNNING 20140909075328
+2014-09-09T16:12:52.249+08:00 INFO Job instantiated
+2014-09-09T16:12:52.254+08:00 INFO Job launched
+2014-09-09T16:12:54.251+08:00 INFO PREPARING 20140909081253
+2014-09-09T16:12:54.331+08:00 INFO PAUSED 20140909081253
+2014-09-09T16:12:54.332+08:00 INFO RUNNING 20140909081253
+2014-09-09T16:30:53.210+08:00 INFO Job instantiated
+2014-09-09T16:30:53.217+08:00 INFO Job launched
+2014-09-09T16:30:55.375+08:00 INFO PREPARING 20140909083054
+2014-09-09T16:30:55.466+08:00 INFO PAUSED 20140909083054
+2014-09-09T16:30:55.468+08:00 INFO RUNNING 20140909083054
+2014-09-09T16:32:07.722+08:00 INFO Job instantiated
+2014-09-09T16:32:07.730+08:00 INFO Job launched
+2014-09-09T16:32:09.798+08:00 INFO PREPARING 20140909083209
+2014-09-09T16:32:09.901+08:00 INFO PAUSED 20140909083209
+2014-09-09T16:32:09.904+08:00 INFO RUNNING 20140909083209
+2014-09-09T16:32:54.020+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.60yq.cas.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #25: http://www.60yq.cas.cn/')
+2014-09-09T16:36:15.312+08:00 INFO Job instantiated
+2014-09-09T16:36:15.321+08:00 INFO Job launched
+2014-09-09T16:36:17.370+08:00 INFO PREPARING 20140909083616
+2014-09-09T16:36:17.468+08:00 INFO PAUSED 20140909083616
+2014-09-09T16:36:17.473+08:00 INFO RUNNING 20140909083616
+2014-09-09T16:46:13.595+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://pingxuan.kepu.net.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://pingxuan.kepu.net.cn/')
+2014-09-09T16:50:50.144+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://wlz.most.gov.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://wlz.most.gov.cn/')
+2014-09-09T16:50:50.205+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.60yq.cas.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #2: http://www.60yq.cas.cn/')
+2014-09-09T17:19:22.547+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637039.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #24: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637039.html')
+2014-09-09T17:19:22.549+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637039.html (in thread 'ToeThread #24: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637039.html')
+2014-09-09T17:19:37.462+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091023_2588895.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #24: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091023_2588895.html')
+2014-09-09T17:19:37.463+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091023_2588895.html (in thread 'ToeThread #24: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091023_2588895.html')
+2014-09-09T17:19:42.603+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636971.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636971.html')
+2014-09-09T17:19:42.604+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636971.html (in thread 'ToeThread #10: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636971.html')
+2014-09-09T17:19:47.762+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637004.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637004.html')
+2014-09-09T17:19:47.764+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637004.html (in thread 'ToeThread #10: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637004.html')
+2014-09-09T17:19:52.889+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638166.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638166.html')
+2014-09-09T17:19:52.890+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638166.html (in thread 'ToeThread #10: http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638166.html')
+2014-09-09T17:19:58.009+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636986.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636986.html')
+2014-09-09T17:19:58.010+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636986.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636986.html')
+2014-09-09T17:20:06.416+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638049.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638049.html')
+2014-09-09T17:20:06.422+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638049.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638049.html')
+2014-09-09T17:20:11.545+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638045.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638045.html')
+2014-09-09T17:20:11.546+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638045.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638045.html')
+2014-09-09T17:20:16.693+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638007.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638007.html')
+2014-09-09T17:20:16.694+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638007.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638007.html')
+2014-09-09T17:20:25.715+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636981.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636981.html')
+2014-09-09T17:20:25.718+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636981.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636981.html')
+2014-09-09T17:20:31.838+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638053.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638053.html')
+2014-09-09T17:20:31.839+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638053.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638053.html')
+2014-09-09T17:20:36.973+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638051.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638051.html')
+2014-09-09T17:20:36.974+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638051.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638051.html')
+2014-09-09T17:20:42.088+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638010.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638010.html')
+2014-09-09T17:20:42.089+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638010.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638010.html')
+2014-09-09T17:20:47.219+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638052.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638052.html')
+2014-09-09T17:20:47.219+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638052.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638052.html')
+2014-09-09T17:21:00.143+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636992.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636992.html')
+2014-09-09T17:21:00.153+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636992.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636992.html')
+2014-09-09T17:21:05.966+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636989.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636989.html')
+2014-09-09T17:21:05.966+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636989.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636989.html')
+2014-09-09T17:21:11.148+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636968.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636968.html')
+2014-09-09T17:21:11.151+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636968.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636968.html')
+2014-09-09T17:21:16.275+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637049.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637049.html')
+2014-09-09T17:21:16.276+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637049.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637049.html')
+2014-09-09T17:21:21.396+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638011.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638011.html')
+2014-09-09T17:21:21.400+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638011.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638011.html')
+2014-09-09T17:21:26.537+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638004.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638004.html')
+2014-09-09T17:21:26.538+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638004.html (in thread 'ToeThread #3: http://www.cas.cn/zt/hyzt/09work/08work/200910/t20091028_2638004.html')
+2014-09-09T17:21:31.661+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638056.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638056.html')
+2014-09-09T17:21:31.662+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638056.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638056.html')
+2014-09-09T17:21:36.775+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638172.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638172.html')
+2014-09-09T17:21:36.776+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638172.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638172.html')
+2014-09-09T17:21:41.939+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636978.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636978.html')
+2014-09-09T17:21:41.941+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636978.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636978.html')
+2014-09-09T17:21:48.044+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637046.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637046.html')
+2014-09-09T17:21:48.045+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637046.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637046.html')
+2014-09-09T17:21:53.189+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636969.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636969.html')
+2014-09-09T17:21:53.190+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636969.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636969.html')
+2014-09-09T17:21:58.976+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636974.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636974.html')
+2014-09-09T17:21:58.977+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636974.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636974.html')
+2014-09-09T17:22:04.158+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636957.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636957.html')
+2014-09-09T17:22:04.159+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636957.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/yw/200910/t20091027_2636957.html')
+2014-09-09T17:22:09.267+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638044.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638044.html')
+2014-09-09T17:22:09.268+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638044.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638044.html')
+2014-09-09T17:22:14.390+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636984.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636984.html')
+2014-09-09T17:22:14.391+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636984.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636984.html')
+2014-09-09T17:22:23.250+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638171.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638171.html')
+2014-09-09T17:22:23.251+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638171.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/mt/200910/t20091028_2638171.html')
+2014-09-09T17:22:28.395+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636980.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636980.html')
+2014-09-09T17:22:28.396+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636980.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/hy/200910/t20091027_2636980.html')
+2014-09-09T17:22:33.853+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637044.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637044.html')
+2014-09-09T17:22:33.854+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637044.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/ft/200910/t20091027_2637044.html')
+2014-09-09T17:22:46.850+08:00 SEVERE Problem java.lang.IllegalArgumentException: value cannot be null occured when trying to process 'http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638041.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638041.html')
+2014-09-09T17:22:46.851+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638041.html (in thread 'ToeThread #17: http://www.cas.cn/zt/hyzt/09work/tpbd/200910/t20091028_2638041.html')
+2014-09-10T16:42:16.516+08:00 INFO Job instantiated
+2014-09-10T16:42:16.523+08:00 INFO Job launched
+2014-09-10T16:42:18.609+08:00 INFO PREPARING 20140910084218
+2014-09-10T16:42:18.699+08:00 INFO PAUSED 20140910084218
+2014-09-10T16:42:18.701+08:00 INFO RUNNING 20140910084218
+2014-09-10T16:42:33.030+08:00 WARNING Cookie rejected: "U_TRS1=00000075.44fc1a61.54100ef8.29acc8a0". Illegal domain attribute ".sina.com.cn". Domain of origin: "s.weibo.com" (in thread 'ToeThread #5: http://s.weibo.com/robots.txt'; in processor 'fetchHttp')
+2014-09-10T16:42:33.042+08:00 WARNING Cookie rejected: "U_TRS2=00000075.450d1a61.54100ef8.fdedbeed". Illegal domain attribute ".sina.com.cn". Domain of origin: "s.weibo.com" (in thread 'ToeThread #5: http://s.weibo.com/robots.txt'; in processor 'fetchHttp')
+2014-09-10T16:42:37.207+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://comic.book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #14: http://comic.book.sina.com.cn/')
+2014-09-10T16:42:37.230+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://eladies.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #5: http://eladies.sina.com.cn/')
+2014-09-10T16:42:37.232+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://iask.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #22: http://iask.sina.com.cn/')
+2014-09-10T16:42:37.245+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sina.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://sina.wrating.com/')
+2014-09-10T16:42:37.271+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://house.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #25: http://house.sina.com.cn/')
+2014-09-10T16:42:37.423+08:00 WARNING Cookie rejected: "U_TRS1=00000075.fad47493.54100efd.ffda3e75". Illegal domain attribute ".sina.com.cn". Domain of origin: "s.weibo.com" (in thread 'ToeThread #5: http://s.weibo.com/weibo/'; in processor 'fetchHttp')
+2014-09-10T16:42:37.423+08:00 WARNING Cookie rejected: "U_TRS2=00000075.fae47493.54100efd.efaf74a7". Illegal domain attribute ".sina.com.cn". Domain of origin: "s.weibo.com" (in thread 'ToeThread #5: http://s.weibo.com/weibo/'; in processor 'fetchHttp')
+2014-09-10T16:42:37.931+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://weather.news.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #20: http://weather.news.sina.com.cn/')
+2014-09-10T16:42:37.945+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #14: http://sina.com.cn/')
+2014-09-10T16:42:44.380+08:00 SEVERE Problem java.util.ConcurrentModificationException occured when trying to process 'http://woman.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://woman.sina.com.cn/')
+2014-09-10T16:42:43.500+08:00 SEVERE Problem java.util.ConcurrentModificationException occured when trying to process 'http://money.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://money.sina.com.cn/')
+2014-09-10T16:43:01.978+08:00 INFO PAUSING 20140910084218
+2014-09-10T16:43:02.273+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://health.sina.com.cn/ X http://www.sina.com.cn/ in extractorHtml'
+[ToeThread #16: http://health.sina.com.cn/
+ CrawlURI http://health.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: extractorHtml
+    ACTIVE for 25s845ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 24s742ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T08:43:01Z         162          52          102          0(2.35)      0(14)             9            25       123539        126912         1.88          13           1
+ (in thread 'ToeThread #16: http://health.sina.com.cn/'; in processor 'extractorHtml')
+2014-09-10T16:43:21.903+08:00 INFO Job instantiated
+2014-09-10T16:43:21.918+08:00 INFO Job launched
+2014-09-10T16:43:24.063+08:00 INFO PREPARING 20140910084323
+2014-09-10T16:43:24.198+08:00 INFO PAUSED 20140910084323
+2014-09-10T16:43:24.201+08:00 INFO RUNNING 20140910084323
+2014-09-10T16:43:39.510+08:00 WARNING Cookie rejected: "U_TRS1=00000075.2f3f2fc4.54100f3b.4cdbabff". Illegal domain attribute ".sina.com.cn". Domain of origin: "s.weibo.com" (in thread 'ToeThread #12: http://s.weibo.com/robots.txt'; in processor 'fetchHttp')
+2014-09-10T16:43:39.511+08:00 WARNING Cookie rejected: "U_TRS2=00000075.2f4e2fc4.54100f3b.3d3ebdbd". Illegal domain attribute ".sina.com.cn". Domain of origin: "s.weibo.com" (in thread 'ToeThread #12: http://s.weibo.com/robots.txt'; in processor 'fetchHttp')
+2014-09-10T16:44:09.605+08:00 INFO PAUSING 20140910084323
+2014-09-10T16:44:10.973+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://2012.sina.com.cn/ X http://www.sina.com.cn/ in extractorHtml'
+[ToeThread #4: http://2012.sina.com.cn/
+ CrawlURI http://2012.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: extractorHtml
+    ACTIVE for 27s468ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 24s886ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T08:44:09Z         160          62           99          0(2.14)      0(12)             0            25       119829        126912         1.81          13           1
+ (in thread 'ToeThread #4: http://2012.sina.com.cn/'; in processor 'extractorHtml')
+2014-09-10T16:44:11.529+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://money.sina.com.cn/ X http://www.sina.com.cn/ in extractorHtml'
+[ToeThread #13: http://money.sina.com.cn/
+ CrawlURI http://money.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: extractorHtml
+    ACTIVE for 27s429ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 24s606ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T08:44:09Z         160          62           99          0(2.14)      0(12)             0            25       120288        126912         1.81          13           1
+ (in thread 'ToeThread #13: http://money.sina.com.cn/'; in processor 'extractorHtml')
+2014-09-10T16:44:11.902+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://history.sina.com.cn/ X http://www.sina.com.cn/ in extractorHtml'
+[ToeThread #8: http://history.sina.com.cn/
+ CrawlURI http://history.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: extractorHtml
+    ACTIVE for 27s478ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 25s185ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T08:44:09Z         160          62           99          0(2.14)      0(12)             0            25       119836        126912         1.81          13           1
+ (in thread 'ToeThread #8: http://history.sina.com.cn/'; in processor 'extractorHtml')
+2014-09-10T16:44:11.978+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://torch.2008.sina.com.cn/ X http://www.sina.com.cn/ in extractorHtml'
+[ToeThread #24: http://torch.2008.sina.com.cn/
+ CrawlURI http://torch.2008.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: extractorHtml
+    ACTIVE for 27s472ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 24s579ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T08:44:09Z         160          62           99          0(2.14)      0(12)             0            25       120992        126912         1.81          13           1
+ (in thread 'ToeThread #24: http://torch.2008.sina.com.cn/'; in processor 'extractorHtml')
+2014-09-10T16:44:12.029+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.sina.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #19: http://www.sina.com/')
+2014-09-10T16:44:12.028+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://f1.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://f1.sina.com.cn/')
+2014-09-10T16:44:12.027+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://book.sina.com.cn/')
+2014-09-10T16:44:12.026+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://fashion.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://fashion.sina.com.cn/')
+2014-09-10T16:44:12.027+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://eladies.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #9: http://eladies.sina.com.cn/')
+2014-09-10T16:44:12.026+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://finance.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://finance.sina.com.cn/')
+2014-09-10T16:44:12.046+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://home.sina.com.cn/ X http://www.sina.com.cn/ in warcWriter'
+[ToeThread #7: http://home.sina.com.cn/
+ CrawlURI http://home.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 29s380ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 29s241ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T08:44:12Z         160          59           99          0(2.07)      0(12)             3            23       114743        126912         1.96          13           1
+ (in thread 'ToeThread #7: http://home.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T16:44:12.057+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://collection.sina.com.cn/ X http://www.sina.com.cn/ in warcWriter'
+[ToeThread #10: http://collection.sina.com.cn/
+ CrawlURI http://collection.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 29s492ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 28s472ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T08:44:12Z         160          60           99          0(2.06)      0(12)             2            23       106532        126912         1.96          13           1
+ (in thread 'ToeThread #10: http://collection.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T16:44:12.041+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://health.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #25: http://health.sina.com.cn/')
+2014-09-10T16:44:12.041+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://house.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #21: http://house.sina.com.cn/')
+2014-09-10T16:44:12.041+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://edu.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://edu.sina.com.cn/')
+2014-09-10T16:44:12.041+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://iask.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #22: http://iask.sina.com.cn/')
+2014-09-10T16:44:12.041+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://comic.book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #20: http://comic.book.sina.com.cn/')
+2014-09-10T16:44:13.074+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://tech.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://tech.sina.com.cn/')
+2014-09-10T16:44:13.136+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://2008.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://2008.sina.com.cn/')
+2014-09-10T16:44:13.239+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://2002.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #14: http://2002.sina.com.cn/')
+2014-09-10T16:44:13.258+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://2014.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://2014.sina.com.cn/')
+2014-09-10T16:44:18.573+08:00 INFO PAUSED 20140910084323
+2014-09-10T19:37:56.001+08:00 INFO Job instantiated
+2014-09-10T19:37:56.009+08:00 INFO Job launched
+2014-09-10T19:37:58.098+08:00 INFO PREPARING 20140910113757
+2014-09-10T19:37:58.194+08:00 INFO PAUSED 20140910113757
+2014-09-10T19:37:58.195+08:00 INFO RUNNING 20140910113757
+2014-09-10T19:38:13.375+08:00 WARNING Cookie rejected: "U_TRS1=00000075.e98a17e0.54103825.9d5c4617". Illegal domain attribute ".sina.com.cn". Domain of origin: "s.weibo.com" (in thread 'ToeThread #11: http://s.weibo.com/robots.txt'; in processor 'fetchHttp')
+2014-09-10T19:38:13.388+08:00 WARNING Cookie rejected: "U_TRS2=00000075.e99a17e0.54103825.ddc8f7a2". Illegal domain attribute ".sina.com.cn". Domain of origin: "s.weibo.com" (in thread 'ToeThread #11: http://s.weibo.com/robots.txt'; in processor 'fetchHttp')
+2014-09-10T19:38:17.636+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://sina.com.cn/')
+2014-09-10T19:38:19.449+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://eladies.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://eladies.sina.com.cn/')
+2014-09-10T19:38:19.452+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://weiqi.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #24: http://weiqi.sina.com.cn/')
+2014-09-10T19:38:19.452+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://comic.book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #8: http://comic.book.sina.com.cn/')
+2014-09-10T19:38:19.452+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://video.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #2: http://video.sina.com.cn/')
+2014-09-10T19:38:26.456+08:00 INFO PAUSING 20140910113757
+2014-09-10T19:38:26.481+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://collection.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #25: http://collection.sina.com.cn/')
+2014-09-10T19:38:26.573+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://fashion.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://fashion.sina.com.cn/')
+2014-09-10T19:38:26.574+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://home.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #24: http://home.sina.com.cn/')
+2014-09-10T19:38:26.590+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://woman.sina.com.cn/ X http://www.sina.com.cn/ in warcWriter'
+[ToeThread #21: http://woman.sina.com.cn/
+ CrawlURI http://woman.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 10s99ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 6s410ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T11:38:26Z         160          57           99          0(3.49)      0(21)             5            25       111077        126912         1.79          13           1
+ (in thread 'ToeThread #21: http://woman.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T19:38:27.027+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://health.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://health.sina.com.cn/')
+2014-09-10T19:38:27.039+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://money.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #16: http://money.sina.com.cn/')
+2014-09-10T19:38:27.521+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://yue.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://yue.sina.com.cn/')
+2014-09-10T19:38:27.523+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cul.book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #2: http://cul.book.sina.com.cn/')
+2014-09-10T19:38:27.559+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.sina.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #5: http://www.sina.com/')
+2014-09-10T19:38:28.248+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #20: http://book.sina.com.cn/')
+2014-09-10T19:38:28.327+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://finance.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #19: http://finance.sina.com.cn/')
+2014-09-10T19:38:28.292+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://2012.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://2012.sina.com.cn/')
+2014-09-10T19:38:31.872+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://edu.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #1: http://edu.sina.com.cn/')
+2014-09-10T19:38:31.874+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://f1.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://f1.sina.com.cn/')
+2014-09-10T19:38:32.220+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://astro.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://astro.sina.com.cn/')
+2014-09-10T19:38:32.233+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://2008.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://2008.sina.com.cn/')
+2014-09-10T19:38:32.240+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://bj.house.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #8: http://bj.house.sina.com.cn/')
+2014-09-10T19:38:32.668+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://history.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://history.sina.com.cn/')
+2014-09-10T19:38:37.363+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://news.sina.com.cn/ X http://www.sina.com.cn/ in warcWriter'
+[ToeThread #7: http://news.sina.com.cn/
+ CrawlURI http://news.sina.com.cn/ X http://www.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 20s982ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 4s643ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T11:38:37Z         164          40          102        0.16(2.6)     35(32)            23             6       122430        126912         4.73          13           0
+ (in thread 'ToeThread #7: http://news.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T19:38:37.374+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://baby.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://baby.sina.com.cn/')
+2014-09-10T19:38:37.809+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sports.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://sports.sina.com.cn/')
+2014-09-10T19:38:37.828+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://ent.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #25: http://ent.sina.com.cn/')
+2014-09-10T19:38:37.828+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://games.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #22: http://games.sina.com.cn/')
+2014-09-10T19:38:38.808+08:00 INFO PAUSED 20140910113757
+2014-09-10T19:39:48.464+08:00 INFO Job instantiated
+2014-09-10T19:39:48.471+08:00 INFO Job launched
+2014-09-10T19:39:50.592+08:00 INFO PREPARING 20140910113949
+2014-09-10T19:39:50.682+08:00 INFO PAUSED 20140910113949
+2014-09-10T19:39:50.683+08:00 INFO RUNNING 20140910113949
+2014-09-10T19:40:08.104+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://sohu.wrating.com/')
+2014-09-10T19:40:08.136+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/xijiu/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://news.sohu.com/s2014/xijiu/')
+2014-09-10T19:40:08.138+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/xijiu/ (in thread 'ToeThread #23: http://news.sohu.com/s2014/xijiu/')
+2014-09-10T19:40:08.270+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://k.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://k.sohu.com/')
+2014-09-10T19:40:08.787+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cp.ra.icast.cn/cp/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://cp.ra.icast.cn/cp/')
+2014-09-10T19:40:08.791+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://www.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://www.sohu.com/')
+2014-09-10T19:40:49.602+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-10T19:40:49.603+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html (in thread 'ToeThread #7: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-10T19:40:56.063+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/_scroll_newslist/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://news.sohu.com/_scroll_newslist/')
+2014-09-10T19:40:56.065+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/_scroll_newslist/ (in thread 'ToeThread #7: http://news.sohu.com/_scroll_newslist/')
+2014-09-10T19:43:29.347+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://news.sohu.com/s2013/litianyi/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #19: http://news.sohu.com/s2013/litianyi/')
+2014-09-10T19:43:29.349+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2013/litianyi/ (in thread 'ToeThread #19: http://news.sohu.com/s2013/litianyi/')
+2014-09-10T19:43:34.758+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://weblive.sports.sohu.com/l/16/73/index.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://weblive.sports.sohu.com/l/16/73/index.html')
+2014-09-10T19:43:34.759+08:00 WARNING politessDelay unset, returning default 5000 for http://weblive.sports.sohu.com/l/16/73/index.html (in thread 'ToeThread #10: http://weblive.sports.sohu.com/l/16/73/index.html')
+2014-09-10T19:50:29.542+08:00 INFO PAUSING 20140910113949
+2014-09-10T19:50:30.917+08:00 INFO RUNNING 20140910113949
+2014-09-10T19:52:34.407+08:00 INFO Job instantiated
+2014-09-10T19:52:34.421+08:00 INFO Job launched
+2014-09-10T19:52:37.005+08:00 INFO PREPARING 20140910115235
+2014-09-10T19:52:37.223+08:00 INFO PAUSED 20140910115235
+2014-09-10T19:52:37.227+08:00 INFO RUNNING 20140910115235
+2014-09-10T19:52:55.436+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #24: http://sohu.wrating.com/')
+2014-09-10T19:52:55.439+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://k.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://k.sohu.com/')
+2014-09-10T19:52:56.040+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cp.ra.icast.cn/cp/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #4: http://cp.ra.icast.cn/cp/')
+2014-09-10T19:52:56.119+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #22: http://www.sohu.com/')
+2014-09-10T19:52:58.598+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/sxgcdz/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://news.sohu.com/s2014/sxgcdz/')
+2014-09-10T19:52:58.600+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/sxgcdz/ (in thread 'ToeThread #3: http://news.sohu.com/s2014/sxgcdz/')
+2014-09-10T19:58:43.949+08:00 INFO Job instantiated
+2014-09-10T19:58:43.957+08:00 INFO Job launched
+2014-09-10T19:58:46.056+08:00 INFO PREPARING 20140910115845
+2014-09-10T19:58:46.172+08:00 INFO PAUSED 20140910115845
+2014-09-10T19:58:46.173+08:00 INFO RUNNING 20140910115845
+2014-09-10T19:59:08.050+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://news.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #2: http://news.sina.com.cn/')
+2014-09-10T19:59:15.423+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #22: http://sohu.wrating.com/')
+2014-09-10T19:59:15.548+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cp.ra.icast.cn/cp/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://cp.ra.icast.cn/cp/')
+2014-09-10T19:59:15.910+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://k.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://k.sohu.com/')
+2014-09-10T19:59:23.634+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #1: http://www.sohu.com/')
+2014-09-10T19:59:23.708+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/photo/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://news.sohu.com/photo/')
+2014-09-10T19:59:23.709+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/photo/ (in thread 'ToeThread #3: http://news.sohu.com/photo/')
+2014-09-10T20:12:08.720+08:00 INFO Job instantiated
+2014-09-10T20:12:08.727+08:00 INFO Job launched
+2014-09-10T20:12:10.876+08:00 INFO PREPARING 20140910121210
+2014-09-10T20:12:10.969+08:00 INFO PAUSED 20140910121210
+2014-09-10T20:12:10.970+08:00 INFO RUNNING 20140910121210
+2014-09-10T20:12:20.659+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://news.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://news.sohu.com/')
+2014-09-10T20:12:28.395+08:00 SEVERE Problem java.util.ConcurrentModificationException occured when trying to process 'http://golf.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://golf.sina.com.cn/')
+2014-09-10T20:12:28.527+08:00 SEVERE Problem java.util.ConcurrentModificationException occured when trying to process 'http://mobile.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #16: http://mobile.sina.com.cn/')
+2014-09-10T20:12:29.485+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://video.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://video.sina.com.cn/')
+2014-09-10T20:12:29.569+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://shidefc.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://shidefc.sina.com.cn/')
+2014-09-10T20:12:29.569+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://home.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://home.sina.com.cn/')
+2014-09-10T20:12:29.726+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://yayun2002.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #8: http://yayun2002.sina.com.cn/')
+2014-09-10T20:12:29.732+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://mil.news.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://mil.news.sina.com.cn/')
+2014-09-10T20:12:41.796+08:00 INFO Job instantiated
+2014-09-10T20:12:41.801+08:00 INFO Job launched
+2014-09-10T20:12:43.907+08:00 INFO PREPARING 20140910121243
+2014-09-10T20:12:44.035+08:00 INFO PAUSED 20140910121243
+2014-09-10T20:12:44.038+08:00 INFO RUNNING 20140910121243
+2014-09-10T20:13:05.545+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://news.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #8: http://news.sina.com.cn/')
+2014-09-10T20:13:12.873+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/sxgcdz/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://news.sohu.com/s2014/sxgcdz/')
+2014-09-10T20:13:12.875+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/sxgcdz/ (in thread 'ToeThread #23: http://news.sohu.com/s2014/sxgcdz/')
+2014-09-10T20:13:12.905+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #24: http://sohu.wrating.com/')
+2014-09-10T20:13:13.585+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cp.ra.icast.cn/cp/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://cp.ra.icast.cn/cp/')
+2014-09-10T20:13:13.592+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://www.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #4: http://www.sohu.com/')
+2014-09-10T20:13:19.756+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://news.sohu.com/s2014/kunshan/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://news.sohu.com/s2014/kunshan/')
+2014-09-10T20:13:19.758+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/kunshan/ (in thread 'ToeThread #23: http://news.sohu.com/s2014/kunshan/')
+2014-09-10T20:13:42.255+08:00 INFO Job instantiated
+2014-09-10T20:13:42.261+08:00 INFO Job launched
+2014-09-10T20:13:44.221+08:00 INFO PREPARING 20140910121343
+2014-09-10T20:13:44.287+08:00 INFO PAUSED 20140910121343
+2014-09-10T20:13:44.289+08:00 INFO RUNNING 20140910121343
+2014-09-10T20:14:03.256+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://news.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://news.sina.com.cn/')
+2014-09-10T20:14:10.506+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cp.ra.icast.cn/cp/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #22: http://cp.ra.icast.cn/cp/')
+2014-09-10T20:14:10.507+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://k.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://k.sohu.com/')
+2014-09-10T20:14:10.525+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/newsmaker300/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://news.sohu.com/s2014/newsmaker300/')
+2014-09-10T20:14:10.528+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/newsmaker300/ (in thread 'ToeThread #12: http://news.sohu.com/s2014/newsmaker300/')
+2014-09-10T20:14:31.633+08:00 INFO Job instantiated
+2014-09-10T20:14:31.638+08:00 INFO Job launched
+2014-09-10T20:14:33.607+08:00 INFO PREPARING 20140910121433
+2014-09-10T20:14:33.671+08:00 INFO PAUSED 20140910121433
+2014-09-10T20:14:33.672+08:00 INFO RUNNING 20140910121433
+2014-09-10T20:14:53.993+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://news.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://news.sina.com.cn/')
+2014-09-10T20:15:01.463+08:00 SEVERE Problem java.util.ConcurrentModificationException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://sohu.wrating.com/')
+2014-09-10T20:15:01.939+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cp.ra.icast.cn/cp/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://cp.ra.icast.cn/cp/')
+2014-09-10T20:15:02.606+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://www.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://www.sohu.com/')
+2014-09-10T20:15:04.502+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://k.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://k.sohu.com/')
+2014-09-10T20:17:36.071+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #5: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-10T20:17:36.072+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html (in thread 'ToeThread #5: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-10T20:17:42.799+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/2832/s395957637/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #19: http://news.sohu.com/s2014/2832/s395957637/')
+2014-09-10T20:17:42.800+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/2832/s395957637/ (in thread 'ToeThread #19: http://news.sohu.com/s2014/2832/s395957637/')
+2014-09-10T20:19:02.211+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2014/yanchunzhang/anli/280150.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #8: http://images.sohu.com/bill/s2014/yanchunzhang/anli/280150.html')
+2014-09-10T20:19:02.213+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2014/yanchunzhang/anli/280150.html (in thread 'ToeThread #8: http://images.sohu.com/bill/s2014/yanchunzhang/anli/280150.html')
+2014-09-10T20:22:13.285+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://mil.sohu.com/s2013/mxct/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #8: http://mil.sohu.com/s2013/mxct/')
+2014-09-10T20:40:41.377+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/pictalk/.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #1: http://news.sohu.com/pictalk/.html')
+2014-09-10T20:40:41.386+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/pictalk/.html (in thread 'ToeThread #1: http://news.sohu.com/pictalk/.html')
+2014-09-10T20:42:11.737+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2014/hailiu/huyi/pinglun/index.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://images.sohu.com/bill/s2014/hailiu/huyi/pinglun/index.html')
+2014-09-10T20:42:11.739+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2014/hailiu/huyi/pinglun/index.html (in thread 'ToeThread #7: http://images.sohu.com/bill/s2014/hailiu/huyi/pinglun/index.html')
+2014-09-10T20:42:14.759+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://pinglun.sohu.com/sogouad.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://pinglun.sohu.com/sogouad.html')
+2014-09-10T20:42:14.760+08:00 WARNING politessDelay unset, returning default 5000 for http://pinglun.sohu.com/sogouad.html (in thread 'ToeThread #6: http://pinglun.sohu.com/sogouad.html')
+2014-09-10T20:50:12.358+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://pinglun.sohu.com/s372006830.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://pinglun.sohu.com/s372006830.html')
+2014-09-10T20:50:12.360+08:00 WARNING politessDelay unset, returning default 5000 for http://pinglun.sohu.com/s372006830.html (in thread 'ToeThread #6: http://pinglun.sohu.com/s372006830.html')
+2014-09-10T20:56:21.071+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2013/jijianye/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #1: http://news.sohu.com/s2013/jijianye/')
+2014-09-10T20:56:21.081+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2013/jijianye/ (in thread 'ToeThread #1: http://news.sohu.com/s2013/jijianye/')
+2014-09-10T20:56:32.435+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2013/junliduibi/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #1: http://news.sohu.com/s2013/junliduibi/')
+2014-09-10T20:56:32.436+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2013/junliduibi/ (in thread 'ToeThread #1: http://news.sohu.com/s2013/junliduibi/')
+2014-09-10T21:10:08.599+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2010/10wuzhongquanhui/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #14: http://news.sohu.com/s2010/10wuzhongquanhui/')
+2014-09-10T21:10:08.601+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2010/10wuzhongquanhui/ (in thread 'ToeThread #14: http://news.sohu.com/s2010/10wuzhongquanhui/')
+2014-09-10T21:11:57.027+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/cs/button/tongyong/2008/linyin/950100news.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #4: http://images.sohu.com/cs/button/tongyong/2008/linyin/950100news.html')
+2014-09-10T21:11:57.028+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/cs/button/tongyong/2008/linyin/950100news.html (in thread 'ToeThread #4: http://images.sohu.com/cs/button/tongyong/2008/linyin/950100news.html')
+2014-09-10T21:13:10.864+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2010/chongjianhaidi/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://news.sohu.com/s2010/chongjianhaidi/')
+2014-09-10T21:13:10.865+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2010/chongjianhaidi/ (in thread 'ToeThread #15: http://news.sohu.com/s2010/chongjianhaidi/')
+2014-09-10T21:13:16.533+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/cs/button/tongyong/2008/linyin/220320news.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://images.sohu.com/cs/button/tongyong/2008/linyin/220320news.html')
+2014-09-10T21:13:16.535+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/cs/button/tongyong/2008/linyin/220320news.html (in thread 'ToeThread #15: http://images.sohu.com/cs/button/tongyong/2008/linyin/220320news.html')
+2014-09-10T21:18:49.194+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://product.news.sohu.com/traceback/ribendizhen11/7bei.html?startDate=2011-3-11&url=http://product.news.sohu.com/traceback/ribendizhen11/year-month-day.htm&defaultUrl=http://news.sohu.com/s2011/ribendizhen11/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://product.news.sohu.com/traceback/ribendizhen11/7bei.html?startDate=2011-3-11&url=http://product.news.sohu.com/traceback/ribendizhen11/year-month-day.htm&defaultUrl=http://news.sohu.com/s2011/ribendizhen11/')
+2014-09-10T21:18:49.195+08:00 WARNING politessDelay unset, returning default 5000 for http://product.news.sohu.com/traceback/ribendizhen11/7bei.html?startDate=2011-3-11&url=http://product.news.sohu.com/traceback/ribendizhen11/year-month-day.htm&defaultUrl=http://news.sohu.com/s2011/ribendizhen11/ (in thread 'ToeThread #12: http://product.news.sohu.com/traceback/ribendizhen11/7bei.html?startDate=2011-3-11&url=http://product.news.sohu.com/traceback/ribendizhen11/year-month-day.htm&defaultUrl=http://news.sohu.com/s2011/ribendizhen11/')
+2014-09-10T21:18:59.708+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.mapenjoy.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://www.mapenjoy.com/')
+2014-09-10T21:19:17.077+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.digitalglobe.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #8: http://www.digitalglobe.com/')
+2014-09-10T21:23:49.152+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2013/dawu_gd/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://news.sohu.com/s2013/dawu_gd/')
+2014-09-10T21:23:49.152+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2013/dawu_gd/ (in thread 'ToeThread #3: http://news.sohu.com/s2013/dawu_gd/')
+2014-09-10T21:28:47.924+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2009/xuelingyu/shenghuojiema/dsy160260.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://images.sohu.com/bill/s2009/xuelingyu/shenghuojiema/dsy160260.html')
+2014-09-10T21:28:47.925+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2009/xuelingyu/shenghuojiema/dsy160260.html (in thread 'ToeThread #3: http://images.sohu.com/bill/s2009/xuelingyu/shenghuojiema/dsy160260.html')
+2014-09-10T21:39:17.935+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://lianghui.people.com.cn/2013npc/GB/357321/357864/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #9: http://lianghui.people.com.cn/2013npc/GB/357321/357864/')
+2014-09-10T21:47:35.119+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cpc.people.com.cn/zhengji/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #21: http://cpc.people.com.cn/zhengji/')
+2014-09-10T21:59:44.776+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://pinglun.sohu.com/s380901943.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://pinglun.sohu.com/s380901943.html')
+2014-09-10T21:59:44.777+08:00 WARNING politessDelay unset, returning default 5000 for http://pinglun.sohu.com/s380901943.html (in thread 'ToeThread #23: http://pinglun.sohu.com/s380901943.html')
+2014-09-10T22:19:52.791+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/cs/button/tongyong/2008/buick/360200news.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://images.sohu.com/cs/button/tongyong/2008/buick/360200news.html')
+2014-09-10T22:19:52.793+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/cs/button/tongyong/2008/buick/360200news.html (in thread 'ToeThread #18: http://images.sohu.com/cs/button/tongyong/2008/buick/360200news.html')
+2014-09-10T22:19:57.879+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/cs/button/tongyong/2008/buick/760100news.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://images.sohu.com/cs/button/tongyong/2008/buick/760100news.html')
+2014-09-10T22:19:57.880+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/cs/button/tongyong/2008/buick/760100news.html (in thread 'ToeThread #18: http://images.sohu.com/cs/button/tongyong/2008/buick/760100news.html')
+2014-09-10T22:20:01.401+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://s.sohu.com/tv_tuijian.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #24: http://s.sohu.com/tv_tuijian.html')
+2014-09-10T22:20:01.810+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2008/kunminggongjiaobaozha/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://news.sohu.com/s2008/kunminggongjiaobaozha/')
+2014-09-10T22:20:01.811+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2008/kunminggongjiaobaozha/ (in thread 'ToeThread #7: http://news.sohu.com/s2008/kunminggongjiaobaozha/')
+2014-09-10T22:31:58.523+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://s.sohu.com/s_tuijian.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #1: http://s.sohu.com/s_tuijian.html')
+2014-09-10T22:31:58.525+08:00 WARNING politessDelay unset, returning default 5000 for http://s.sohu.com/s_tuijian.html (in thread 'ToeThread #1: http://s.sohu.com/s_tuijian.html')
+2014-09-10T22:37:16.032+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://it.sohu.com/s2008/cncdizhen/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://it.sohu.com/s2008/cncdizhen/')
+2014-09-10T22:37:16.041+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.faw-benteng.com/market/contribute2008/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://www.faw-benteng.com/market/contribute2008/')
+2014-09-10T22:43:32.804+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/cs/button/tongyong/2008/buick/360200biz.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://images.sohu.com/cs/button/tongyong/2008/buick/360200biz.html')
+2014-09-10T22:43:32.805+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/cs/button/tongyong/2008/buick/360200biz.html (in thread 'ToeThread #6: http://images.sohu.com/cs/button/tongyong/2008/buick/360200biz.html')
+2014-09-10T23:03:36.418+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2013/yanchunzhang/shuangyi/95060news.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://images.sohu.com/bill/s2013/yanchunzhang/shuangyi/95060news.html')
+2014-09-10T23:03:36.421+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2013/yanchunzhang/shuangyi/95060news.html (in thread 'ToeThread #10: http://images.sohu.com/bill/s2013/yanchunzhang/shuangyi/95060news.html')
+2014-09-10T23:03:41.627+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2013/yanchunzhang/shuangyi/150110news.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://images.sohu.com/bill/s2013/yanchunzhang/shuangyi/150110news.html')
+2014-09-10T23:03:41.628+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2013/yanchunzhang/shuangyi/150110news.html (in thread 'ToeThread #3: http://images.sohu.com/bill/s2013/yanchunzhang/shuangyi/150110news.html')
+2014-09-10T23:10:46.072+08:00 INFO Job instantiated
+2014-09-10T23:10:46.079+08:00 INFO Job launched
+2014-09-10T23:10:48.185+08:00 INFO PREPARING 20140910151047
+2014-09-10T23:10:48.281+08:00 INFO PAUSED 20140910151047
+2014-09-10T23:10:48.282+08:00 INFO RUNNING 20140910151047
+2014-09-10T23:11:09.409+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://cul.book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://cul.book.sina.com.cn/')
+2014-09-10T23:11:09.846+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://yayun2006.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://yayun2006.sina.com.cn/')
+2014-09-10T23:11:09.881+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://weiqi.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://weiqi.sina.com.cn/')
+2014-09-10T23:11:09.868+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://house.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://house.sina.com.cn/')
+2014-09-10T23:11:10.323+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://mobile.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://mobile.sina.com.cn/')
+2014-09-10T23:11:10.285+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://bj.house.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #14: http://bj.house.sina.com.cn/')
+2014-09-10T23:11:10.320+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://fashion.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #25: http://fashion.sina.com.cn/')
+2014-09-10T23:11:10.270+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://health.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://health.sina.com.cn/')
+2014-09-10T23:11:12.918+08:00 SEVERE Problem java.util.ConcurrentModificationException occured when trying to process 'http://www.sina.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #16: http://www.sina.com/')
+2014-09-10T23:11:35.146+08:00 INFO PAUSING 20140910151047
+2014-09-10T23:11:35.949+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://yue.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #14: http://yue.sina.com.cn/')
+2014-09-10T23:11:36.522+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://edu.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://edu.sina.com.cn/')
+2014-09-10T23:11:36.883+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://shidefc.sina.com.cn/ X http://news.sina.com.cn/ in warcWriter'
+[ToeThread #16: http://shidefc.sina.com.cn/
+ CrawlURI http://shidefc.sina.com.cn/ X http://news.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 23s32ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 17s873ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T15:11:35Z         189          84           97          0(2.03)      0(26)             9            25       124878        126912         1.76          40           1
+ (in thread 'ToeThread #16: http://shidefc.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T23:11:36.885+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://mil.news.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #5: http://mil.news.sina.com.cn/')
+2014-09-10T23:11:38.003+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://ent.sina.com.cn/ X http://news.sina.com.cn/ in extractorHtml'
+[ToeThread #8: http://ent.sina.com.cn/
+ CrawlURI http://ent.sina.com.cn/ X http://news.sina.com.cn/    2 attempts
+    in processor: extractorHtml
+    ACTIVE for 28s504ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 24s831ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T15:11:35Z         189          84           97       0.15(2.06)     22(27)             9            25       126595        126912         1.76          40           1
+ (in thread 'ToeThread #8: http://ent.sina.com.cn/'; in processor 'extractorHtml')
+2014-09-10T23:11:38.029+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://eladies.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://eladies.sina.com.cn/')
+2014-09-10T23:11:39.177+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://yayun2002.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://yayun2002.sina.com.cn/')
+2014-09-10T23:11:39.073+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://book.sina.com.cn/')
+2014-09-10T23:11:39.067+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://home.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://home.sina.com.cn/')
+2014-09-10T23:11:38.635+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://golf.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://golf.sina.com.cn/')
+2014-09-10T23:11:38.056+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://money.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #24: http://money.sina.com.cn/')
+2014-09-10T23:11:38.030+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://comic.book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://comic.book.sina.com.cn/')
+2014-09-10T23:11:44.707+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://finance.sina.com.cn/ X http://news.sina.com.cn/ in warcWriter'
+[ToeThread #13: http://finance.sina.com.cn/
+ CrawlURI http://finance.sina.com.cn/ X http://news.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 34s32ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 4s852ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T15:11:44Z         189          71           98       0.08(1.73)     14(25)            21            12       125186        126912            3          40           1
+ (in thread 'ToeThread #13: http://finance.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T23:11:46.254+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://astro.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #20: http://astro.sina.com.cn/')
+2014-09-10T23:11:46.257+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://2012.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #2: http://2012.sina.com.cn/')
+2014-09-10T23:11:46.255+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://collection.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://collection.sina.com.cn/')
+2014-09-10T23:11:46.650+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://www.sina.com.cn/ X http://news.sina.com.cn/ in warcWriter'
+[ToeThread #22: http://www.sina.com.cn/
+ CrawlURI http://www.sina.com.cn/ X http://news.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 39s298ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 5s930ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T15:11:45Z         189          71           98        0.07(1.7)     13(25)            21            12       126242        126912            3          40           1
+ (in thread 'ToeThread #22: http://www.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T23:11:46.666+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://tech.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #21: http://tech.sina.com.cn/')
+2014-09-10T23:11:58.109+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://history.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://history.sina.com.cn/')
+2014-09-10T23:11:58.109+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://games.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #4: http://games.sina.com.cn/')
+2014-09-10T23:11:58.109+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://baby.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #9: http://baby.sina.com.cn/')
+2014-09-10T23:11:58.125+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://2014.sina.com.cn/ X http://news.sina.com.cn/ in warcWriter'
+[ToeThread #25: http://2014.sina.com.cn/
+ CrawlURI http://2014.sina.com.cn/ X http://news.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 47s395ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 11s444ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T15:11:58Z         189          65           98           0(1.4)      0(20)            27             6       118170        126912         4.64          40           1
+ (in thread 'ToeThread #25: http://2014.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T23:11:58.127+08:00 SEVERE Serious error occured trying to process 'CrawlURI http://sports.sina.com.cn/ X http://news.sina.com.cn/ in warcWriter'
+[ToeThread #1: http://sports.sina.com.cn/
+ CrawlURI http://sports.sina.com.cn/ X http://news.sina.com.cn/    2 attempts
+    in processor: warcWriter
+    ACTIVE for 51s457ms
+    step: ABOUT_TO_BEGIN_PROCESSOR for 11s2ms
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1518)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:455)
+    org.archive.crawler.framework.ToeThread.reportTo(ToeThread.java:581)
+    org.archive.util.DevUtils.extraInfo(DevUtils.java:61)
+    org.archive.crawler.framework.ToeThread.seriousError(ToeThread.java:266)
+    org.archive.crawler.framework.ToeThread.run(ToeThread.java:176)
+]
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-10T15:11:58Z         189          65           98           0(1.4)      0(20)            27             6       118933        126912         4.64          40           1
+ (in thread 'ToeThread #1: http://sports.sina.com.cn/'; in processor 'warcWriter')
+2014-09-10T23:11:58.128+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://2008.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #19: http://2008.sina.com.cn/')
+2014-09-10T23:11:59.105+08:00 INFO PAUSED 20140910151047
+2014-09-10T23:13:53.270+08:00 INFO Job instantiated
+2014-09-10T23:13:53.278+08:00 INFO Job launched
+2014-09-10T23:13:55.378+08:00 INFO PREPARING 20140910151354
+2014-09-10T23:13:55.465+08:00 INFO PAUSED 20140910151354
+2014-09-10T23:13:55.467+08:00 INFO RUNNING 20140910151354
+2014-09-10T23:14:16.139+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://shidefc.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://shidefc.sina.com.cn/')
+2014-09-10T23:14:16.216+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://house.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #20: http://house.sina.com.cn/')
+2014-09-10T23:14:16.221+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://weather.news.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://weather.news.sina.com.cn/')
+2014-09-10T23:14:16.232+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://comic.book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #16: http://comic.book.sina.com.cn/')
+2014-09-10T23:14:16.252+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://book.sina.com.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #22: http://book.sina.com.cn/')
+2014-09-10T23:15:08.722+08:00 INFO Job instantiated
+2014-09-10T23:15:08.731+08:00 INFO Job launched
+2014-09-10T23:15:10.878+08:00 INFO PREPARING 20140910151510
+2014-09-10T23:15:10.964+08:00 INFO PAUSED 20140910151510
+2014-09-10T23:15:10.966+08:00 INFO RUNNING 20140910151510
+2014-09-10T23:15:28.419+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://sohu.wrating.com/')
+2014-09-10T23:15:28.433+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/newsmaker297/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://news.sohu.com/s2014/newsmaker297/')
+2014-09-10T23:15:28.437+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/newsmaker297/ (in thread 'ToeThread #7: http://news.sohu.com/s2014/newsmaker297/')
+2014-09-10T23:15:28.557+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://k.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #25: http://k.sohu.com/')
+2014-09-10T23:15:29.822+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://cp.ra.icast.cn/cp/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://cp.ra.icast.cn/cp/')
+2014-09-10T23:15:29.822+08:00 SEVERE Problem org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed occured when trying to process 'http://www.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://www.sohu.com/')
+2014-09-10T23:15:35.629+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/newsmaker299/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://news.sohu.com/s2014/newsmaker299/')
+2014-09-10T23:15:35.630+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/newsmaker299/ (in thread 'ToeThread #10: http://news.sohu.com/s2014/newsmaker299/')
+2014-09-10T23:17:36.143+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-10T23:17:36.145+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html (in thread 'ToeThread #12: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-10T23:19:12.552+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2014/yanchunzhang/anli/280150.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #20: http://images.sohu.com/bill/s2014/yanchunzhang/anli/280150.html')
+2014-09-10T23:19:12.554+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2014/yanchunzhang/anli/280150.html (in thread 'ToeThread #20: http://images.sohu.com/bill/s2014/yanchunzhang/anli/280150.html')
+2014-09-10T23:27:05.731+08:00 INFO Job instantiated
+2014-09-10T23:27:05.739+08:00 INFO Job launched
+2014-09-10T23:27:08.017+08:00 INFO PREPARING 20140910152707
+2014-09-10T23:27:08.115+08:00 INFO PAUSED 20140910152707
+2014-09-10T23:27:08.116+08:00 INFO RUNNING 20140910152707
+2014-09-10T23:27:17.559+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #16: http://news.sohu.com/')
+2014-09-10T23:27:21.988+08:00 INFO STOPPING 20140910152707
+2014-09-10T23:27:21.989+08:00 INFO EMPTY 20140910152707
+2014-09-10T23:27:23.585+08:00 INFO FINISHED 20140910152707
+2014-09-10T23:27:46.022+08:00 INFO Job instantiated
+2014-09-10T23:27:46.027+08:00 INFO Job launched
+2014-09-10T23:27:48.028+08:00 INFO PREPARING 20140910152747
+2014-09-10T23:27:48.100+08:00 INFO PAUSED 20140910152747
+2014-09-10T23:27:48.103+08:00 INFO RUNNING 20140910152747
+2014-09-10T23:28:01.013+08:00 INFO STOPPING 20140910152747
+2014-09-10T23:28:01.022+08:00 INFO EMPTY 20140910152747
+2014-09-10T23:28:02.816+08:00 INFO FINISHED 20140910152747
+2014-09-10T23:28:54.528+08:00 INFO Job instantiated
+2014-09-10T23:28:54.533+08:00 INFO Job launched
+2014-09-10T23:28:56.550+08:00 INFO PREPARING 20140910152856
+2014-09-10T23:28:56.638+08:00 INFO PAUSED 20140910152856
+2014-09-10T23:28:56.639+08:00 INFO RUNNING 20140910152856
+2014-09-10T23:29:09.537+08:00 INFO STOPPING 20140910152856
+2014-09-10T23:29:09.538+08:00 INFO EMPTY 20140910152856
+2014-09-10T23:29:11.207+08:00 INFO FINISHED 20140910152856
+2014-09-10T23:30:30.502+08:00 INFO Job instantiated
+2014-09-10T23:30:30.507+08:00 INFO Job launched
+2014-09-10T23:30:32.536+08:00 INFO PREPARING 20140910153032
+2014-09-10T23:30:32.613+08:00 INFO PAUSED 20140910153032
+2014-09-10T23:30:32.614+08:00 INFO RUNNING 20140910153032
+2014-09-10T23:30:41.253+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.tsinghua.edu.cn/publish/news/index.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #9: http://news.tsinghua.edu.cn/publish/news/index.html')
+2014-09-10T23:30:45.519+08:00 INFO STOPPING 20140910153032
+2014-09-10T23:30:45.520+08:00 INFO EMPTY 20140910153032
+2014-09-10T23:30:47.278+08:00 INFO FINISHED 20140910153032
+2014-09-10T23:31:06.826+08:00 INFO Job instantiated
+2014-09-10T23:31:06.831+08:00 INFO Job launched
+2014-09-10T23:31:08.809+08:00 INFO PREPARING 20140910153108
+2014-09-10T23:31:08.874+08:00 INFO PAUSED 20140910153108
+2014-09-10T23:31:08.875+08:00 INFO RUNNING 20140910153108
+2014-09-11T08:51:08.397+08:00 INFO Job instantiated
+2014-09-11T08:51:08.405+08:00 INFO Job launched
+2014-09-11T08:51:10.499+08:00 INFO PREPARING 20140911005109
+2014-09-11T08:51:10.589+08:00 INFO PAUSED 20140911005109
+2014-09-11T08:51:10.591+08:00 INFO RUNNING 20140911005109
+2014-09-11T09:20:50.365+08:00 INFO Job instantiated
+2014-09-11T09:20:50.371+08:00 INFO Job launched
+2014-09-11T09:20:52.360+08:00 INFO PREPARING 20140911012051
+2014-09-11T09:20:52.433+08:00 INFO PAUSED 20140911012051
+2014-09-11T09:20:52.434+08:00 INFO RUNNING 20140911012051
+2014-09-11T09:31:01.934+08:00 INFO PAUSING 20140911012051
+2014-09-11T09:31:03.382+08:00 INFO PAUSED 20140911012051
+2014-09-11T09:31:03.507+08:00 INFO RUNNING 20140911012051
+2014-09-11T09:57:05.387+08:00 INFO Job instantiated
+2014-09-11T09:57:05.394+08:00 INFO Job launched
+2014-09-11T09:57:07.568+08:00 INFO PREPARING 20140911015706
+2014-09-11T09:57:07.652+08:00 INFO PAUSED 20140911015706
+2014-09-11T09:57:07.653+08:00 INFO RUNNING 20140911015706
+2014-09-11T09:57:32.491+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://166.111.5.104/mcms/news/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://166.111.5.104/mcms/news/')
+2014-09-11T11:14:11.497+08:00 INFO PAUSING 20140911015706
+2014-09-11T11:14:13.130+08:00 INFO PAUSED 20140911015706
+2014-09-11T11:14:13.151+08:00 INFO RUNNING 20140911015706
+2014-09-11T14:22:27.186+08:00 INFO Job instantiated
+2014-09-11T14:22:27.192+08:00 INFO Job launched
+2014-09-11T14:22:29.288+08:00 INFO PREPARING 20140911062228
+2014-09-11T14:22:29.372+08:00 INFO PAUSED 20140911062228
+2014-09-11T14:22:29.373+08:00 INFO RUNNING 20140911062228
+2014-09-11T14:32:40.371+08:00 INFO Job instantiated
+2014-09-11T14:32:40.378+08:00 INFO Job launched
+2014-09-11T14:32:42.519+08:00 INFO PREPARING 20140911063241
+2014-09-11T14:32:42.609+08:00 INFO PAUSED 20140911063241
+2014-09-11T14:32:42.610+08:00 INFO RUNNING 20140911063241
+2014-09-11T15:23:48.129+08:00 INFO Job instantiated
+2014-09-11T15:23:48.136+08:00 INFO Job launched
+2014-09-11T15:23:50.286+08:00 INFO PREPARING 20140911072349
+2014-09-11T15:23:50.374+08:00 INFO PAUSED 20140911072349
+2014-09-11T15:23:50.376+08:00 INFO RUNNING 20140911072349
+2014-09-11T15:25:37.508+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://166.111.5.104/mcms/news/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #2: http://166.111.5.104/mcms/news/')
+2014-09-11T15:52:04.983+08:00 INFO PAUSING 20140911072349
+2014-09-11T15:52:06.218+08:00 INFO PAUSED 20140911072349
+2014-09-11T15:52:06.245+08:00 INFO RUNNING 20140911072349
+2014-09-11T15:55:04.627+08:00 INFO Job instantiated
+2014-09-11T15:55:04.634+08:00 INFO Job launched
+2014-09-11T15:55:06.905+08:00 INFO PREPARING 20140911075506
+2014-09-11T15:55:07.011+08:00 INFO PAUSED 20140911075506
+2014-09-11T15:55:07.013+08:00 INFO RUNNING 20140911075506
+2014-09-11T15:55:25.063+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://166.111.5.104/mcms/news/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://166.111.5.104/mcms/news/')
+2014-09-11T15:57:10.671+08:00 INFO Job instantiated
+2014-09-11T15:57:10.678+08:00 INFO Job launched
+2014-09-11T15:57:12.826+08:00 INFO PREPARING 20140911075712
+2014-09-11T15:57:12.911+08:00 INFO PAUSED 20140911075712
+2014-09-11T15:57:12.912+08:00 INFO RUNNING 20140911075712
+2014-09-11T15:57:32.525+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://166.111.5.104/mcms/news/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #23: http://166.111.5.104/mcms/news/')

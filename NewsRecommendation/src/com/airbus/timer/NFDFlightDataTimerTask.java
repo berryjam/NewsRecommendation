@@ -11,6 +11,8 @@ public class NFDFlightDataTimerTask extends TimerTask {
 	@Override
 	public void run() {
 		try {
+			// look busy (and give MailSenderInfo a chance)
+			Thread.sleep(10000);
 			// 在这里写你要执行的内容
 			// MailSenderInfo主要是设置邮件
 			MailSenderInfo mailInfo = new MailSenderInfo();

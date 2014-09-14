@@ -153,7 +153,7 @@ http://www.tsinghua.edu.cn/publish/newthu/index.html
     </bean>
     <!-- ...but REJECT those more than a configured link-hop-count from start... -->
     <bean class="org.archive.modules.deciderules.TooManyHopsDecideRule">
-     <!-- <property name="maxHops" value="20" /> -->
+      <!-- <property name="maxHops" value="20" /> -->
     </bean>
     <!-- ...but ACCEPT those more than a configured link-hop-count from start... -->
     <bean class="org.archive.modules.deciderules.TransclusionDecideRule">
@@ -276,7 +276,7 @@ http://www.tsinghua.edu.cn/publish/newthu/index.html
  <bean id="fetchHttp" class="org.archive.modules.fetcher.FetchHTTP">
   <!-- <property name="useHTTP11" value="false" /> -->
   <!-- <property name="maxLengthBytes" value="0" /> -->
-  <!-- <property name="timeoutSeconds" value="1200" /> -->
+   <property name="timeoutSeconds" value="1200" /> 
   <!-- <property name="maxFetchKBSec" value="0" /> -->
   <property name="defaultEncoding" value="UTF-8" />
   <!-- <property name="shouldFetchBodyRule"> 
