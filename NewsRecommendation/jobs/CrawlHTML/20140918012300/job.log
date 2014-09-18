@@ -1,0 +1,14 @@
+2014-09-18T09:23:00.769+08:00 INFO PREPARING 20140918012300
+2014-09-18T09:23:00.844+08:00 INFO PAUSED 20140918012300
+2014-09-18T09:23:00.846+08:00 INFO RUNNING 20140918012300
+2014-09-18T09:23:16.875+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://166.111.5.104/mcms/news/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://166.111.5.104/mcms/news/')
+2014-09-18T09:23:36.493+08:00 INFO Job instantiated
+2014-09-18T09:23:36.501+08:00 INFO Job launched
+2014-09-18T09:23:38.015+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140918012338 (in thread 'CrawlHTML launchthread')
+2014-09-18T09:24:14.344+08:00 INFO Job instantiated
+2014-09-18T09:24:14.345+08:00 INFO Job launched
+2014-09-18T09:24:15.855+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140918012415 (in thread 'CrawlHTML launchthread')
+2014-09-18T09:24:52.088+08:00 INFO Job instantiated
+2014-09-18T09:24:52.090+08:00 INFO Job launched
+2014-09-18T09:24:53.609+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140918012453 (in thread 'CrawlHTML launchthread')

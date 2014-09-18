@@ -1,0 +1,12 @@
+           timestamp  discovered      queued   downloaded       doc/s(avg)  KB/s(avg)   dl-failures   busy-thread   mem-use-KB  heap-size-KB   congestion   max-depth   avg-depth
+2014-09-17T09:31:46Z           0           0            0             0(�)       0(0)             0             0        23489         83008            0          -1           0
+2014-09-17T09:31:46Z CRAWL RUNNING - Preparing
+2014-09-17T09:31:46Z CRAWL ENDING - Finished - Ended by operator
+2014-09-17T09:31:46Z           1           1            0             0(0)       0(0)             0             0        45793         83008            ∞           1           1
+2014-09-17T09:31:46Z CRAWL PAUSED - Paused
+2014-09-17T09:31:46Z CRAWL RUNNING - Running
+2014-09-17T09:32:06Z           8           2            6         0.3(0.3)       2(2)             0             0        86936        126912            1           2           2
+2014-09-17T09:32:15Z CRAWL ENDING - Finished
+2014-09-17T09:32:15Z CRAWL EMPTY - Running
+2014-09-17T09:32:16Z CRAWL ENDED - Finished
+2014-09-17T09:32:16Z           9           0            9        0.29(0.3)       0(1)             0             0        78701        126912            1           0           0

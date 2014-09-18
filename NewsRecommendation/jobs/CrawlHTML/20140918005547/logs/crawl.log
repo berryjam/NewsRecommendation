@@ -1,0 +1,3 @@
+2014-09-18T00:55:51.287Z     1         62 dns:news.buaa.edu.cn P http://news.buaa.edu.cn/ text/dns #004 20140918005549573+1704 sha1:CTH56IZPBO3Z2M3ZBX4SNATJ62VQ7QBZ - -
+2014-09-18T00:56:08.239Z   404        208 http://news.buaa.edu.cn/robots.txt P http://news.buaa.edu.cn/ text/html #004 20140918005600309+7920 sha1:XNFFJ6VAXWKDEXG4RE4KTA2W6ENTMXMG - -
+2014-09-18T00:58:47.094Z   200      27640 http://news.buaa.edu.cn/ - - text/html #004 20140918005638281+26145 sha1:ICBCD5HCBWJ5Z3UXPGR34TOEOZOMVHV4 - usingCharsetInHTML:UTF-8,3t
