@@ -22,7 +22,7 @@ import java.util.List;
 public class DataBaseUtil {
 	private static List<String> URLS;
 
-	private static final String PATH = "/Users/berryjam/git/NewsRecommendation/NewsRecommendation/record.txt";
+	private static final String PATH = "./record.txt";
 
 	private Connection connection = null;
 
