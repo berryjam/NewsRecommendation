@@ -22,8 +22,10 @@ public class NFDFlightDataTimerTask extends TimerTask {
 			mailInfo.setUserName("berry22222");
 			mailInfo.setPassword("893131");// 您的邮箱密码
 			mailInfo.setFromAddress("berry22222@126.com");
+			// FIXME 更改为要接受新闻信息的收件人邮箱
 			mailInfo.setToAddress("berryjamcoding@gmail.com");
 			mailInfo.setSubject("Airbus 每周新技术相关新闻推荐");
+			getUrlsByDate("2014-09-30", "2014-09-30");
 			mailInfo.setContent(getUrlsByPeriod());
 			// SimpleMailSender要来发送邮件
 			SimpleMailSender sms = new SimpleMailSender();
@@ -32,6 +34,12 @@ public class NFDFlightDataTimerTask extends TimerTask {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static String getUrlsByDate(String startDate, String endDate) {
+		DataBaseUtil util = new DataBaseUtil();
+		util.init();
+		return util.getURLSByDate(startDate, endDate);
 	}
 
 	private String getUrlsByPeriod() {

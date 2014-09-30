@@ -5613,3 +5613,255 @@ Blocked/Waiting On: NONE
  (in thread 'ToeThread #10: http://www.kepu60.cn/')
 2014-09-18T10:43:05.757+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://pingxuan.kepu.net.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
  (in thread 'ToeThread #13: http://pingxuan.kepu.net.cn/')
+2014-09-19T09:48:40.988+08:00 INFO Job instantiated
+2014-09-19T09:48:40.996+08:00 INFO Job launched
+2014-09-19T09:48:43.184+08:00 INFO PREPARING 20140919014842
+2014-09-19T09:48:43.263+08:00 INFO PAUSED 20140919014842
+2014-09-19T09:48:43.264+08:00 INFO RUNNING 20140919014842
+2014-09-19T09:54:24.086+08:00 INFO Job instantiated
+2014-09-19T09:54:24.091+08:00 INFO Job launched
+2014-09-19T09:54:26.139+08:00 INFO PREPARING 20140919015425
+2014-09-19T09:54:26.213+08:00 INFO PAUSED 20140919015425
+2014-09-19T09:54:26.214+08:00 INFO RUNNING 20140919015425
+2014-09-19T10:03:09.694+08:00 INFO Job instantiated
+2014-09-19T10:03:09.699+08:00 INFO Job launched
+2014-09-19T10:03:11.757+08:00 INFO PREPARING 20140919020311
+2014-09-19T10:03:11.824+08:00 INFO PAUSED 20140919020311
+2014-09-19T10:03:11.825+08:00 INFO RUNNING 20140919020311
+2014-09-19T10:44:47.992+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://pingxuan.kepu.net.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #1: http://pingxuan.kepu.net.cn/')
+2014-09-19T10:44:48.254+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.cas.cn/zt/kjzt/jzsqx/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #21: http://www.cas.cn/zt/kjzt/jzsqx/')
+2014-09-19T10:44:48.256+08:00 WARNING politessDelay unset, returning default 5000 for http://www.cas.cn/zt/kjzt/jzsqx/ (in thread 'ToeThread #21: http://www.cas.cn/zt/kjzt/jzsqx/')
+2014-09-19T10:54:14.658+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://wlz.most.gov.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://wlz.most.gov.cn/')
+2014-09-24T10:53:49.974+08:00 INFO Job instantiated
+2014-09-24T10:53:49.985+08:00 INFO Job launched
+2014-09-24T10:53:52.164+08:00 INFO PREPARING 20140924025351
+2014-09-24T10:53:52.255+08:00 INFO PAUSED 20140924025351
+2014-09-24T10:53:52.257+08:00 INFO RUNNING 20140924025351
+2014-09-24T10:58:19.849+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://pingxuan.kepu.net.cn/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #17: http://pingxuan.kepu.net.cn/')
+2014-09-24T11:08:01.653+08:00 INFO Job instantiated
+2014-09-24T11:08:01.660+08:00 INFO Job launched
+2014-09-24T11:08:03.788+08:00 INFO PREPARING 20140924030803
+2014-09-24T11:08:03.865+08:00 INFO PAUSED 20140924030803
+2014-09-24T11:08:03.867+08:00 INFO RUNNING 20140924030803
+2014-09-24T11:24:09.329+08:00 INFO Job instantiated
+2014-09-24T11:24:09.336+08:00 INFO Job launched
+2014-09-24T11:24:11.495+08:00 INFO PREPARING 20140924032410
+2014-09-24T11:24:11.579+08:00 INFO PAUSED 20140924032410
+2014-09-24T11:24:11.581+08:00 INFO RUNNING 20140924032410
+2014-09-24T11:34:03.499+08:00 INFO Job instantiated
+2014-09-24T11:34:03.506+08:00 INFO Job launched
+2014-09-24T11:34:05.652+08:00 INFO PREPARING 20140924033405
+2014-09-24T11:34:05.733+08:00 INFO PAUSED 20140924033405
+2014-09-24T11:34:05.735+08:00 INFO RUNNING 20140924033405
+2014-09-24T11:34:36.654+08:00 INFO STOPPING 20140924033405
+2014-09-24T11:34:36.655+08:00 INFO EMPTY 20140924033405
+2014-09-24T11:34:38.598+08:00 INFO FINISHED 20140924033405
+2014-09-24T11:36:43.857+08:00 INFO Job instantiated
+2014-09-24T11:36:43.865+08:00 INFO Job launched
+2014-09-24T11:36:46.010+08:00 INFO PREPARING 20140924033645
+2014-09-24T11:36:46.095+08:00 INFO PAUSED 20140924033645
+2014-09-24T11:36:46.096+08:00 INFO RUNNING 20140924033645
+2014-09-24T11:36:58.998+08:00 INFO STOPPING 20140924033645
+2014-09-24T11:36:58.999+08:00 INFO EMPTY 20140924033645
+2014-09-24T11:37:00.506+08:00 INFO FINISHED 20140924033645
+2014-09-24T11:37:21.626+08:00 INFO Job instantiated
+2014-09-24T11:37:21.628+08:00 INFO Job launched
+2014-09-24T11:37:23.151+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140924033723 (in thread 'CrawlHTML launchthread')
+2014-09-24T11:37:59.459+08:00 INFO Job instantiated
+2014-09-24T11:37:59.471+08:00 INFO Job launched
+2014-09-24T11:38:00.984+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140924033800 (in thread 'CrawlHTML launchthread')
+2014-09-24T11:38:37.163+08:00 INFO Job instantiated
+2014-09-24T11:38:37.171+08:00 INFO Job launched
+2014-09-24T11:38:38.680+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140924033838 (in thread 'CrawlHTML launchthread')
+2014-09-24T11:40:08.949+08:00 INFO Job instantiated
+2014-09-24T11:40:08.954+08:00 INFO Job launched
+2014-09-24T11:40:10.997+08:00 INFO PREPARING 20140924034010
+2014-09-24T11:40:11.062+08:00 INFO PAUSED 20140924034010
+2014-09-24T11:40:11.064+08:00 INFO RUNNING 20140924034010
+2014-09-24T11:53:42.028+08:00 INFO Job instantiated
+2014-09-24T11:53:42.034+08:00 INFO Job launched
+2014-09-24T11:53:44.230+08:00 INFO PREPARING 20140924035343
+2014-09-24T11:53:44.314+08:00 INFO PAUSED 20140924035343
+2014-09-24T11:53:44.316+08:00 INFO RUNNING 20140924035343
+2014-09-24T11:55:08.594+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #14: http://sohu.wrating.com/')
+2014-09-24T11:56:00.832+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://www.sohu.com/')
+2014-09-24T11:58:50.946+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-24T11:58:50.949+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html (in thread 'ToeThread #3: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-24T11:58:59.084+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/xijiu/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://news.sohu.com/s2014/xijiu/')
+2014-09-24T11:58:59.085+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/xijiu/ (in thread 'ToeThread #10: http://news.sohu.com/s2014/xijiu/')
+2014-09-24T11:59:11.836+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://yule.sohu.com/hotpics/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #8: http://yule.sohu.com/hotpics/')
+2014-09-24T12:03:16.514+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://news.sohu.com/s2014/6831/s403066136/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #15: http://news.sohu.com/s2014/6831/s403066136/')
+2014-09-24T12:03:16.517+08:00 WARNING politessDelay unset, returning default 5000 for http://news.sohu.com/s2014/6831/s403066136/ (in thread 'ToeThread #15: http://news.sohu.com/s2014/6831/s403066136/')
+2014-09-24T14:21:21.686+08:00 INFO Job instantiated
+2014-09-24T14:21:21.693+08:00 INFO Job launched
+2014-09-24T14:21:23.850+08:00 INFO PREPARING 20140924062123
+2014-09-24T14:21:23.935+08:00 INFO PAUSED 20140924062123
+2014-09-24T14:21:23.938+08:00 INFO RUNNING 20140924062123
+2014-09-24T14:22:06.426+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://k.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #9: http://k.sohu.com/')
+2014-09-24T14:22:16.279+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #11: http://sohu.wrating.com/')
+2014-09-24T14:22:43.768+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #25: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-24T14:22:43.771+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html (in thread 'ToeThread #25: http://images.sohu.com/bill/s2012/iframe/dashiye/950100.html')
+2014-09-24T14:22:44.414+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://pic.yule.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #9: http://pic.yule.sohu.com/')
+2014-09-24T14:51:37.885+08:00 INFO Job instantiated
+2014-09-24T14:51:37.892+08:00 INFO Job launched
+2014-09-24T14:51:40.039+08:00 INFO PREPARING 20140924065139
+2014-09-24T14:51:40.118+08:00 INFO PAUSED 20140924065139
+2014-09-24T14:51:40.119+08:00 INFO RUNNING 20140924065139
+2014-09-24T14:52:14.558+08:00 WARNING Multiple content-length headers detected (in thread 'ToeThread #7: http://vip.book.sohu.com/book/101459/'; in processor 'fetchHttp')
+2014-09-24T14:52:14.559+08:00 WARNING Multiple content-length headers detected (in thread 'ToeThread #7: http://vip.book.sohu.com/book/101459/'; in processor 'fetchHttp')
+2014-09-24T14:52:15.549+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://k.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://k.sohu.com/')
+2014-09-24T14:52:23.193+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://sohu.wrating.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #18: http://sohu.wrating.com/')
+2014-09-24T14:52:23.403+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://images.sohu.com/cs/button/zhilian/2007/fr7604800913.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #12: http://images.sohu.com/cs/button/zhilian/2007/fr7604800913.html')
+2014-09-24T14:52:23.404+08:00 WARNING politessDelay unset, returning default 5000 for http://images.sohu.com/cs/button/zhilian/2007/fr7604800913.html (in thread 'ToeThread #12: http://images.sohu.com/cs/button/zhilian/2007/fr7604800913.html')
+2014-09-24T14:52:25.106+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.sohu.com/' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #6: http://www.sohu.com/')
+2014-09-25T11:29:50.795+08:00 INFO Job instantiated
+2014-09-25T11:29:50.803+08:00 INFO Job launched
+2014-09-25T11:29:52.995+08:00 INFO PREPARING 20140925032952
+2014-09-25T11:29:53.110+08:00 INFO PAUSED 20140925032952
+2014-09-25T11:29:53.114+08:00 INFO RUNNING 20140925032952
+2014-09-25T13:38:00.566+08:00 INFO Job instantiated
+2014-09-25T13:38:00.575+08:00 INFO Job launched
+2014-09-25T13:38:02.745+08:00 INFO PREPARING 20140925053802
+2014-09-25T13:38:02.835+08:00 INFO PAUSED 20140925053802
+2014-09-25T13:38:02.837+08:00 INFO RUNNING 20140925053802
+2014-09-25T13:41:29.608+08:00 INFO Job instantiated
+2014-09-25T13:41:29.613+08:00 INFO Job launched
+2014-09-25T13:41:31.695+08:00 INFO PREPARING 20140925054131
+2014-09-25T13:41:31.774+08:00 INFO PAUSED 20140925054131
+2014-09-25T13:41:31.776+08:00 INFO RUNNING 20140925054131
+2014-09-25T13:44:10.465+08:00 INFO Job instantiated
+2014-09-25T13:44:10.473+08:00 INFO Job launched
+2014-09-25T13:44:12.671+08:00 INFO PREPARING 20140925054411
+2014-09-25T13:44:12.769+08:00 INFO PAUSED 20140925054411
+2014-09-25T13:44:12.771+08:00 INFO RUNNING 20140925054411
+2014-09-29T09:19:52.231+08:00 INFO Job instantiated
+2014-09-29T09:19:52.239+08:00 INFO Job launched
+2014-09-29T09:19:54.431+08:00 INFO PREPARING 20140929011953
+2014-09-29T09:19:54.532+08:00 INFO PAUSED 20140929011953
+2014-09-29T09:19:54.536+08:00 INFO RUNNING 20140929011953
+2014-09-29T09:30:43.945+08:00 INFO Job instantiated
+2014-09-29T09:30:43.956+08:00 INFO Job launched
+2014-09-29T09:30:46.190+08:00 INFO PREPARING 20140929013045
+2014-09-29T09:30:46.309+08:00 INFO PAUSED 20140929013045
+2014-09-29T09:30:46.311+08:00 INFO RUNNING 20140929013045
+2014-09-29T15:53:06.343+08:00 INFO Job instantiated
+2014-09-29T15:53:06.351+08:00 INFO Job launched
+2014-09-29T15:53:08.606+08:00 INFO PREPARING 20140929075307
+2014-09-29T15:53:08.712+08:00 INFO PAUSED 20140929075307
+2014-09-29T15:53:08.715+08:00 INFO RUNNING 20140929075307
+2014-09-29T15:53:52.965+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140825091658085424068/20140825091658085424068_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140825091658085424068/20140825091658085424068_.html')
+2014-09-29T15:53:52.967+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140825091658085424068/20140825091658085424068_.html (in thread 'ToeThread #13: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140825091658085424068/20140825091658085424068_.html')
+2014-09-29T15:54:04.379+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140427090505193657327/20140427090505193657327_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140427090505193657327/20140427090505193657327_.html')
+2014-09-29T15:54:04.380+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140427090505193657327/20140427090505193657327_.html (in thread 'ToeThread #13: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140427090505193657327/20140427090505193657327_.html')
+2014-09-29T15:54:12.670+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140610091900695143637/20140610091900695143637_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #13: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140610091900695143637/20140610091900695143637_.html')
+2014-09-29T15:54:12.671+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140610091900695143637/20140610091900695143637_.html (in thread 'ToeThread #13: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140610091900695143637/20140610091900695143637_.html')
+2014-09-29T15:55:07.982+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html')
+2014-09-29T15:55:07.988+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html (in thread 'ToeThread #7: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html')
+2014-09-29T15:55:56.811+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140509085836230770876/20140509085836230770876_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #7: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140509085836230770876/20140509085836230770876_.html')
+2014-09-29T15:55:56.812+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140509085836230770876/20140509085836230770876_.html (in thread 'ToeThread #7: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140509085836230770876/20140509085836230770876_.html')
+2014-09-29T15:56:22.360+08:00 INFO Job instantiated
+2014-09-29T15:56:22.369+08:00 INFO Job launched
+2014-09-29T15:56:24.434+08:00 INFO PREPARING 20140929075623
+2014-09-29T15:56:24.533+08:00 INFO PAUSED 20140929075623
+2014-09-29T15:56:24.535+08:00 INFO RUNNING 20140929075623
+2014-09-29T15:58:34.305+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #2: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html')
+2014-09-29T16:24:46.576+08:00 INFO Job instantiated
+2014-09-29T16:24:46.582+08:00 INFO Job launched
+2014-09-29T16:24:48.765+08:00 INFO PREPARING 20140929082448
+2014-09-29T16:24:48.860+08:00 INFO PAUSED 20140929082448
+2014-09-29T16:24:48.862+08:00 INFO RUNNING 20140929082448
+2014-09-29T16:25:42.300+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html')
+2014-09-29T16:25:42.303+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140604093134499483171/20140604093134499483171_.html')
+2014-09-29T16:26:43.917+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140610091900695143637/20140610091900695143637_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140610091900695143637/20140610091900695143637_.html')
+2014-09-29T16:26:43.927+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140610091900695143637/20140610091900695143637_.html (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140610091900695143637/20140610091900695143637_.html')
+2014-09-29T16:26:52.164+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140427090505193657327/20140427090505193657327_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140427090505193657327/20140427090505193657327_.html')
+2014-09-29T16:26:52.165+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140427090505193657327/20140427090505193657327_.html (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140427090505193657327/20140427090505193657327_.html')
+2014-09-29T16:27:00.429+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140825091658085424068/20140825091658085424068_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140825091658085424068/20140825091658085424068_.html')
+2014-09-29T16:27:00.433+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140825091658085424068/20140825091658085424068_.html (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140825091658085424068/20140825091658085424068_.html')
+2014-09-29T16:27:46.030+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140617095455674528539/20140617095455674528539_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140617095455674528539/20140617095455674528539_.html')
+2014-09-29T16:27:46.032+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140617095455674528539/20140617095455674528539_.html (in thread 'ToeThread #3: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140617095455674528539/20140617095455674528539_.html')
+2014-09-29T16:30:36.719+08:00 SEVERE Problem java.lang.NullPointerException occured when trying to process 'http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140509085836230770876/20140509085836230770876_.html' at step ABOUT_TO_BEGIN_PROCESSOR in 
+ (in thread 'ToeThread #10: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140509085836230770876/20140509085836230770876_.html')
+2014-09-29T16:30:36.722+08:00 WARNING politessDelay unset, returning default 5000 for http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140509085836230770876/20140509085836230770876_.html (in thread 'ToeThread #10: http://www.tsinghua.edu.cn/publish/newthu/8913/2014/20140509085836230770876/20140509085836230770876_.html')
+2014-09-29T16:33:46.116+08:00 INFO Job instantiated
+2014-09-29T16:33:46.126+08:00 INFO Job launched
+2014-09-29T16:33:48.327+08:00 INFO PREPARING 20140929083347
+2014-09-29T16:33:48.439+08:00 INFO PAUSED 20140929083347
+2014-09-29T16:33:48.443+08:00 INFO RUNNING 20140929083347
+2014-09-29T16:36:18.492+08:00 INFO Job instantiated
+2014-09-29T16:36:18.498+08:00 INFO Job launched
+2014-09-29T16:36:20.518+08:00 INFO PREPARING 20140929083620
+2014-09-29T16:36:20.583+08:00 INFO PAUSED 20140929083620
+2014-09-29T16:36:20.585+08:00 INFO RUNNING 20140929083620
+2014-09-29T16:37:36.658+08:00 INFO Job instantiated
+2014-09-29T16:37:36.664+08:00 INFO Job launched
+2014-09-29T16:37:38.725+08:00 INFO PREPARING 20140929083738
+2014-09-29T16:37:38.781+08:00 INFO PAUSED 20140929083738
+2014-09-29T16:37:38.782+08:00 INFO RUNNING 20140929083738
+2014-09-29T16:52:38.452+08:00 INFO Job instantiated
+2014-09-29T16:52:38.465+08:00 INFO Job launched
+2014-09-29T16:52:39.983+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140929085239 (in thread 'CrawlHTML launchthread')
+2014-09-29T16:58:05.306+08:00 INFO STOPPING 20140929083738
+2014-09-29T16:58:05.307+08:00 INFO EMPTY 20140929083738
+2014-09-29T16:58:07.172+08:00 INFO FINISHED 20140929083738
+2014-09-29T17:07:40.317+08:00 INFO Job instantiated
+2014-09-29T17:07:40.319+08:00 INFO Job launched
+2014-09-29T17:07:41.829+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140929090741 (in thread 'CrawlHTML launchthread')
+2014-09-30T09:25:31.544+08:00 INFO Job instantiated
+2014-09-30T09:25:31.554+08:00 INFO Job launched
+2014-09-30T09:25:33.784+08:00 INFO PREPARING 20140930012533
+2014-09-30T09:25:33.920+08:00 INFO PAUSED 20140930012533
+2014-09-30T09:25:33.925+08:00 INFO RUNNING 20140930012533
+2014-09-30T09:29:14.193+08:00 INFO Job instantiated
+2014-09-30T09:29:14.203+08:00 INFO Job launched
+2014-09-30T09:29:16.411+08:00 INFO PREPARING 20140930012915
+2014-09-30T09:29:16.532+08:00 INFO PAUSED 20140930012915
+2014-09-30T09:29:16.535+08:00 INFO RUNNING 20140930012915
+2014-09-30T09:59:24.526+08:00 INFO Job instantiated
+2014-09-30T09:59:24.534+08:00 INFO Job launched
+2014-09-30T09:59:26.724+08:00 INFO PREPARING 20140930015926
+2014-09-30T09:59:26.815+08:00 INFO PAUSED 20140930015926
+2014-09-30T09:59:26.817+08:00 INFO RUNNING 20140930015926
+2014-09-30T10:02:10.772+08:00 INFO Job instantiated
+2014-09-30T10:02:10.777+08:00 INFO Job launched
+2014-09-30T10:02:12.820+08:00 INFO PREPARING 20140930020212
+2014-09-30T10:02:12.908+08:00 INFO PAUSED 20140930020212
+2014-09-30T10:02:12.909+08:00 INFO RUNNING 20140930020212
+2014-09-30T10:17:22.817+08:00 INFO Job instantiated
+2014-09-30T10:17:22.819+08:00 INFO Job launched
+2014-09-30T10:17:24.334+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140930021724 (in thread 'CrawlHTML launchthread')
+2014-09-30T10:22:39.994+08:00 INFO STOPPING 20140930020212
+2014-09-30T10:22:39.994+08:00 INFO EMPTY 20140930020212
+2014-09-30T10:22:41.473+08:00 INFO FINISHED 20140930020212
+2014-09-30T10:32:24.579+08:00 INFO Job instantiated
+2014-09-30T10:32:24.581+08:00 INFO Job launched
+2014-09-30T10:32:26.098+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140930023226 (in thread 'CrawlHTML launchthread')

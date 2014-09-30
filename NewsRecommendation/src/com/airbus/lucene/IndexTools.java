@@ -185,6 +185,7 @@ public class IndexTools {
 		System.out.println("命中：" + topDocs.totalHits);
 		// 输出结果
 		ScoreDoc[] scoreDocs = topDocs.scoreDocs;
+		boolean hasMustKeywords = false;
 		for (int i = 0; i < topDocs.scoreDocs.length; i++) {
 			Document targetDoc = isearcher.doc(scoreDocs[i].doc);
 			System.out.println("内容：" + targetDoc.toString());
@@ -196,10 +197,15 @@ public class IndexTools {
 			totalScore += Float.parseFloat(scores);
 			// assertEquals("This is the text to be indexed.",
 			// hitDoc.get("fieldname"));
+			if (checkMustKeywords(targetDoc.toString()))
+				hasMustKeywords = true;
 			System.out.println(targetDoc.get("filename") + "\n*score* "
 					+ scores);
 		}
-		curScore = totalScore;
+		if (hasMustKeywords)
+			curScore = totalScore;
+		else
+			curScore = 0;
 		System.out.println("===============");
 	}
 
@@ -415,5 +421,12 @@ public class IndexTools {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	private boolean checkMustKeywords(String s) {
+		if (s.contains("航空航天") || s.contains("航空") || s.contains("航天"))
+			return true;
+		else
+			return false;
 	}
 }

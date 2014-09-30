@@ -442,7 +442,7 @@ public class MirrorWriterProcessor extends Processor {
 				IndexTools indexTools = new IndexTools();
 				indexTools.createIndexByURI(uuri.toString());
 				indexTools.searchIndex();
-				if (indexTools.getCurrentScore() > 0.05f) {
+				if (indexTools.getCurrentScore() > 0.01f) {
 					// 将唯一URL插入到数据库中
 					DataBaseUtil util = new DataBaseUtil();
 					util.init();

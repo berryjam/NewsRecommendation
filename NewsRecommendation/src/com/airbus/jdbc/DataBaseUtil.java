@@ -116,6 +116,31 @@ public class DataBaseUtil {
 		return sb.toString();
 	}
 
+	public String getURLSByDate(String startDate, String endDate) {
+		StringBuilder sb = new StringBuilder("");
+
+		try {
+			PreparedStatement statement = connection
+					.prepareStatement("SELECT url FROM URLS WHERE date BETWEEN "
+							+ "'"
+							+ startDate
+							+ "'"
+							+ " AND"
+							+ "'"
+							+ endDate
+							+ "'");
+			ResultSet rs = statement.executeQuery();
+			while (rs.next()) {
+				sb.append(rs.getString("url") + "\r\n");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return sb.toString();
+	}
+
 	private String getCurrentDate() {
 		SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
