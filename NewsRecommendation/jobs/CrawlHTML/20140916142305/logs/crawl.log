@@ -1,9 +1,0 @@
-2014-09-16T14:23:06.884Z     1         60 dns:www.pku.edu.cn P http://www.pku.edu.cn/ text/dns #008 20140916142306802+80 sha1:KEN246XYJWEWH2U6C4Y37EOX3PJNPBJE - -
-2014-09-16T14:23:10.024Z   302        220 http://www.pku.edu.cn/robots.txt P http://www.pku.edu.cn/ text/html #008 20140916142309897+111 sha1:5NMOM7Q4T5SMN5P5IKR3PSYOHKPC3PNY - -
-2014-09-16T14:23:14.730Z   200      11496 http://www.pku.edu.cn/ - - text/html #008 20140916142313031+146 sha1:LXUDONHGZVMXHEBH6QIUYVZ4OBBT7KW2 - usingCharsetInHTML:UTF-8,3t
-2014-09-16T14:23:18.127Z   200       2631 http://www.pku.edu.cn/error/404.html PR http://www.pku.edu.cn/robots.txt text/html #008 20140916142317738+219 sha1:FWY5N7WASFKUZANN7P6QD4ACCVUKUUUQ - usingCharsetInHTML:UTF-8
-2014-09-16T14:23:21.577Z   200       4621 http://www.pku.edu.cn/homepage/notice/tzlb.html L http://www.pku.edu.cn/ text/html #008 20140916142321132+231 sha1:ZCXF5WQ6AVF3PLNXCYPIRLDETOKN5BUN - usingCharsetInHTML:UTF-8
-2014-09-16T14:23:25.374Z   200      29126 http://www.pku.edu.cn/sitemap/bzdt.html L http://www.pku.edu.cn/ text/html #008 20140916142324584+118 sha1:5C2423PVLGCYPT4HGNBDDGOQO6IOXLQC - usingCharsetInHTML:UTF-8
-2014-09-16T14:23:29.636Z   302        220 http://www.pku.edu.cn/announce/ LL http://www.pku.edu.cn/homepage/notice/tzlb.html text/html #008 20140916142328380+783 sha1:5NMOM7Q4T5SMN5P5IKR3PSYOHKPC3PNY - -
-2014-09-16T14:23:33.957Z   200       1316 http://www.pku.edu.cn/admission/yz.html LL http://www.pku.edu.cn/sitemap/bzdt.html text/html #008 20140916142333645+255 sha1:YPGBQUJF2VIHHHUQO5XEK7FD4BO3YQSY - usingCharsetInHTML:GB2312
-2014-09-16T14:23:37.305Z   200       1843 http://www.pku.edu.cn/graduate/index.html LLL http://www.pku.edu.cn/admission/yz.html text/html #008 20140916142336963+29 sha1:PGV2HMDFFCA6VA7TZNDX2677XFACBVWB - usingCharsetInHTML:UTF-8

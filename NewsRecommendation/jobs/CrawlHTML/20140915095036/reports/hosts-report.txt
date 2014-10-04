@@ -1,3 +1,0 @@
-[#urls] [#bytes] [host] [#robots] [#remaining] [#novel-urls] [#novel-bytes] [#dup-by-hash-urls] [#dup-by-hash-bytes] [#not-modified-urls] [#not-modified-bytes]
-15 578832 www.cas.cn 0 0 15 578832 0 0 0 0 
-1 52 dns: 0 0 1 52 0 0 0 0 

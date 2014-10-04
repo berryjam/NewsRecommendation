@@ -1,9 +1,0 @@
-2014-09-18T09:58:46.645+08:00 INFO PREPARING 20140918015846
-2014-09-18T09:58:46.731+08:00 INFO PAUSED 20140918015846
-2014-09-18T09:58:46.733+08:00 INFO RUNNING 20140918015846
-2014-09-18T09:59:22.442+08:00 INFO Job instantiated
-2014-09-18T09:59:22.464+08:00 INFO Job launched
-2014-09-18T09:59:23.994+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140918015923 (in thread 'CrawlHTML launchthread')
-2014-09-18T10:00:00.298+08:00 INFO Job instantiated
-2014-09-18T10:00:00.299+08:00 INFO Job launched
-2014-09-18T10:00:01.811+08:00 WARNING failed to create symlink from /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/latest to /Users/berryjam/git/NewsRecommendation/NewsRecommendation/./jobs/CrawlHTML/20140918020001 (in thread 'CrawlHTML launchthread')

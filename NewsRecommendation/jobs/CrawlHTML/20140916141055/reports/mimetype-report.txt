@@ -1,3 +1,0 @@
-[#urls] [#bytes] [mime-types]
-15 578847 text/html
-1 51 text/dns
