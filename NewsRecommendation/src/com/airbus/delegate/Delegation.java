@@ -1,5 +1,11 @@
 package com.airbus.delegate;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 import org.archive.crawler.Heritrix;
 
 import com.airbus.email.MailSenderInfo;
@@ -7,14 +13,18 @@ import com.airbus.email.SimpleMailSender;
 import com.airbus.timer.NFDFlightDataTimerTask;
 
 public class Delegation {
-	public static long PERIOD = (long) (0.25 * 60 * 60 * 1000); // 抓取的间隔时间
+	public static final long PERIOD = (long) (0.25 * 60 * 60 * 1000); // 抓取的间隔时间，单位为毫秒
 
 	public static void main(String[] args) throws Exception {
 		Heritrix heritrix = null;
 		heritrix = new Heritrix();
 		heritrix.start(args);
-		Delegation d = new Delegation();
-		d.sendEmailByDate("2014-09-20", "2014-09-30");
+
+		// ---------------如果dates.txt内容包含起始日期和结束日期则查找数据库发送相应数据--------------
+		Delegation delegation = new Delegation();
+		delegation.checkInputDate();
+		// ---------------如果dates.txt内容包含起始日期和结束日期则查找数据库发送相应数据--------------
+
 		while (true) {
 			Thread.sleep(PERIOD);
 			heritrix.getComponent().stop();
@@ -41,11 +51,11 @@ public class Delegation {
 			mailInfo.setMailServerHost("smtp.126.com");
 			mailInfo.setMailServerPort("25");
 			mailInfo.setValidate(true);
-			mailInfo.setUserName("berry22222");
-			mailInfo.setPassword("893131");// 您的邮箱密码
-			mailInfo.setFromAddress("berry22222@126.com");
+			mailInfo.setUserName("berry33333");// 发送人邮箱
+			mailInfo.setPassword("abc893131");// 发送人的邮箱密码
+			mailInfo.setFromAddress("berry33333@126.com");
 			// FIXME 更改为要接受新闻信息的收件人邮箱
-			mailInfo.setToAddress("berryjamcoding@gmail.com");
+			mailInfo.setToAddress("berryjamcoding@gmail.com");// 接收人邮箱
 			mailInfo.setSubject("Airbus 每周新技术相关新闻推荐");
 			mailInfo.setContent(NFDFlightDataTimerTask.getUrlsByDate(startDate,
 					endDate));
@@ -53,6 +63,29 @@ public class Delegation {
 			SimpleMailSender sms = new SimpleMailSender();
 			sms.sendTextMail(mailInfo);// 发送文体格式
 		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	// 目前通过该功能来模拟在输入栏输入日期返回相应的新闻,如果dates.txt里面内容不为空则会读取里面的日期然后推送邮件
+	public void checkInputDate() {
+		File file = new File("dates.txt");
+		FileReader fr;
+		try {
+			fr = new FileReader(file);
+			BufferedReader br = new BufferedReader(fr);
+			String startDate = br.readLine();
+			String endDate = br.readLine();
+			if (startDate != null && endDate != null) {
+				this.sendEmailByDate(startDate, endDate);
+			}
+			br.close();
+			fr.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

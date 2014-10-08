@@ -19,14 +19,13 @@ public class NFDFlightDataTimerTask extends TimerTask {
 			mailInfo.setMailServerHost("smtp.126.com");
 			mailInfo.setMailServerPort("25");
 			mailInfo.setValidate(true);
-			mailInfo.setUserName("berry22222");
-			mailInfo.setPassword("893131");// 您的邮箱密码
-			mailInfo.setFromAddress("berry22222@126.com");
+			mailInfo.setUserName("berry33333");// 发送人邮箱
+			mailInfo.setPassword("abc893131");// 发送人的邮箱密码
+			mailInfo.setFromAddress("berry33333@126.com");
 			// FIXME 更改为要接受新闻信息的收件人邮箱
-			mailInfo.setToAddress("berryjamcoding@gmail.com");
-			mailInfo.setSubject("Airbus 每周新技术相关新闻推荐");
-			getUrlsByDate("2014-09-30", "2014-09-30");
-			mailInfo.setContent(getUrlsByPeriod());
+			mailInfo.setToAddress("berryjamcoding@gmail.com");// 接收人邮箱
+			mailInfo.setSubject("Airbus 每周新技术相关新闻推荐");// 设置邮件主题
+			mailInfo.setContent(getUrlsByPeriod()); // 设置邮件内容
 			// SimpleMailSender要来发送邮件
 			SimpleMailSender sms = new SimpleMailSender();
 			sms.sendTextMail(mailInfo);// 发送文体格式
