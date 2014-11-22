@@ -200,8 +200,8 @@ public class Heritrix {
 	}
 
 	public void start(String[] args) throws Exception {
-		TimerManager m = new TimerManager();
-		m.execute();
+		// TimerManager m = new TimerManager();
+		// m.execute();
 		this.instanceMain(args);
 	}
 

@@ -16,21 +16,22 @@ public class Delegation {
 	public static final long PERIOD = (long) (0.25 * 60 * 60 * 1000); // 抓取的间隔时间，单位为毫秒
 
 	public static void main(String[] args) throws Exception {
+
 		Heritrix heritrix = null;
 		heritrix = new Heritrix();
 		heritrix.start(args);
 
-		// ---------------如果dates.txt内容包含起始日期和结束日期则查找数据库发送相应数据--------------
-		Delegation delegation = new Delegation();
-		delegation.checkInputDate();
-		// ---------------如果dates.txt内容包含起始日期和结束日期则查找数据库发送相应数据--------------
-
-		while (true) {
-			Thread.sleep(PERIOD);
-			heritrix.getComponent().stop();
-			heritrix = new Heritrix();
-			heritrix.start(args);
-		}
+		// // ---------------如果dates.txt内容包含起始日期和结束日期则查找数据库发送相应数据--------------
+		// Delegation delegation = new Delegation();
+		// delegation.checkInputDate();
+		// // ---------------如果dates.txt内容包含起始日期和结束日期则查找数据库发送相应数据--------------
+		//
+		// while (true) {
+		// Thread.sleep(PERIOD);
+		// heritrix.getComponent().stop();
+		// heritrix = new Heritrix();
+		// heritrix.start(args);
+		// }
 	}
 
 	/**

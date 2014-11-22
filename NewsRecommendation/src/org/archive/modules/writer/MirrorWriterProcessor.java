@@ -60,6 +60,7 @@ import org.htmlparser.util.ParserException;
 
 import com.airbus.jdbc.DataBaseUtil;
 import com.airbus.lucene.IndexTools;
+import com.qunar.UserImageSaver;
 
 /**
  * Processor module that writes the results of successful fetches to files on
@@ -439,15 +440,19 @@ public class MirrorWriterProcessor extends Processor {
 			if (!uuri.toString().endsWith("txt")) {
 				// fw.write(uuri.toString() + "\r\n");
 				// fw.flush();
-				IndexTools indexTools = new IndexTools();
-				indexTools.createIndexByURI(uuri.toString());
-				indexTools.searchIndex();
-				if (indexTools.getCurrentScore() > 0.01f) {
-					// 将唯一URL插入到数据库中
-					DataBaseUtil util = new DataBaseUtil();
-					util.init();
-					util.insertUrls(uuri.toString());
-				}
+
+				UserImageSaver saver = new UserImageSaver(uuri.toString());
+				saver.saveImage();
+
+				// IndexTools indexTools = new IndexTools();
+				// indexTools.createIndexByURI(uuri.toString());
+				// indexTools.searchIndex();
+				// if (indexTools.getCurrentScore() > 0.01f) {
+				// // 将唯一URL插入到数据库中
+				// DataBaseUtil util = new DataBaseUtil();
+				// util.init();
+				// util.insertUrls(uuri.toString());
+				// }
 			}
 			// writeToPath(recis, destFile);
 			if (!reCrawl) {
@@ -456,18 +461,18 @@ public class MirrorWriterProcessor extends Processor {
 		} catch (IOException e) {
 			e.printStackTrace();
 			curi.getNonFatalFailures().add(e);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvalidTokenOffsetsException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			// } catch (ParseException e) {
+			// // TODO Auto-generated catch block
+			// e.printStackTrace();
+			// } catch (InvalidTokenOffsetsException e) {
+			// // TODO Auto-generated catch block
+			// e.printStackTrace();
 		} catch (NumberFormatException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			// } catch (SQLException e) {
+			// // TODO Auto-generated catch block
+			// e.printStackTrace();
 		}
 	}
 

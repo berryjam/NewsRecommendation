@@ -1,0 +1,6 @@
+2014-10-16T01:40:13.314Z     1         51 dns:www.cas.cn P http://www.cas.cn/ text/dns #004 20141016014013250+61 sha1:O64ZIWCUQTRX4Q3O6S4VLJWV6ZUCI67C - -
+2014-10-16T01:40:16.557Z   404       1297 http://www.cas.cn/robots.txt P http://www.cas.cn/ text/html #004 20141016014016328+188 sha1:NXJYYMWSCUH5RP2TANQ7Q57TAWAMXHOG - usingCharsetInHTML:UTF-8
+2014-10-16T01:40:22.113Z   200     136436 http://www.cas.cn/ - - text/html #004 20141016014019564+77 sha1:KV2NM2IAOSUTNLBFEXYPFJIBDRCHEC4F - usingCharsetInHTML:UTF-8,3t
+2014-10-16T01:40:26.664Z   200       1818 http://www.cas.cn/include/message/ X http://www.cas.cn/ text/html #004 20141016014025127+19 sha1:CGDHGDJYG3IMEGAAGAITSX7HD72S6AVE - usingCharsetInHTML:UTF-8
+2014-10-16T01:40:29.744Z   200        393 http://www.cas.cn/lxwm/ L http://www.cas.cn/ text/html #004 20141016014029671+19 sha1:DJJ3QKJBHLCHSIOPTJ6UWFQWEDXALU5W - usingCharsetInHTML:UTF-8
+2014-10-16T01:40:32.967Z   200      33037 http://www.cas.cn/hy/xshd/ L http://www.cas.cn/ text/html #004 20141016014032751+36 sha1:PA2WVWFJWRD427KN5UR5BGAVPHICS3RO - usingCharsetInHTML:UTF-8

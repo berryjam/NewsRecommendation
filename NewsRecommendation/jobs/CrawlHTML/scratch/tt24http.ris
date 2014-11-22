@@ -1,0 +1,1864 @@
+om/cnews/2014/10/29/20141029182921d26bb.png",url:"http://gov.163.com/special/jiazhiguan/"},
+                {img: "http://img3.cache.netease.com/cnews/2014/10/29/20141029182921d26bb.png",url:"http://gov.163.com/special/jiazhiguan/"}
+            ],
+            obj = document.getElementById("wljd");
+function changeImg() {
+    curIndex = curIndex > arr.length-1?0:curIndex;
+    obj.style.background="url("+arr[curIndex].img+")";
+    obj.href = arr[curIndex].url;
+    curIndex++;
+}
+setInterval(changeImg,timeInterval);
+//money
+NTES.ready(function() {
+        NTES.ajax.importJs('http://img1.cache.netease.com/f2e/finance/preterite/public/ntesquote-2.0.js', function() {
+        ntesQuote.loadOnce();
+    });
+    NTES("#socode").onclick = function() {
+        this.value = "";
+        this.onclick = function() {
+        };
+        NTES.ajax.importJs('http://img1.cache.netease.com/f2e/finance/preterite/js_2010/stocksearch_suggest-1.1.js', function() {
+            var stockSuggest = new ntesStockSuggest({
+                inputid : "socode",
+                max : 10,
+                tooltip : "代码/拼音/名称",
+                posElem : "selstockinput",
+                getType : function() {
+                    var sel = document.getElementById("selstockinput");
+                    return sel.options[sel.selectedIndex].value;
+                },
+                callback : function(item) {
+                    typeMap = {
+                        "SH" : "http://quotes.money.163.com/0{0}.html#from=stock_index",
+                        "SZ" : "http://quotes.money.163.com/1{0}.html#from=stock_index",
+                        "HK" : "http://quotes.money.163.com/hkstock/{0}.html#from=stock_index",
+                        "FX" : "http://quotes.money.163.com/forex/hq/{0}.html#from=stock_index",
+                        "US" : "http://quotes.money.163.com/usstock/hq/{0}.html#from=stock_index",
+                        "FN" : "http://quotes.fund.163.com/html/{0}.html#from=stock_index",
+                        "FU" : "http://quotes.money.163.com/futures/hq/{0}.html#from=stock_index"
+                    };
+                    url = typeMap[item["type"]].replace("{0}", item["symbol"]);
+                    window.open(url);
+                }
+            });
+            function btnstocksearch() {
+                if (stockSuggest.aSug.length == 1) {
+                    stockSuggest.oP.callback(stockSuggest.aSug[0]);
+                } else {
+                    alert("请选择要查看的股票");
+                }
+            }
+            NTES("#stock-search-btn").onclick = btnstocksearch;
+        }, 'utf-8');
+    };
+});
+//auto
+NTES.ready(function(){
+    var contAutoData = $("#js_auto_data");
+    var autoData = [{"auto_list":[{"auto_name":"逸动","auto_url":"http://product.auto.163.com/series/16420.html#YS2001"},{"auto_name":"力帆X50","auto_url":"http://product.auto.163.com/series/17288.html#YS2001"},{"auto_name":"瑞风S3","auto_url":"http://product.auto.163.com/series/17966.html#YS2001"},{"auto_name":"景逸X5","auto_url":"http://product.auto.163.com/series/16610.html#YS2001"},{"auto_name":"长城M4","auto_url":"http://product.auto.163.com/series/16330.html#YS2001"}],"price":"8万以下","url":"http://product.auto.163.com/price/below8/#YS2001"},{"auto_list":[{"auto_name":"福克斯三厢(第二代)","auto_url":"http://product.auto.163.com/series/16584.html#YS2001"},{"auto_name":"科鲁兹经典","auto_url":"http://product.auto.163.com/series/2064.html#YS2001"}],"price":"8-10万","url":"http://product.auto.163.com/price/p8to10/#YS2001"},{"auto_list":[{"auto_name":"新雅阁","auto_url":"http://product.auto.163.com/series/2014.html#YS2001"},{"auto_name":"本田XR-V","auto_url":"http://product.auto.163.com/series/18048.html#YS2001"},{"auto_name":"速腾","auto_url":"http://product.auto.163.com/series/2215.html#YS2001"},{"auto_name":"本田CR-V","auto_url":"http://product.auto.163.com/series/2005.html#YS2001"},{"auto_name":"途观","auto_url":"http://product.auto.163.com/series/3147.html#YS2001"}],"price":"10-20万","url":"http://product.auto.163.com/price/p10to15/#YS2001"},{"auto_list":[{"auto_name":"探险者","auto_url":"http://product.auto.163.com/series/16629.html#YS2001"},{"auto_name":"沃尔沃XC60","auto_url":"http://product.auto.163.com/series/18087.html#YS2001"},{"auto_name":"奥迪A4L","auto_url":"http://product.auto.163.com/series/1958.html#YS2001"},{"auto_name":"奥迪Q5","auto_url":"http://product.auto.163.com/series/3148.html#YS2001"}],"price":"20万以上","url":"http://product.auto.163.com/price/p20to30/#YS2001"}];
+    if(contAutoData!=undefined && autoData.length == 4){
+        var html = [];
+        for(var i = 0,len = autoData.length; i < len;i++){
+            html.push('<dl><dt><a href="'+autoData[i].url+'">'+autoData[i].price+'</a></dt><dd class="autopro-classify-con">');
+            for (var j = 0; j < autoData[i].auto_list.length; j++){
+                html.push('<a href="'+autoData[i].auto_list[j].auto_url+'">'+autoData[i].auto_list[j].auto_name+'</a>');
+            }
+            html.push('</dd><dd class="autopro-classify-more"><a href="'+autoData[i].url+'">&gt;&gt;</a></dd></dl>');
+        }
+        contAutoData.innerHTML = html.join("");
+    };
+    if(NTES("#js-autopro-search")){
+        var searchBox = NTES("#js-autopro-search"),
+                searchTx = NTES.one(".autopro-search-tx",searchBox),
+                searchBtn = NTES.one(".autopro-search-btn",searchBox),
+                sDefault = searchTx.getAttribute("_sdefaultvalue"),
+                slUrl = "http://product.auto.163.com/autosearch/pv-0-0-2_ff-8_ff-0-0-0-0-0-1.html";
+        searchTx.value = sDefault;
+        searchTx.addEvent("focus",function(){
+            if(searchTx.value == sDefault){
+                searchTx.value = "";
+            }
+        }).addEvent("blur",function(){
+            if(searchTx.value == ""){
+                searchTx.value = sDefault;
+            }
+        })
+        searchBtn.onclick = function(){
+            var searchkey = searchTx.value.replace(/^\s+/, '').replace(/\s+$/, '');
+            if (searchkey == '' || searchkey == sDefault) { alert("请输入要查询的内容"); return;}
+            else{
+                url = slUrl + "?q=" + encodeURIComponent(encodeURIComponent(searchkey)) +"#YS1001";
+                window.open(url);
+            }
+        }
+    }
+})();
+//shop & caipiao
+(function(window){
+    var DS=function(a,b){var c=typeof b=="string"?DS(b)[0]:(b||document),type,key;if(/^(#|\.|@|\*)(.+)$/.test(a)){type=RegExp.$1;key=RegExp.$2;switch(type){case"#":return[c.getElementById(key)];case".":return getElementsByClassName(key,c);case"@":return DS.toArray(c.getElementsByName(key));case"*":return DS.toArray(c.getElementsByTagName(key))}}else return[]},d=window.document,toString=Object.prototype.toString,getElementsByClassName=function(b,c){var d=c||document,regCss;if(d.getElementsByClassName)return DS.toArray(d.getElementsByClassName(b));regCss=new RegExp("\\b"+b+"\\b");return DS.toArray(d.getElementsByTagName("*"),function(a){return regCss.test(a.className)})};var eventProp="altKey ctrlKey shiftKey keyCode button clientX clientY offsetX offsetY pageX pageY target relatedTarget srcElement fromElement toElement".split(" "),bindEvent=function(b,c,d){var f=function(a){var e=fixEvent(a||window.event);if(d.call(b,e)===false){e.preventDefault();e.stopPropagation()}};b.addEventListener?b.addEventListener(c,f,false):b.attachEvent?b.attachEvent("on"+c,f):(b["on"+c]=f)},fixEvent=function(e){var a={};for(var i=eventProp.length,prop;i;){prop=eventProp[--i];a[prop]=e[prop]}a.orgEvent=e;a.target=e.target||e.srcElement||document;if(a.target.nodeType===3)a.target=a.target.parentNode;if(!a.relatedTarget&&a.fromElement)a.relatedTarget=a.fromElement===a.target?a.toElement:a.fromElement;if(a.pageX==null&&a.clientX!=null){var b=document.documentElement,body=document.body;a.pageX=a.clientX+(b&&b.scrollLeft||body&&body.scrollLeft||0)-(b&&b.clientLeft||body&&body.clientLeft||0);a.pageY=a.clientY+(b&&b.scrollTop||body&&body.scrollTop||0)-(b&&b.clientTop||body&&body.clientTop||0);b=body=null}a.preventDefault=e.preventDefault?function(){e.preventDefault()}:function(){e.returnValue=false};a.stopPropagation=e.stopPropagation?function(){e.stopPropagation()}:function(){e.cancelBubble=true};return a};DS.ready=function(a){if(d.readyState=="complete"){a();return}if(window.attachEvent){(function(){try{d.documentElement.doScroll("left")}catch(err){setTimeout(arguments.callee,1);return}a()})()}else{var b=function(){d.removeEventListener("DOMContentLoaded",b,false);a()};d.addEventListener("DOMContentLoaded",b,false)}};DS.toArray=function(a,b){var c=[],n=a.length,i=0,obj,fn=b||DS.noop;for(;i<n;i++){obj=a[i];if(fn(obj)!==false)c[c.length]=obj}return c};DS.isIE678="\v"=="v";DS.isFunction=function(a){return toString.call(a)==="[object Function]"};DS.isArray=function(a){return toString.call(a)==="[object Array]"};DS.isObject=function(a){return toString.call(a)==="[object Object]"};DS.trim=function(a){return(a+"").replace(/^(?:\s|\xa0|\u3000)+|(?:\s|\xa0|\u3000)+$/g,"")};DS.noop=function(){};DS.bind=function(a,b,c){if(DS.isObject(b)){for(var d in b)DS.bind(a,d,b[d]);return}bindEvent(a,b,c)};DS.createForm=function(a,b,c,e){var f=["<form method='",c||"post","' action='",a,"' target='",e||"_blank","'>"],div,form,x,form;if(b){for(x in b)f.push("<input type='hidden' name='"+x+"' value='"+b[x]+"'/>")}f.push("</form>");div=d.createElement("div");d.body.appendChild(div,d.body.lastChild);div.innerHTML=f.join("");form=DS("*form",div)[0];form.submit();d.body.removeChild(div)};
+    window.NTES_MCYB = DS;
+    DS.ready(function(){
+        var wrap = DS(".caipiao-bd")[0];
+        if( !wrap )return;
+        var inputs = DS("*input", DS(".caipiao-ball", wrap)[0]), btn=DS(".caipiao-btn", wrap)[0];
+        DS.bind(btn, "click", function(){
+            var n = inputs.length, i=0, j, red=[], blue, num, zz = function(a){return ("00"+a).slice(-2)}, data={}, ff = function(i){inputs[i].select()};
+            for(; i<n; i++){
+                num = DS.trim(inputs[i].value.replace(/\D/g, ""));
+                if( i < 6 ){
+                    if( !num ){
+                        alert("请选择6个红球！");
+                        ff( i );
+                        return;
+                    }
+                    if( +num < 1 || +num > 33 ){
+                        alert("红球范围是1～33！");
+                        ff( i );
+                        return;
+                    }
+                    for( j=0; j<i; j++ ){
+                        if( red[j] == num ){
+                            alert("红球不能重复！");
+                            ff( i );
+                            return;
+                        }
+                    }
+                    red[i] = zz(num);
+                }else{
+                    if( !num ){
+                        alert("请选择1个蓝球！");
+                        ff( i );
+                        return;
+                    }
+                    if( +num < 1 || +num > 16 ){
+                        alert("蓝球范围是1～16！");
+                        ff( i );
+                        return;
+                    }
+                    blue = zz(num);
+                }
+            }
+            data.stakeNumber = red.join(" ")+":"+ blue;
+            data.activityType = "16";
+            data.betTimes = "1";
+            data.gameId = "2010032416YX00000001";
+            DS.createForm("http://caipiao.163.com/order/order_quickPreSsq.html#from=shouye1", data);
+        });
+        var n = inputs.length, i=0, zz = function(a){return ("00"+a).slice(-2)}, red = (function(){
+            var red=[];
+            while(red.length < 6){
+                var a = Math.floor(Math.random()* 33 + 1);
+                if( red.indexOf(a) == -1 )
+                    red.push(a);
+            }
+            return red.sort(function(a,b){return a-b;});
+        })();
+        for(; i<n; i++){
+            DS.bind(inputs[i], "keyup", function(e){
+                var v = DS.trim(this.value).replace(/\D/g, "");
+                if( v != this.value )
+                    this.value = v;
+            });
+            if( i < 6 ){
+                DS.bind(inputs[i], "blur", function(){
+                    var v = DS.trim(this.value).replace(/\D/g, "");
+                    if( v ) this.value = zz(Math.min(+v, 33));
+                });
+            }else{
+                DS.bind(inputs[i], "blur", function(){
+                    var v = DS.trim(this.value).replace(/\D/g, "");
+                    if( v ) this.value = zz(Math.min(+v, 16));
+                });
+            }
+            inputs[i].value = i < n-1 ? zz(red[i]) : zz(Math.floor(Math.random()* 16 + 1));
+        }
+    });
+})(window);
+(function(window, DS){
+    var Mall = {};
+    Mall.gId = function(id){return document.getElementById(id)};
+    Mall.iselect = null;
+    Mall.checkPhone = function(num){
+        if(/^(13|14|15|18)\d{9}$/.test(num)){return true};return false;
+    } ;
+    Mall.bindSelect = function(e){
+        Mall.gId("mall_in").onclick = function(){
+            var mall_select = Mall.iselect;
+            if(mall_select.style.display == "none"){
+                mall_select.style.display = "block";
+                mall_select.activeLi.className = "";
+                mall_select.selectLi.className = "active";
+                mall_select.activeLi = mall_select.selectLi;
+            }else{
+                mall_select.style.display = "none";
+            }
+        };
+        var mall_select = Mall.iselect, li = mall_select.getElementsByTagName("li"), len = li.length;
+        for(var i = 0; i<len; i++){
+            li[i].onclick = function(){
+                var arr = {30:"29.49-30.15",50:"49-49.8",100:"98-99.5",300:"296.1-300.3",500:"493.5-498"}, val = this.getAttribute("value");
+                Mall.gId("mall_value").value = val;
+                Mall.gId("mall_in").innerHTML = this.innerHTML;
+                Mall.gId("mall_money").innerHTML = arr[val];
+                mall_select.selectLi = this;
+                mall_select.style.display = "none";
+            };
+            li[i].onmouseover = function(){
+                mall_select.activeLi.className = "";
+                this.className = "active";
+                mall_select.activeLi = this;
+            };
+        }
+    };
+    Mall.init = function(){
+        this.issubmit = true;
+        var rep = /[^\d]/;
+        Mall.gId("mall_phone").onkeyup = function(){this.value = this.value.replace(rep,"");};
+        Mall.gId("mall_phone").onblur = function(){
+            if(!Mall.checkPhone(this.value)){
+                Mall.issubmit = false;Mall.gId("js_phone_label").className = "tips-error";
+            }else{
+                Mall.issubmit = true;Mall.gId("js_phone_label").className = "";
+            }
+        };
+        Mall.gId("mall_phone").onfocus = function(){
+            Mall.gId("js_phone_label").className = "";
+        };
+        this.bindSelect();
+        Mall.gId("neteasy_mall_form").onsubmit = function(){
+            Mall.gId("mall_phone").onblur();
+            if(!Mall.issubmit){return false;}
+        };
+        var li = mall_select.getElementsByTagName("li"), len = li.length;
+        for(var i=0; i<len; i++){
+            if(li[i].className == "active"){
+                Mall.iselect.activeLi = Mall.iselect.selectLi = li[i];
+            }
+        }
+        DS.bind(document, "click", function(e){
+            var target = e.srcElement || e.target;
+            if(target.id == "mall_in") return;
+            Mall.iselect.style.display = "none";
+        })
+    };
+    DS.ready(function(){
+        Mall.iselect = Mall.gId("mall_select");
+        Mall.init();
+    });
+})(window, NTES_MCYB);
+NTES.ready(function(){
+    var api_interest = "http://api.pr.163.com/love/www2?callback=jsonplove",newData = [];
+    window.jsonplove = function(data){
+        newData = data;
+    };
+    NTES.ajax.importJs(api_interest,function(){
+        var re = /\'|\"/gi,datalen = newData.length,gacode1 = "vendor=163.home.rightad&utm_source=home.163.com&utm_campaign=163",gacode2="vendor=163.home.rightad&utm_source=home.163.com&utm_campaign=163",herf='';
+        if( datalen < 15 ) return false;
+        var html_1 = [],html_2 = [],html_3 = [], html_temp = [];
+        for (var i = 0; i < 6; i++){
+            var alttitle = newData[i].city.replace(re, "&quot;");
+            if (newData[i].url.indexOf("?") != -1) {
+                href = newData[i].url+"#";
+            }else{
+                href = newData[i].url+"?";
+            }
+            html_1.push('<li class="love-user"><a href="'+href+gacode1+'"><img src="'+newData[i].picUrl90+'" width="90" alt="'+alttitle+'"><p><span class="love-user-location">'+newData[i].city+'</span><span class="love-user-age">'+newData[i].age+'</span></p></a></li>');
+        }
+        for (var i = 6; i < 9; i++){
+            var alttitle = newData[i].city.replace(re, "&quot;");
+            if (newData[i].url.indexOf("?") != -1) {
+                href = newData[i].url+"#";
+            }else{
+                href = newData[i].url+"?";
+            }
+            html_2.push('<li class="love-user"><a href="'+href+gacode1+'"><img src="'+newData[i].picUrl90+'" width="90" alt="'+alttitle+'"><p><span class="love-user-location">'+newData[i].city+'</span><span class="love-user-age">'+newData[i].age+'</span></p></a></li>');
+        }
+        for (var i = 9; i < 15; i++){
+            var alttitle = newData[i].city.replace(re, "&quot;") + ' ' + newData[i].age.replace(re, "&quot;") + ' ' + newData[i].height.replace(re, "&quot;");
+            if (newData[i].url.indexOf("?") != -1) {
+                href = newData[i].url+"#";
+            }else{
+                href = newData[i].url+"?";
+            }
+            if(!newData[i].height){
+                html_3.push('<li class="cover-title"><a href="'+href+gacode2+'"><img src="'+newData[i].picUrl150+'" width="150" alt="'+alttitle+'"><p><span class="love-user-age">'+newData[i].age+'</span><span class="love-user-location">'+newData[i].city+'</span></p></a></li>');
+            }else{
+                html_3.push('<li class="cover-title"><a href="'+href+gacode2+'"><img src="'+newData[i].picUrl150+'" width="150" alt="'+alttitle+'"><p style="text-align:center;"><span class="love-user-age">'+newData[i].height+'cm</span><span class="love-user-location">'+newData[i].city+'</span>'+newData[i].age+'</p></a></li>');
+            }
+        }
+        NTES('#js_loveul').innerHTML = html_1.join('');
+        NTES('#js_yuehuiul').innerHTML = html_2.join('');
+        NTES('#js_loveul_end').innerHTML = html_3.join('');
+    }, 'utf-8');
+})();
+NTES.ready(function(){
+    var 
+    con1 = $("#social_con_1"),
+    con2 = $("#social_con_2"),
+    requestUrl = "http://www.163.com/special/00774IL4/jnews_society163.html",
+    callback = "socialData",
+    picNum = 1,
+    sNum = 5,
+    bNum = 7,
+    maxNum = picNum + sNum + bNum;
+    NTES.ajax.importJs(requestUrl+"?callback="+callback, function(){},'');
+    window[callback] = function(data){
+        if(data && data.length == maxNum){
+            var tmp1 = [''],tmp2 = [''];
+            for (var i = 0; i < maxNum; i++){
+                if(i == 0 && data[i].piclink != "undefined")tmp1.push('<li class="list-figure"><div class="m-img"><a href="'+ data[i].link +'#jnewsindexsopic"><img src="'+ data[i].piclink +'" alt="'+data[i].title+'" title="'+data[i].title+'" width="130" height="90"><p>'+data[i].title+'</p></a></div></li>');
+                else if(i > 0 && i < 6)tmp1.push('<li><a href="'+ data[i].link +'#jnewsindexsoright">'+data[i].title+'</a></li>');
+                else if(i == 6)tmp2.push('<li class="hx"><a href="'+data[i].link+'#jnewsindexsomain">'+data[i].title+'</a></li>');
+                else if(i > 5 && i < 14)tmp2.push('<li><a href="'+data[i].link+'#jnewsindexsomain">'+data[i].title+'</a></li>');
+            };
+            tmp1.push('</ul>');
+            tmp2.push('</ul>');
+        };
+        con1.innerHTML = tmp1.join("");
+        con2.innerHTML = tmp2.join("");
+    }
+})();
+</script>
+<script>
+//huihui
+NTES.ready(function(){
+    var huihui =  {"topTitle":"热门折扣排行","topLink":"http://www.huihui.cn/","discounts":[{"title":"【11.21白菜价】 美味零食 9.9元之类的全都在这里！","link":"http://www.huihui.cn/deals/12431992","browse":75222416},{"title":"【凑单品】顺手捎一件 不为满减包邮而烦了！单买也是好价","link":"http://www.huihui.cn/deals/18554896","browse":726125},{"title":"小零食 19.9元任选10件 商品换新","link":"http://www.huihui.cn/deals/19695294","browse":430881}],"texts":[{"title":"购物全攻略","link":"http://www.huihui.cn/guide"},{"title":"购物返现","link":"http://www.huihui.cn/mall"},{"title":"网购比价神器","link":"http://zhushou.huihui.cn/"}],"imageSrc":"http://oimageb5.ydstatic.com/image?id=-4183040330699395166&product=gouwu","imageUrl":"http://www.huihui.cn/share/47952596?keyfrom=netease_index_image"};
+    if(huihui != "" && typeof huihui != "undefined"){
+        if(huihui.topTitle != '' && huihui.topLink != ''){
+            var huihui_1 = '<div class="huihui-title"><a href="'+huihui.topLink+'">'+huihui.topTitle+'</a></div><span class="huihui-more"><a href="'+huihui.topLink+'">更多&gt;</a></span>';
+        };
+        if(huihui.discounts != "" && typeof huihui.discounts != "undefined" ){
+            var huihui_li = [];
+            for (var i = 0,k=1,j= huihui.discounts.length; i<j; i++,k++){
+                huihui_li[i] = '<span class="huihui-order">'+k+'</span><span class="huihui-goodslist-name"><a href="'+huihui.discounts[i].link+'" title="'+huihui.discounts[i].title+'">'+huihui.discounts[i].title+'</a></span><span class="huihui-goodslist-price">'+huihui.discounts[i].browse+'</span>';
+            };
+            var huihui_2 = huihui_li.join("</li><li>");
+        };
+        if(huihui.texts != "" && typeof huihui.texts != "undefined"){
+            var huihui_a = [];
+            for(var i = 0,j=huihui.texts.length; i<j; i++){
+                huihui_a[i] = '<a href="'+huihui.texts[i].link+'">'+huihui.texts[i].title+'</a>';
+            };
+            var huihui_3 = huihui_a.join('');
+        };
+        if(huihui.imageSrc != "" && typeof huihui.imageSrc != "undefined"){
+            var huihui_4 = '<a href="'+huihui.imageUrl+'"><img src="'+huihui.imageSrc+'" alt="惠惠推广位" width="280" height="70" class="ml-4"/></a>';
+        };
+        $("#js_huihui").innerHTML = '<div class="huihui interval-dot"><div class="huihui-hd mb6">'+huihui_1+'</div><div class="huihui-bd"><ol class="m-list huihui-goodslist clearfix"><li>'+huihui_2+'</li></ol></div></div><div class="huihui-links">'+huihui_3+'</div>'+huihui_4;
+    }
+})();
+        // ad for random (four tabs)
+(function () {
+    var AChangezy1 = function (obj, cookiename) {
+        var t = this;
+        t.obj = obj ? obj : {};
+        var num = t.obj["num"] == "" ?  1 : Math.floor(Math.random()*t.obj["num"]) + 1;
+        var url = t.obj["temp"] + num + ".html";
+        var content = $(t.obj["content"]);
+        NTES.ajax.send(url, "GET", null, {
+            onSuccess: function(xhr){
+                content.innerHTML = xhr.responseText;
+                var fcs = new NTES.ui.Slide(content.$("span.tab-hd-con"), content.$("div.tab-bd-con"), "current", "mouseover"),
+                        tablength = content.$("span.tab-hd-con").length;
+                if(typeof cookiename != "undefined" && cookiename != ""){
+                    var randowNumCookie = 0;
+                    fcs.onShow = function(index, ctrl, content){
+                        if( index != (tablength-1) ){
+                            randowNumCookie = index + 1;
+                            NTES.cookie.set(cookiename, randowNumCookie, "14d" );
+                        }else{
+                            NTES.cookie.set(cookiename, 0, "14d");
+                        }
+                    }
+                    if(NTES.cookie.get(cookiename) != null && NTES.cookie.get(cookiename) != ""){
+                        randowNumCookie = parseInt(NTES.cookie.get(cookiename));
+                        fcs.show(randowNumCookie);
+                        fcs.play(5000);
+                    }else{
+                        var randomNum = Math.floor(Math.random()*tablength);
+                        fcs.show(randomNum);
+                        fcs.play(5000);
+                    }
+                }else{
+                    var randomNum = Math.floor(Math.random()*tablength);
+                    fcs.show(randomNum);
+                    fcs.play(5000);
+                }
+            }
+        });
+    }
+    window.AChangezy1 = AChangezy1;
+})();
+//endNav fix
+(function($,undefined){var getElementHeight=function(elm){return elm.clientHeight||elm.offsetHeight||0},getElementWidth=function(elm){return elm.clientWidth||elm.offsetWidth||0},getElementPosition=function(a){var b=navigator.userAgent.toLowerCase();var c=(b.indexOf('opera')!=-1);var d=(b.indexOf('msie')!=-1&&!c);var e=typeof a=="string"?document.getElementById(a):a;if(e.parentNode===null||e.style.display=='none'){return false}var f=null;var g=[];var h;if(e.getBoundingClientRect){h=e.getBoundingClientRect();var i=Math.max(document.documentElement.scrollTop,document.body.scrollTop);var j=Math.max(document.documentElement.scrollLeft,document.body.scrollLeft);return{x:h.left+j,y:h.top+i}}else if(document.getBoxObjectFor){h=document.getBoxObjectFor(e);var k=(e.style.borderLeftWidth)?parseInt(e.style.borderLeftWidth):0;var l=(e.style.borderTopWidth)?parseInt(e.style.borderTopWidth):0;g=[h.x-k,h.y-l]}else{g=[e.offsetLeft,e.offsetTop];f=e.offsetParent;if(f!=e){while(f){g[0]+=f.offsetLeft;g[1]+=f.offsetTop;f=f.offsetParent}}if(b.indexOf('opera')!=-1||(b.indexOf('safari')!=-1&&e.style.position=='absolute')){g[0]-=document.body.offsetLeft;g[1]-=document.body.offsetTop}}if(e.parentNode){f=e.parentNode}else{f=null}while(f&&f.tagName!='BODY'&&f.tagName!='HTML'){g[0]-=f.scrollLeft;g[1]-=f.scrollTop;if(f.parentNode){f=f.parentNode}else{f=null}}return{x:g[0],y:g[1]}},getViewHeight=function(){return document.all?document.getElementsByTagName("html")[0].offsetHeight:window.innerHeight},getPageHeight=function(){return Math.max(getViewHeight(),document.getElementsByTagName("body")[0].scrollHeight)},insertAfter=function(a,b){var c=b.parentNode;if(c.lastChild==b){c.appendChild(a)}else{c.insertBefore(a,b.nextSibling)}},removeElement=function(a){var b=a.parentNode;b&&b.removeChild(a)},getPageScrollTop=function(){return Nbd.scrollTop||document.documentElement.scrollTop},extend=NTES.util.extend,emptyFunc=function(){},isIE6=!!NTES.browser.msie&&(NTES.browser.version=="6.0"),console=typeof console=="undefined"?(console={},console.log=emptyFunc,console):console,duration=0,boundary=0,triggerShowClass="js_N_nav_footer_trigger_show",footerNavFixedClass="js_N_nav_footer_nav_fixed",globalNavSelector="#js_N_nav_footer",globalNavTriggerSelector="#js_N_nav_footer_trigger",onGlobalNavFixedChange=emptyFunc,autoBindTrigger=false,defaultsInterface={destory:emptyFunc,update:emptyFunc,fixGlobalNav:emptyFunc},hasFixed=false,triggerHasFixed=false,keepFixed=false,scrollTimer=null,Nwin=null,Nbd=null,footerNav=null,footerNavTrigger=null,footerNavPlaceholder=null,triggerElm=null,footerNavElm=null,viewHeight=0,pageHeight=0,footerNavHeight=0,scrollHandler=emptyFunc,resizeHandler=emptyFunc,triggerClickHander=emptyFunc,footerNavTriggerPostion={x:0,y:0},footerNavPosition={x:0,y:0},lastScrollTop=0,init=function(configs){if(isIE6){return false}Nwin=$(window);Nbd=document.body;configs=configs||{};onGlobalNavFixed=configs.onGlobalNavFixed||emptyFunc;triggerShowClass=configs.triggerShowClass||triggerShowClass;footerNavFixedClass=configs.footerNavFixedClass||footerNavFixedClass;footerNav=$(configs.globalNavSelector||globalNavSelector);footerNavTrigger=$(configs.globalNavTriggerSelector||globalNavTriggerSelector);autoBindTrigger=configs.autoBindTrigger||autoBindTrigger;onGlobalNavFixedChange=configs.onGlobalNavFixedChange||onGlobalNavFixedChange;footerNavPlaceholder=document.createElement("div");insertAfter(footerNavPlaceholder,footerNav);triggerElm=footerNavTrigger.get(0);footerNavElm=footerNav.get(0);viewHeight=getViewHeight();pageHeight=getPageHeight();footerNavHeight=getElementHeight(footerNav);footerNavTriggerHeight=33;footerNavTriggerPostion=getElementPosition(triggerElm);footerNavPosition=getElementPosition(footerNavElm);hasFixed=false;triggerHasFixed=false;Nbd.scrollTop=lastScrollTop;setTriggerPosition();keepFixed&&setGlobalNavPosition();bindEvent();return true},bindEvent=function(){var setTimer=function(fn){if(duration){scrollTimer=setTimeout(function(){fn()},duration);return}fn()};scrollHandler=function(e){lastScrollTop=getPageScrollTop();if(scrollTimer){clearTimer();return}setTimer(function(){!keepFixed&&setTriggerPosition();keepFixed&&setGlobalNavPosition();clearTimer()})};resizeHandler=function(){update()};triggerClickHander=function(){if(hasFixed){keepFixed=false;setGlobalNavPosition(true,true);footerNavTrigger.removeCss("sitemap-ctrl-active");return}keepFixed=true;setGlobalNavPosition(true,false);footerNavTrigger.addCss("sitemap-ctrl-active")};Nwin.addEvent("scroll",scrollHandler);Nwin.addEvent("resize",resizeHandler);autoBindTrigger&&footerNavTrigger.addEvent("click",triggerClickHander)},setTriggerPosition=function(force,clear){var detectY=getPageScrollTop()+viewHeight+boundary-footerNavTriggerHeight,resetTriggerTop=0;if((force&&clear)||!keepFixed&&(detectY>=footerNavTriggerPostion.y)){if(!triggerHasFixed){return}triggerHasFixed=false;clearTriggerFix();return}if((force&&!clear)||(detectY<footerNavTriggerPostion.y)){if(triggerHasFixed&&!force){return}triggerHasFixed=true;triggerElm.style.position="fixed";triggerElm.style.left=footerNavTriggerPostion.x+"px";resetTriggerTop=viewHeight-boundary-footerNavTriggerHeight;if(hasFixed){triggerElm.style.top=(resetTriggerTop-footerNavHeight)+"px"}else{triggerElm.style.top=resetTriggerTop+"px"}}},setGlobalNavPosition=function(force,clear){var detectY=getPageScrollTop()+viewHeight+boundary-footerNavHeight;if((force&&clear)||(detectY>=footerNavPosition.y)){if(!hasFixed){return}else{globlNavFixChange(false)}clearGlobalFix();return}if((force&&!clear)||(detectY<footerNavPosition.y)){if(hasFixed){return}else{globlNavFixChange(true)}footerNavPlaceholder.style.height=footerNavHeight+"px";footerNav.addCss(footerNavFixedClass);footerNavElm.style.top=(viewHeight-footerNavHeight)+"px"}},clearTriggerFix=function(){triggerElm.style.position="";triggerElm.style.left="";triggerElm.style.top=""},clearGlobalFix=function(){footerNavPlaceholder.style.height="";footerNav.removeCss(footerNavFixedClass);footerNavElm.style.top=""},globlNavFixChange=function(fix){hasFixed=!!fix;setTriggerPosition(true,keepFixed?!hasFixed:hasFixed);onGlobalNavFixedChange(hasFixed)},clearTimer=function(){if(scrollTimer){clearTimeout(scrollTimer);scrollTimer=null}},update=function(){destory();init()},destory=function(){clearTimer();Nwin.removeEvent("scroll",scrollHandler);Nwin.removeEvent("resize",resizeHandler);autoBindTrigger&&footerNavTrigger.removeEvent("click",triggerClickHander);clearGlobalFix();clearTriggerFix();removeElement(footerNavPlaceholder)};NTES.plugin=NTES.plugin||{};NTES.plugin.globalFixedNav=function(configs){if(init(configs)){defaultsInterface=extend(defaultsInterface,{destory:function(){destory()},update:function(){update()},fixGlobalNav:function(fix){keepFixed=!!fix;setGlobalNavPosition(true,!keepFixed)}})};NTES.plugin.globalFixedNav=emptyFunc;return defaultsInterface}})(NTES);
+NTES.ready(function(){
+    window.guideGf = NTES.plugin.globalFixedNav({
+        duration: 0,
+        boundary: 0,
+        triggerShowClass: "js_N_nav_footer_trigger_show",
+        footerNavFixedClass: "js_N_nav_footer_nav_fixed",
+        globalNavSelector: "#js_N_nav_footer",
+        globalNavTriggerSelector: "#js_N_nav_footer_trigger",
+        onGlobalNavFixedChange: function(beFixed){
+        },
+        autoBindTrigger: true
+    });
+});
+//]]>
+</script>
+<!-- endjs.js end -->
+<!-- START WRating v1.0 -->
+<script type="text/javascript" src="http://img6.cache.netease.com/common/script/wrating.js">
+</script>
+<script type="text/javascript">
+var vjAcc="860010-0503010000";
+var wrUrl="http://163.wrating.com/";
+vjTrack("");
+</script>
+<noscript><img src="http://163.wrating.com/a.gif?a=&c=860010-0503010000" width="1" height="1"/></noscript>
+<!-- END WRating v1.0 -->
+<!-- START NetEase Devilfish 2006 -->
+<script src="http://analytics.163.com/ntes.js" type="text/javascript"></script>
+<script type="text/javascript">
+;(function(){
+	var NE = window["NE"] || {};
+	var store = window.localStorage || {
+		userdata_inpt : null,
+		init : function(){
+			var t= this;
+			if(t.userdata_inpt==null){
+				try{
+					t.userdata_inpt = document.createElement("input");
+					t.userdata_inpt.type="hidden";
+					t.userdata_inpt.style.display="none";
+					t.userdata_inpt.addBehavior("#default#userData");
+					document.body.appendChild(t.userdata_inpt);	
+					t.userdata_inpt.load("tools_userData");//存放在tools_userData空间下							
+				}catch(e){
+					return false;
+				}		
+			}
+			return true;
+		},
+		setItem : function(k,v){
+			var t = this;
+			if(t.init()){
+				var o = t.userdata_inpt;
+				o.setAttribute(k,v);				
+				o.save("tools_userData");
+			}
+		},
+		getItem : function(k){
+			var t = this;
+			if(t.init()){
+				var o = t.userdata_inpt;
+				return o.getAttribute(k);
+			}
+			return null;		
+		}
+	};
+	NE.store = {
+		set : function(namespace,key,data){
+			if(!data || typeof data == undefined){
+				data = key;
+				key = namespace;
+			}else if(namespace){
+				key = namespace + "." + key;
+			}
+			store.setItem(key,data);
+		},
+		get : function(namespace,key){
+			if(typeof key == "string"){
+				key = namespace + "." + key;
+			}else{
+				key = namespace;
+			}
+			var str = store.getItem(key) || "";
+			return str;
+		}
+	}
+	window["NE"] = NE;
+})();
+_ntes_nvsf = NE.store.get("_ntes","_nvsf");
+if(!_ntes_nvsf){
+	_ntes_nvsf = fetch_visitor_hash();
+	NE.store.set("_ntes","_nvsf",_ntes_nvsf);
+}
+</script>
+<script type="text/javascript">
+_ntes_nacc = "www";
+neteaseTracker();
+neteaseClickStat();
+</script>
+<!-- END NetEase Devilfish 2006 -->
+<script>!function(i){function e(){}function t(){var i=Math.round((+new Date-E)/1e3);return 0>i?0:i}function n(i){var e=i.className,t=d(i),n={script:1,style:1,link:1,img:1,hr:1,br:1},l=!0;return n[t]?l=!1:/blank\d/.test(e)&&(l=!1),l}function l(e){g||(y&&window._ntes_sendInfo?(i.each(M,function(i,e){r(e)}),g=!0):M.push(e)),g&&r(e)}function a(i){return 10>i?i.toString():i>=62?"z":String.fromCharCode(i+(36>i?55:61))}function o(i,e){if(!e)return i;var t=i.length-1,n=i.charCodeAt(t);return 58>n?n-=48:91>n?n-=55:123>n&&(n-=61),i.substr(0,t)+a(n+e)}function f(i,e,t){e&&e.setAttribute((t?"_":"")+"jcid",i)}function c(i){if(i){var e=this.getAttribute("href")||"";N++;var n="/ntes_p?"+C+"&_nct="+t()+"&_nah="+escape(e)+"&_nat={id}_"+i;l(n)}}function r(i){_ntes_sendInfo("jc",_ntes_src_addr+i.replace("{id}",y))}function v(i,e,t){for(var n={a:1,area:1},l=i,a=null;i.tagName&&i!=_;){if(n[d(i)]){a=i;break}i=i.parentNode}if(a)for(;i&&i!=e&&!(t=i.getAttribute("jcid"));)i=i.parentNode;for(;!t&&!(t=l.getAttribute("_jcid"));)if(l=l.parentNode,!l||!l.tagName||l==_)return;t&&c.call(a||i,t)}function d(i){return i&&i.tagName?i.tagName.toLowerCase():""}function u(e,t,n){if("iframe"!=d(e))t(e,n);else{var l,a=D(e),o=function(){if("function"==typeof l&&l.call(this),a=D(e)){var o=a.body;i(o).addEvent("click",function(i){var e=i.target;v(e,o)}),t(o,n)}};a&&/^http/.test(a.location.href)?o():e.attachEvent?e.attachEvent("onload",o):(l=e.onload,e.onload=o)}}function p(i){return(i.innerHTML.match(/jcid=".*?"/g)||[]).join("")}function b(e,t){var n,l;i(e).addEvent("mouseover",function(){var i=p(e),a=e.innerHTML.replace(/<.*?>/g,"").length;!e.children.length||i==n&&a==l||(t(),n=p(e),l=a)})}function s(i,e){var t=i[0],n=i.level;return t&&n&&h(t,n,e),t}function h(e,t,n){if(i.util.isArray(e))i.each(e,function(i,e){h(e,t,n)});else if("object"==typeof e)if(e.i)e.k=o(e.i.substr(0,t+1),n)+e.i.substr(t+1);else for(var l in e)h(e[l],t,n)}function D(i){var e;try{e=i.contentDocument}catch(t){}if(!e&&i.contentWindow){try{var n=i.contentWindow.document;"object"==typeof n&&(e=n)}catch(t){}if(!e)return null}var l=1;try{e.location&&(l=0)}catch(t){}return l?null:e}var y,m,C="_nacc=siteclick&_npurl="+escape(document.URL),N=0,g=!1,M=[],_=document.body,B=i(window),A=window.performance,E=A&&A.timing?A.timing.connectStart:+new Date,w=[function(e,t,n){e+=a(n.start||1),n.bind?i("a",t).each(function(i,t){f(e,t,n.all)}):f(e,t,n.all)},function(e,t,n){var l=n.start||1;i(n.query||"a",t).each(function(i,t){f(e+a(l++),t,n.all)})},function(e,t,l){for(var o=1,c=l.level||1,r=[t],v=0;c>v;v++){var u=[];i.each(r,function(e,t){var l=0;"a"==d(t)||/slider-ctrl|ntes-nav-select/.test(t.className)||i.each(t.children,function(i,e){n(e)&&(u.push(e),l++)}),l||u.push(t)}),r=u}i.each(r,function(i,t){f(e+a(o++),t,l.all)})},function(e,t){var n=i(">form",t);n[0]&&n.addEvent("submit",function(){c.call(this,e+"1")})},function(e,t,n){var l=i(n.h,t),o=i(n.b,t);if(l&&o){var c=n.step||10,r=2;f(e+"1",t),l.each(function(i,t){f(e+a(r+i*c),t)}),o.each(function(i,t){f(e+a(r+i*c+1),t)})}},function(e,t,l){var o=l.union||"",c={};if(/^[\s\d,]+$/.test(o)){var r=0;i.each(o.split(/\s*,\s*/),function(i,e){if(e=parseInt(e))for(var t=0;e>t;t++)c[r++]=i})}var v=2;f(e+"1",t);var d=parseInt(l.step)||10,u=i(l.h,t),p=i(l.b,t);u&&p&&(i.each(u,function(i,t){f(e+a(i*d+v),t)}),i.each(p,function(t,l){var o=t*d+v+1,r=l.children;if(0==r.length)r=[l];else for(;1==r.length;)r=r[0].children;var u=0;i.each(r,function(i,t){n(t)&&("undefined"!=typeof c[i]&&(u=c[i]),f(e+a(o+u),t),u++)})}))}];e.prototype={init:function(e,n){e&&5==e.length&&(y=e),m||(m=Math.random()<(n||.1),m&&(i("body").addEvent("click",function(i){v(i.target,_)}),i.ready(function(){function i(){e&&(l("/ntes_u?"+e+"&_nct="+t()+"&_mcn="+N+n),e=0)}var e=C+"&_nch={id}",n="",a="&_msl="+t();B.addEvent("load",function(){n="&_msl="+t()}),l("/ntes_u?"+e+a),B.addEvent("beforeunload",i);var o=navigator.userAgent.toLowerCase();!/compatible/.test(o)&&/firefox/.test(o)&&B.addEvent("unload",i)}),this.retain&&this.area(_,this.retain)))},area:function(i,e,t){for(var n in e){var l=!1,a=e[n];a.level=t||0,/(.*?)=$/.test(n)&&(n=RegExp.$1,l=!0),this.procA(i,n,a,l)}},procA:function(e,t,n,l){var a=this,o=n.level+1;if(l)return b(e,function(){a.procA(e,t,n)}),void 0;var f=function(i,e){a.area(i,e,o)},c=0,r=0,v=0;/(.*?)!$/.test(t)&&(t=RegExp.$1,r=1),/(.*?)\*$/.test(t)?(t=RegExp.$1,c=1):/(.*?)\+$/.test(t)&&(t=RegExp.$1,v=1);var d=t?/^#\S+$/.test(t)?i(t):i(t,e):[e];if(d){d.nodeType&&(d=[d]);var p,h=0,D=d.length;for(p=0;D>p;p++){var y=d[p];if(!r||!y.id){var m=c?n[0]:n[h];if(v&&1==n.length&&(m=s(n,h)),m&&y)if(m.i)for(var C=m.s||1,N=0;C>N;N++)m.j=N,this.zone(d[p+N],m);else u(y,f,m);h++}}}},zone:function(i,e){var t=o(e.k||e.i,e.j),n=w[e.f||0],l=e.p||{};i&&n&&(l.dyn?b(i,function(){n(t,i,l)}):u(i,function(i){n(t,i,l)}))},batch:function(i){m?this.area(_,i):this.retain=i}},window._aCM=new e}(NTES),function(){_aCM.init("wsa01"),setTimeout(function(){_aCM.batch({"#js_N_nav":[{"":[{"":[{i:"111",f:1}]}]}],".head-main":[{">.logo":[{"":[{i:"211"}]}],"#wljd":[{"":[{i:"221"}]}]}],".nav":[{">.nav-w155":[{"":[{i:"311",f:1}]},{"":[{i:"321",f:1}]}],">.nav-w124":[{"":[{i:"331",f:1}]}],">.nav-w112":[{"":[{i:"341",f:1}]},{"":[{i:"351",f:1}]},{"":[{i:"361",f:1}]}]}],".adtop":[{">.c-fl":[{".tab-con":[{i:"413",f:1},{i:"41D",f:1},{i:"41N",f:1}],".tab-u":[{i:"412"},{i:"41C"},{i:"41M"}]}],">.w-tab-st":[{".tab-con":[{i:"423",f:1},{i:"42D",f:1},{i:"42N",f:1}],".tab-u":[{i:"422"},{i:"42C"},{i:"42M"}]}]}],".area":[{".slider-scroll":[{".current_static":[{i:"511"}],".slider-main-img":[0,{i:"512"},{i:"513"},{i:"514"},{i:"515"}],"#houseNewsIP":[{i:"516"}]}],"#layout-v":[{".tab-hd-con":[{i:"522"},{i:"52C",f:1},{i:"52M",f:1}],".tab-bd-con":[{i:"523",f:2,p:{level:2}},{i:"52D",f:2,p:{level:2}},{i:"52N",f:2,p:{level:2}}]}],"#layout-news":[{".tab-hd-con":[{i:"532"},{i:"53C"},{i:"53M"}],".tab-bd-con":[{i:"533",f:2,p:{level:2}},{i:"53D",f:2,p:{level:2}},{i:"53N",f:2,p:{level:2}}]}],"#layout-recommend":[{".tab-hd-con":[{i:"541",s:3}],"#js_slider_recommend":[{i:"544",f:2,p:{level:5,dyn:1}}],".tab-bd-con":[0,{i:"545",f:1,p:{dyn:1}},{i:"546",f:2,p:{level:2}}],"#js_a_bobo":[{i:"547",f:1,p:{dyn:1}}],">.txt-bobo":[{i:"548",f:1}]}],".ad-txt":[{"":[{i:"551",f:1}]}],".box-hd":[{">.box-hd-title":[{i:"561"}],">.box-hd-more":[{i:"562"}]}],".productlinks":[{">.item-mail":[{i:"571",f:1}],">.item-game":[{i:"572",f:1}],">.item-sns":[{i:"573",f:1}],">.item-recommend":[{i:"574",f:1}]}],".box-bg-padding":[{"":[{i:"581",f:1}]}]},{"#layout-sports":[{".tab-hd-con":[{i:"612"},{i:"61C",f:1},{i:"61M",f:1}],".tab-bd-con":[{i:"613",f:2,p:{level:2}},{i:"61D",f:2,p:{level:2}},{i:"61N",f:2,p:{level:2}}]}],"#layout-ent":[{".tab-hd-con":[{i:"622"},{i:"62C"},{i:"62M",f:1}],".tab-bd-con":[{i:"623",f:2,p:{level:2}},{i:"62D",f:2,p:{level:2}},{i:"62N",f:2,p:{level:2}}]}],"#layout-t":[{"":[{i:"631",f:1}]}],"#layout-newv":[{"":[{i:"641",f:1}]}]},0,{"#layout-auto":[{".tab-hd-con":[{i:"812"},{i:"81C"},{i:"81M"}],".tab-bd-con":[{i:"813",f:2,p:{level:2}},{i:"81D",f:2,p:{level:2}},{i:"81N",f:2,p:{level:2}}]}],"#layout-auto2":[{".tab-hd-con":[{i:"822",f:1},{i:"82C"},{i:"82M"}],".tab-bd-con":[{i:"823",f:2,p:{level:2}},{i:"82D",f:2,p:{level:2}},{i:"82N",f:2,p:{level:2}}]}],".ad-h150":[{"":[{i:"831"}]}]},{"#layout-tech":[{".tab-hd-con":[{i:"912"},{i:"91C"},{i:"91M"}],".tab-bd-con":[{i:"913",f:2,p:{level:2}},{i:"91D",f:2,p:{level:2}},{i:"91N",f:2,p:{level:2}}]}],"#layout-digi":[{".tab-hd-con":[{i:"922"},{i:"92C"},{i:"92M",f:1}],".tab-bd-con":[{i:"923",f:2,p:{level:2}},{i:"92D",f:2,p:{level:2}},{i:"92N",f:2,p:{level:2}}]}],"#layout-love":[{"":[{i:"931",f:1}]}]},{"#layout-house":[{".tab-hd-con":[{i:"A12"},{i:"A1C",f:1},{i:"A1M"}],".tab-bd-con":[{i:"A13",f:2,p:{level:2}},{i:"A1D",f:2,p:{level:2}},{i:"A1N",f:2,p:{level:2}}]}],"#layout-home":[{".tab-hd-con":[{i:"A22"},{i:"A2C"},{i:"A2M"}],".tab-bd-con":[{i:"A23",f:2,p:{level:2}},{i:"A2D",f:2,p:{level:2}},{i:"A2N",f:2,p:{level:2}}]}],"#layout-shop":[{".tab-hd-con":[{i:"A32"},{i:"A3C"},{i:"A3M"}],".tab-bd-con":[{i:"A33",f:2,p:{level:2}},{i:"A3D",f:2,p:{level:2}}],"#js_huihui":[{i:"A3N",f:2,p:{level:2}}]}]},{"#layout-lady":[{".tab-hd-con":[{i:"B12"},{i:"B1C"},{i:"B1M"}],".tab-bd-con":[{i:"B13",f:2,p:{level:2}},{i:"B1D",f:2,p:{level:2}},{i:"B1N",f:2,p:{level:2}}]}],"#layout-fashion":[{".tab-hd-con":[{i:"B22"},{i:"B2C"},{i:"B2M",f:1}],".tab-bd-con":[{i:"B23",f:2,p:{level:2}},{i:"B2D",f:2,p:{level:2}},{i:"B2N",f:2,p:{level:2}}]}],"#layout-travel":[{".tab-hd-con":[{i:"B32"},{i:"B3C"},{i:"B3M"}],".tab-bd-con":[{i:"B33",f:2,p:{level:2}},{i:"B3D",f:2,p:{level:2}},{i:"B3N",f:2,p:{level:2}}]}],"#layout-edu":[{".tab-hd-con":[{i:"B42"},{i:"B4C"},{i:"B4M"}],".tab-bd-con":[{i:"B43",f:2,p:{level:2}},{i:"B4D",f:2,p:{level:2}},{i:"B4N",f:2,p:{level:2}}]}],"#layout-game":[{".tab-hd-con":[{i:"B52"},{i:"B5C",f:1},{i:"B5M"}],".tab-bd-con":[{i:"B53",f:2,p:{level:2}},{i:"B5D",f:2,p:{level:2}},{i:"B5N",f:2,p:{level:2}}]}]},0,0,{"#layout-dy":[{".tab-hd-con":[{i:"D12"},{i:"D1C"},{i:"D1M"}],".tab-bd-con":[{i:"D13",f:2,p:{level:2}},{i:"D1D",f:2,p:{level:2}},{i:"D1N",f:2,p:{level:2}}]}],"#layout-bobo":[{".tab-hd-con":[{i:"D22"},{i:"D2C"},{i:"D2M"}],".tab-bd-con":[{i:"D23",f:2,p:{level:2}},{i:"D2D",f:2,p:{level:2}},{i:"D2N",f:2,p:{level:2}}]}],"#layout-social":[{".tab-hd-con":[{i:"D32"},{i:"D3C"},{i:"D3M"}],".tab-bd-con":[{i:"D33",f:2,p:{level:2}},{i:"D3D",f:2,p:{level:2}},{i:"D3N",f:2,p:{level:2}}]}],"#layout-book":[{".tab-hd-con":[{i:"D42"},{i:"D4C"},{i:"D4M"}],".tab-bd-con":[{i:"D43",f:2,p:{level:2}},{i:"D4D",f:2,p:{level:2}},{i:"D4N",f:2,p:{level:2}}]}],"#layout-house2":[{".tab-hd-con":[{i:"D52"},{i:"D5C"},{i:"D5M"}],".tab-bd-con":[{i:"D53",f:2,p:{level:2}},{i:"D5D",f:2,p:{level:2}},{i:"D5N",f:2,p:{level:2}}]}],"#layout-trends":[{"":[{i:"D61",f:1}]}]}],".area-main":[0,0,{"#layout-money":[{".tab-hd-con":[{i:"712"},{i:"71C"},{i:"71M"}],".tab-bd-con":[{i:"713",f:2,p:{level:2}},{i:"71D",f:2,p:{level:2}},{i:"71N",f:2,p:{level:2}}]}],"#layout-money2":[{".tab-hd-con":[{i:"722"},{i:"72C"},{i:"72M"}],".tab-bd-con":[{i:"723",f:2,p:{level:2}},{i:"72D",f:2,p:{level:2}},{i:"72N",f:2,p:{level:2}}]}]},0,0,0,0,{"#layout-blog":[{".tab-hd-con":[{i:"C12"},{i:"C1C"},{i:"C1M"}],".tab-bd-con":[{i:"C13",f:2,p:{level:2}},{i:"C1D",f:2,p:{level:2}},{i:"C1N",f:2,p:{level:2}}]}],"#layout-bbs":[{".tab-hd-con":[{i:"C22"},{i:"C2C"},{i:"C2M"}],".tab-bd-con":[{i:"C23",f:2,p:{level:2}},{i:"C2D",f:2,p:{level:2}},{i:"C2N",f:2,p:{level:2}}]}]}],"#layout-photo":[{"":[{".tab-hd-con":[{i:"E12"},{i:"E1C"},{i:"E1M"},{i:"E1W"},{i:"E1g"},{i:"E1q"}],".tab-bd-con":[{i:"E13",f:2,p:{level:2}},{i:"E1D",f:2,p:{level:2}},{i:"E1N",f:2,p:{level:2}},{i:"E1X",f:2,p:{level:2}},{i:"E1h",f:2,p:{level:2}},{i:"E1r",f:2,p:{level:2}}]}]}],".main":[{".sitemap-info":[{"":[{i:"F11"}]}],".sitemap-con":[{"":[{i:"F21",f:1}]},{"":[{i:"F31",f:1}]},{"":[{i:"F41",f:1}]},{"":[{i:"F51",f:1}]},{"":[{i:"F61",f:1}]},{"":[{i:"F71",f:1}]},{"":[{i:"F81",f:1}]},{"":[{i:"F91",f:1}]},{"":[{i:"FA1",f:1}]},{"":[{i:"FB1",f:1}]},{"":[{i:"FC1",f:1}]}],".sitemap-flink":[{"":[{i:"FD1"}]}],tbody:[{td:[{i:"FE1",f:1,s:4}]}]}],".footer":[{"":[{"":[{i:"G11",f:1}]}]}],"#js_passportUserNameList":[{"":[{"":[{i:"H11"}]}]}]})},50)}();</script>
+<!-- big data analysis -->
+<script src="http://img1.cache.netease.com/f2e/products/analysis/js/analysis.350ctAoOoFtN.3.js"></script><script type="text/javascript">
+// house 
+NTES.ready(function(){
+            function PopUpLayer(ctrl, content) {
+                var timerId;
+                var hide = function() {
+                    content.style.display = "none";
+                    ctrl.removeCss("N-houseMenu-select-over");
+                };
+                this.hide = function(event) {
+                    timerId = setTimeout(hide, 150);
+                };
+                ctrl.addEvent("mouseover", function() { content.style.display = "block"; ctrl.addCss("N-houseMenu-select-over"); });
+                ctrl.addEvent("mouseout", this.hide);
+                content.addEvent("mouseout", this.hide);
+                content.addEvent("mouseover", function() { clearTimeout(timerId); });
+            }
+            var housePopLayer = new PopUpLayer($("#H-house-selectcity-menu"),$("#H-house-selectcity"));
+            //end
+            //头图定向
+            NTES.ajax.importJs("http://ipservice.163.com/ipquery",function(){
+                var houseNewsOrientation = {
+                    bj:{
+                        province:"北京市|山东省|山西省|河北省|河南省|内蒙古|陕西省|黑龙江省|辽宁省|吉林省|天津市|台湾",
+                                    title:"《华人在海外》:被'遗弃'的中国女孩们",
+                    url:"http://vhouse.163.com/photoview/5LTA0029/32717.html",
+                    pimg:"http://img4.cache.netease.com/edu/2014/11/21/201411211423337b066.jpg"
+                    },
+        sh:{
+    province:"上海市|江苏省|浙江省|安徽省|福建省|江西省",
+                        title:"《华人在海外》:被'遗弃'的中国女孩们",
+        url:"http://vhouse.163.com/photoview/5LTA0029/32717.html",
+        pimg:"http://img4.cache.netease.com/edu/2014/11/21/201411211423337b066.jpg"
+},
+gz:{
+    province:"湖南省|湖北省|广东省|贵州省|云南省|广西|甘肃省|青海省|宁夏|西藏|香港|澳门",
+                        title:"《华人在海外》:被'遗弃'的中国女孩们",
+        url:"http://vhouse.163.com/photoview/5LTA0029/32717.html",
+        pimg:"http://img4.cache.netease.com/edu/2014/11/21/201411211423337b066.jpg"
+},
+   hn:{
+            province:"四川省|重庆市|海南省|新疆",
+                                     title:"揭秘北京富人区 名人大腕儿都住哪儿",
+             url:"http://bbs.hn.house.163.com/photoalbum/hainanyz/476456620.html",
+             pimg:"http://img2.cache.netease.com/house/2014/11/22/201411221016159d01c.jpg"
+                      }
+};
+var loc;
+for(key in houseNewsOrientation){
+    if(houseNewsOrientation[key].province.indexOf(localAddress.province) != -1){
+        loc = key.toString();
+    }
+}
+if(loc){
+    $("#houseNewsIP").innerHTML = '<a href="'+ houseNewsOrientation[loc]["url"] + '"><img src="' + houseNewsOrientation[loc]["pimg"] + '" alt="' + houseNewsOrientation[loc]["title"] + '" width="310" height="220"><p class="pos-abs">' + houseNewsOrientation[loc]["title"] + '</p></a>';
+}
+});
+//end
+var HouseConfig = {
+        ip: "http://ipservice.163.com/ipquery",
+        cookieName: "locOfCity",
+        city: [{
+             name: "广州",
+             url2_2_name:"电商",
+             url1: "http://gz.house.163.com/",
+             url2: "http://xf.house.163.com/gz/#163-2-MF",
+             url2_2:"http://e.house.163.com/gz/",
+             url3:"http://bbs.gz.house.163.com/",
+             src1: "/special/00774IMH/n_house_gz_01.html",
+             src2: "/special/00774IMH/n_house_gz_02_201401.html",
+             src3: "/special/00774IMH/n_house_gz_03.html",
+             str:"gz",
+         zystr:"zygz"
+        },  { 
+             name: "中山", 
+             url2_2_name:"", 
+             url1: "http://zs.house.163.com/", 
+             url2: "http://zs.house.163.com/xf", 
+             url2_2:"", 
+             url3:"", 
+             src1: "/special/00774ISL/0219_163ws1.html", 
+             src2: "/special/00774ISL/0219_163ws2.html", 
+             src3: "", 
+             str:"zs"
+        },{ 
+             name: "漳州", 
+             url2_2_name:"", 
+             url1: "http://zhangzhou.house.163.com/", 
+             url2: "http://zhangzhou.house.163.com/xf", 
+             url2_2:"", 
+             url3:"http://zhangzhou.house.163.com/special/027705GN/bbs.html", 
+             src1: "/special/00774ISL/0277_163ws1.html", 
+             src2: "/special/00774ISL/0277_163ws2.html", 
+             src3: "/special/00774ISL/0277_163ws3.html", 
+             str:"zhangzhou"
+       },  {
+            name: "佛山",
+            url2_2_name:"",
+            url1: "http://fs.house.163.com/",
+            url2: "",
+            url2_2:"",
+            url3:"",
+            src1: "/special/00774ISL/0220_163ws1.html",
+            src2: "",
+            src3:"",
+            str:"fs"
+        }, {
+            name: "珠海",
+            url2_2_name:"",
+            url1: "http://zh.house.163.com/",
+            url2: "",
+            url2_2:"",
+            url3:"",
+            src1: "/special/00774ISL/0221_163ws1.html",
+            src2: "",
+            src3:"",
+            str:"zh"
+        },{
+            name: "东莞",
+            url2_2_name:"",
+            url1: "http://sz.house.163.com/",
+            url2: "http://xf.house.163.com/sz/#163-2-MF",
+            url2_2:"",
+            url_3_name:"楼盘大全",
+            url3: "http://xf.house.163.com/sz/search#163-3-LPDQ",
+            src1: "/special/00774IMH/n_house_sz_01_201405.html",
+            src2: "/special/00774IMH/n_house_sz_02_201405.html",
+            src3:"/special/00774IMH/n_house_sz_03_201405.html",
+            str:"sz"
+        }, {
+            name: "惠州",
+            url2_2_name:"",
+            url1: "http://sz.house.163.com/",
+            url2: "http://xf.house.163.com/sz/#163-2-MF",
+            url2_2:"",
+            url_3_name:"楼盘大全",
+            url3: "http://xf.house.163.com/sz/search#163-3-LPDQ",
+            src1: "/special/00774IMH/n_house_sz_01_201405.html",
+            src2: "/special/00774IMH/n_house_sz_02_201405.html",
+            src3:"/special/00774IMH/n_house_sz_03_201405.html",
+            str:"sz"
+        }, {
+            name: "深圳",
+            url2_2_name:"电商",
+            url1: "http://sz.house.163.com/",
+            url2: "http://xf.house.163.com/sz/#163-2-MF",
+            url2_2:"http://sz.house.163.com/special/szehouse/",
+            url_3_name:"楼盘大全",
+            url3: "http://xf.house.163.com/sz/search#163-3-LPDQ",
+            src1: "/special/00774IMH/n_house_sz_01_201405.html",
+            src2: "/special/00774IMH/n_house_sz_02_201405.html",
+            src3:"/special/00774IMH/n_house_sz_03_201405.html",
+            str:"sz",
+            zystr:"zysz"
+        },{
+            name: "肇庆",
+            url2_2_name:"",
+            url1: "http://zq.house.163.com/",
+            url2: "",
+            url2_2:"",
+            url3:"",
+            src1: "/special/00774ISL/0222_163ws1.html",
+            src2: "",
+            src3:"",
+            str:"zq"
+        },{
+            name: "海南",
+            url2_2_name:"",
+            url1: "http://hn.house.163.com/",
+            url2: "http://hn.house.163.com/xf",
+            url2_2:"",
+            url_3_name:"楼盘大全",
+            url3: "http://hn.house.163.com/xf",
+            src1: "/special/00774IMH/n_house_hn_01.html",
+            src2: "/special/00774IMH/n_house_hn_02.html",
+            src3:"/special/00774IMH/n_house_hn_03.html",
+            str:"hn"
+        }, {
+            name: "长沙",
+            url2_2_name:"",
+            url1: "http://cs.house.163.com/",
+            url2: "http://cs.house.163.com/xf",
+            url2_2:"",
+            url3:"http://cs.house.163.com/",
+            src1: "/special/00774ISL/0211_163ws1.html",
+            src2: "/special/00774ISL/0211_163ws2.html",
+            src3: "/special/00774ISL/0211_163ws3.html",
+            str:"cs"
+        },{
+            name: "武汉",
+            url2_2_name:"",
+            url1: "http://wh.house.163.com/",
+            url2: "http://xf.house.163.com/wh/search/0-0-0-0-0-0-0-0-1.html",
+            url2_2:"",
+            url3:"",
+            src1: "/special/00774ISL/0209_163ws1.html",
+            src2: "/special/00774ISL/0209_163ws2.html",
+            src3: "/special/00774ISL/0209_163ws3.html",
+            str:"wh"
+        }, {
+            name: "西安",
+            url2_2_name:"",
+            url1: "http://xa.house.163.com/",
+            url2: "http://xf.house.163.com/xa/search/0-0-0-0-0-0-0-0-1.html",
+            url2_2:"",
+            url3:"",
+            src1: "/special/00774ISL/0215_163ws1.html",
+            src2: "/special/00774ISL/0215_163ws2.html",
+            src3: "/special/00774ISL/0215_163ws3.html",
+            str:"xa"
+        }, {
+            name: "沈阳",
+            url2_2_name:"",
+            url1: "http://sy.house.163.com/",
+            url2: "http://xf.house.163.com/sy/search/0-0-0-0-0-0-0-0-1.html",
+            url2_2:"",
+            url3:"",
+            src1: "/special/00774IMH/n_house_sy_01.html",
+            src2: "/special/00774IMH/n_house_sy_02.html",
+            src3:"",
+            str:"sy"
+         }, {
+             name: "大连",
+             url2_2_name:"",
+             url1: "http://dl.house.163.com/",
+             url2: "http://dl.house.163.com/xf",
+             url2_2:"",
+             url_3_name:"楼盘大全",
+             url3:"http://xf.house.163.com/bj/search#163-3-LPDQ",
+             src1: "/special/00774ISL/0205_163ws1.html",
+             src2: "/special/00774ISL/0205_163ws2.html",
+             src3:"/special/00774IMH/n_house_bj_03_201405.html",
+             str:"dl"
+        },{
+             name: "郑州",
+             url2_2_name:"",
+             url1: "http://zz.house.163.com/",
+             url2: "http://xf.house.163.com/zz/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1: "/special/00774ISL/0244_163ws1.html",
+             src2: "/special/00774ISL/0244_163ws2.html",
+             src3: "/special/00774IMH/n_house_zz_03.html",
+             str:"zz"
+        },{
+             name: "乌鲁木齐",
+             url2_2_name:"",
+             url1: "http://wlmq.house.163.com/",
+             url2: "http://xf.house.163.com/wlmq/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1: "/special/00774ISL/0241_163ws1.html",
+             src2: "/special/00774ISL/0241_163ws2.html",
+             src3:"",
+             str:"wlmq"
+        },{
+             name: "兰州",
+             url2_2_name:"",
+             url1: "http://lz.house.163.com/",
+             url2: "http://xf.house.163.com/lz/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1: "/special/00774ISL/0243_163ws1.html",
+             src2: "/special/00774ISL/0243_163ws2.html",
+             src3:"",
+             str:"lz"
+         },{
+             name: "西宁",
+             url2_2_name:"",
+             url1: "http://xn.house.163.com/",
+             url2: "http://xf.house.163.com/xn/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1: "/special/00774ISL/0246_163ws1.html",
+             src2: "/special/00774ISL/0246_163ws2.html",
+             src3:"",
+             str:"xn"
+         },{
+             name: "石家庄",
+             url2_2_name:"电商",
+             url1: "http://sjz.house.163.com/",
+             url2: "http://xf.house.163.com/sjz/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"http://sjz.house.163.com/special/02390MM8/fangyigou.html",
+             url3:"http://sjz.house.163.com/special/0239034P/luntanshoue.html",
+             src1: "/special/00774ISL/0239_163ws1.html",
+             src2: "/special/00774ISL/0239_163ws2.html",
+             src3: "/special/00774ISL/0239_163ws3.html",
+             str:"sjz"
+        },{
+            name: "北京",
+            url2_2_name:"电商",
+            url1: "http://bj.house.163.com/",
+            url2: "http://xf.house.163.com/bj/#163-2-MF",
+            url2_2:"http://e.house.163.com/bj/",
+            url_3_name:"楼盘大全",
+            url3:"http://xf.house.163.com/bj/search#163-3-LPDQ",
+            src1:"/special/00774IMH/n_house_bj_01_201405.html",
+            src2:"/special/00774IMH/n_house_bj_02_201405.html",
+            src3:"/special/00774IMH/n_house_bj_03_201405.html",
+            str:"bj",
+            zystr:"zybj"
+        },{
+             name: "上海",
+             url2_2_name:"",
+             url1: "http://sh.house.163.com/",
+             url2: "http://xf.house.163.com/sh/#163-2-MF",
+             url2_2:"",
+             url_3_name:"楼盘大全",
+             url3: "http://xf.house.163.com/sh/search#163-3-LPDQ",
+             src1: "/special/00774IMH/n_house_sh_01_201404.html",
+             src2: "/special/00774IMH/n_house_sh_02_201404.html",
+             src3: "/special/00774IMH/n_house_sh_03_201404.html",
+             str:"sh",
+           zystr:"zysh"
+        },{
+             name: "成都",
+             url2_2_name:"",
+             url1:"http://cd.house.163.com/",
+             url2:"http://cd.house.163.com/xf/",
+             url2_2:"",
+             url3:"http://cd.house.163.com/special/0224011E/bbs.html",
+             src1:"/special/00774ISL/0224_163ws1.html",
+             src2:"/special/00774ISL/0224_163ws2.html",
+             src3:"/special/00774ISL/0224_163ws3.html",
+             str:"cd",
+         zystr:"zycd"
+        },{
+             name: "重庆",
+             url2_2_name:"",
+             url1:"http://cq.house.163.com/",
+             url2:"http://xf.house.163.com/cq/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774ISL/0202_163ws1.html",
+             src2:"/special/00774ISL/0202_163ws2.html",
+             src3:"/special/00774ISL/0202_163ws3.html",
+             str:"cq",
+         zystr:"zycq"
+        },{
+             name: "哈尔滨",
+             url2_2_name:"",
+             url1:"http://heb.house.163.com/",
+             url2:"http://xf.house.163.com/heb/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774ISL/0218_163ws1.html",
+             src2:"/special/00774ISL/0218_163ws2.html",
+             src3:"",
+             str:"heb"
+        },{
+             name: "长春",
+             url2_2_name:"",
+             url1:"http://cc.house.163.com/",
+             url2:"http://xf.house.163.com/cc/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774ISL/0264_163ws1.html",
+             src2:"/special/00774ISL/0264_163ws2.html",
+             src3:"",
+             str:"cc"
+        },{
+             name: "秦皇岛",
+             url2_2_name:"",
+             url1:"http://qhd.house.163.com/",
+             url2:"http://xf.house.163.com/qhd/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774ISL/0238_163ws1.html",
+             src2:"/special/00774ISL/0238_163ws2.html",
+             src3:"",
+             str:"qhd"
+        },{
+             name: "贵阳",
+             url2_2_name:"",
+             url1:"http://gy.house.163.com/",
+             url2:"http://xf.house.163.com/gy/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774ISL/0242_163ws1.html",
+             src2:"/special/00774ISL/0242_163ws2.html",
+             src3:"",
+             str:"gy"
+        },{
+             name: "桂林",
+             url2_2_name:"",
+             url1:"http://gl.house.163.com/",
+             url2:"http://gl.house.163.com/xf/",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774IMH/n_house_gl_01.html",
+             src2:"/special/00774IMH/n_house_gl_02.html",
+             src3:"",
+             str:"gl"
+         },{
+             name: "南京",
+             url2_2_name:"",
+             url1:"http://nj.house.163.com/",
+             url2:"http://nj.house.163.com/xf/",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774ISL/0203_163ws1.html",
+             src2:"/special/00774ISL/0203_163ws2.html",
+             src3:"/special/00774ISL/0203_163ws3.html",
+             str:"nj"
+        },{
+             name: "杭州",
+             url2_2_name:"",
+             url1:"http://hz.house.163.com/",
+             url2:"http://xf.house.163.com/hz/search/0-0-0-0-0-0-0-0-1.html",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774ISL/0207_163ws1.html",
+             src2:"/special/00774ISL/0207_163ws2.html",
+             src3:"",
+             str:"hz"
+        },{
+             name: "保定",
+             url2_2_name:"",
+             url1:"http://baoding.house.163.com/",
+             url2:"http://baoding.house.163.com/xf/",
+             url2_2:"",
+             url3:"",
+             src1:"/special/00774ISL/0251_163ws1.html",
+             src2:"/special/00774ISL/0251_163ws2.html",
+             src3:"/special/00774ISL/0251_163ws3.html",
+             str:"baoding"
+        },{
+             name: "厦门",
+             url2_2_name:"",
+             url1:"http://fj.house.163.com/",
+             url2:"http://fj.house.163.com/xf/",
+             url2_2:"",
+             url3:"http://fj.house.163.com/special/0273054J/bbs.html",
+             src1:"/special/00774ISL/0273_163ws1.html",
+             src2:"/special/00774ISL/0273_163ws2.html",
+             src3:"/special/00774ISL/0273_163ws3.html",
+             str:"fj"
+        },{  
+             name: "天津", 
+             url2_2_name:"",
+             url1:"http://tj.house.163.com/",
+             url2:"http://tj.house.163.com/xf/", 
+             url2_2:"", 
+             url3:"",
+             src1:"/special/00774ISL/0201_163ws1.html", 
+             src2:"/special/00774ISL/0201_163ws2.html",
+             src3:"", 
+             str:"tj",
+         zystr:"zytj"
+        },{  
+             name: "唐山", 
+             url2_2_name:"",
+             url1:"http://ts.house.163.com/",
+             url2:"http://ts.house.163.com/xf", 
+             url2_2:"", 
+             url3:"",
+             src1:"/special/00774ISL/0240_163ws1.html", 
+             src2:"/special/00774ISL/0240_163ws2.html",
+             src3:"/special/00774ISL/0240_163ws3.html", 
+             str:"ts" 
+        },{  
+             name: "济南", 
+             url2_2_name:"",
+             url1:"http://jn.house.163.com/",
+             url2:"http://jn.house.163.com/xf", 
+             url2_2:"", 
+             url3:"",
+             src1:"/special/00774ISL/0213_163ws1.html", 
+             src2:"/special/00774ISL/0213_163ws2.html",
+             src3:"", 
+             str:"jn" 
+        },{  
+             name: "南通", 
+             url2_2_name:"",
+             url1:"http://nt.house.163.com/",
+             url2:"http://nt.house.163.com/xf", 
+             url2_2:"", 
+             url3:"",
+             src1:"/special/00774ISL/0232_163ws1.html", 
+             src2:"/special/00774ISL/0232_163ws2.html",
+             src3:"", 
+             str:"nt" 
+        },{  
+             name: "泰州", 
+             url2_2_name:"",
+             url1:"http://tz.house.163.com/",
+             url2:"http://tz.house.163.com/xf", 
+             url2_2:"", 
+             url3:"",
+             src1:"/special/00774ISL/0281_163ws1.html", 
+             src2:"/special/00774ISL/0281_163ws2.html",
+             src3:"", 
+             str:"tz" 
+        }, {
+name: "大庆",
+url2_2_name:"",
+url1:"http://daqing.house.163.com/",
+url2:"http://daqing.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0257_163ws1.html",
+src2:"/special/00774ISL/0257_163ws2.html",
+src3:"",
+str:"daqing"
+},{
+name: "牡丹江",
+url2_2_name:"",
+url1:"http://mudanjiang.house.163.com/",
+url2:"http://mudanjiang.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0258_163ws1.html",
+src2:"/special/00774ISL/0258_163ws2.html",
+src3:"",
+str:"mudanjiang"
+},{
+name: "齐齐哈尔",
+url2_2_name:"",
+url1:"http://qiqihaer.house.163.com/",
+url2:"http://qiqihaer.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0259_163ws1.html",
+src2:"/special/00774ISL/0259_163ws2.html",
+src3:"",
+str:"qiqihaer"
+},{
+name: "佳木斯",
+url2_2_name:"",
+url1:"http://jiamusi.house.163.com/",
+url2:"http://jiamusi.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0260_163ws1.html",
+src2:"/special/00774ISL/0260_163ws2.html",
+src3:"",
+str:"jiamusi"
+},{
+name: "鸡西",
+url2_2_name:"",
+url1:"http://jixi.house.163.com/",
+url2:"http://jixi.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0261_163ws1.html",
+src2:"/special/00774ISL/0261_163ws2.html",
+src3:"",
+str:"jixi"
+},{
+name: "徐州",
+url2_2_name:"",
+url1:"http://xz.house.163.com/",
+url2:"http://xz.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0280_163ws1.html",
+src2:"/special/00774ISL/0280_163ws2.html",
+src3:"/special/00774ISL/0280_163ws3.html",
+str:"xz"
+},{
+name: "温州",
+url2_2_name:"",
+url1:"http://wz.house.163.com/",
+url2:"http://wz.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0283_163ws1.html",
+src2:"/special/00774ISL/0283_163ws2.html",
+src3:"",
+str:"wz"
+},{
+             name: "太原",
+             url2_2_name:"",
+             url1:"http://ty.house.163.com/",
+             url2:"http://ty.house.163.com/xf",
+             url2_2:"",
+             url3:"http://bbs.gz.house.163.com/list/taiyuan.html",
+             src1:"/special/00774ISL/0263_163ws1.html",
+             src2:"/special/00774ISL/0263_163ws2.html",
+             src3:"/special/00774ISL/0263_163ws3.html",
+             str:"ty"
+         },{
+name: "云南",
+url2_2_name:"",
+url1:"http://yn.house.163.com/",
+url2:"http://yn.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0268_163ws1.html",
+src2:"/special/00774ISL/0268_163ws2.html",
+src3:"",
+str:"yn"
+},{
+name: "南昌",
+url2_2_name:"",
+url1:"http://nc.house.163.com/",
+url2:"http://nc.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0262_163ws1.html",
+src2:"/special/00774ISL/0262_163ws2.html",
+src3:"",
+str:"nc"
+},{
+name: "扬州",
+url2_2_name:"",
+url1:"http://yz.house.163.com/",
+url2:"http://yz.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0231_163ws1.html",
+src2:"/special/00774ISL/0231_163ws2.html",
+src3:"/special/00774ISL/0231_163ws3.html",
+str:"yz"
+},{
+name: "常州",
+url2_2_name:"",
+url1:"http://cz.house.163.com/",
+url2:"",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0230_163ws1.html",
+src2:"/special/00774ISL/0230_163ws2.html",
+src3:"",
+str:"cz"
+},{
+name: "无锡",
+url2_2_name:"",
+url1:"http://wx.house.163.com/",
+url2:"http://wx.house.163.com/xf/",
+url2_2:"",
+url3:"http://wx.house.163.com/bbs/",
+src1:"/special/00774ISL/0212_163ws1.html",
+src2:"/special/00774ISL/0212_163ws2.html",
+src3:"/special/00774ISL/0212_163ws3.html",
+str:"wx"
+},{
+name: "青岛",
+url2_2_name:"",
+url1:"http://qd.house.163.com/",
+url2:"http://qd.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0210_163ws1.html",
+src2:"/special/00774ISL/0210_163ws2.html",
+src3:"",
+str:"qd"
+},{
+name: "赣州",
+url2_2_name:"",
+url1:"http://ganzhou.house.163.com/",
+url2:"http://ganzhou.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0292_163ws1.html",
+src2:"/special/00774ISL/0292_163ws2.html",
+src3:"",
+str:"ganzhou"
+},{
+name: "呼和浩特",
+url2_2_name:"",
+url1:"http://hhht.house.163.com/",
+url2:"http://hhht.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0297_163ws1.html",
+src2:"/special/00774ISL/0297_163ws2.html",
+src3:"",
+str:"hhht"
+},{
+name: "东营",
+url2_2_name:"",
+url1:"http://dy.house.163.com/",
+url2:"http://dy.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0282_163ws1.html",
+src2:"/special/00774ISL/0282_163ws2.html",
+src3:"",
+str:"dy"
+},{
+name: "九江",
+url2_2_name:"",
+url1:"http://jiujiang.house.163.com/",
+url2:"http://jiujiang.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0300_163ws1.html",
+src2:"/special/00774ISL/0300_163ws2.html",
+src3:"",
+str:"jiujiang"
+},{
+name: "承德",
+url2_2_name:"",
+url1:"http://chengde.house.163.com/",
+url2:"http://chengde.house.163.com/xf/",
+url2_2:"",
+url3:"http://chengde.house.163.com/special/025203N8/bbs.html",
+src1:"/special/00774ISL/0252_163ws1.html",
+src2:"/special/00774ISL/0252_163ws2.html",
+src3:"/special/00774ISL/0252_163ws3.html",
+str:"chengde"
+},{
+name: "临沂",
+url2_2_name:"",
+url1:"http://linyi.house.163.com/",
+url2:"http://linyi.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0293_163ws1.html",
+src2:"/special/00774ISL/0293_163ws2.html",
+src3:"",
+str:"linyi"
+},{
+name: "银川",
+url2_2_name:"",
+url1:"http://yinchuan.house.163.com/",
+url2:"http://yinchuan.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0245_163ws1.html",
+src2:"/special/00774ISL/0245_163ws2.html",
+src3:"",
+str:"yinchuan"
+},{
+name: "衡水",
+url2_2_name:"",
+url1:"http://hengshui.house.163.com/",
+url2:"http://hengshui.house.163.com/xf/",
+url2_2:"",
+url3:"http://hengshui.house.163.com/special/025303NM/bbs.html",
+src1:"/special/00774ISL/0253_163ws1.html",
+src2:"/special/00774ISL/0253_163ws2.html",
+src3:"/special/00774ISL/0253_163ws3.html",
+str:"hengshui"
+},{
+name: "福州",
+url2_2_name:"",
+url1:"http://fz.house.163.com/",
+url2:"http://fz.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0214_163ws1.html",
+src2:"/special/00774ISL/0214_163ws2.html",
+src3:"",
+str:"fz"
+},{
+name: "苏州",
+url2_2_name:"",
+url1:"http://suzhou.house.163.com/",
+url2:"http://suzhou.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0216_163ws1.html",
+src2:"/special/00774ISL/0216_163ws2.html",
+src3:"",
+str:"suzhou"
+},{
+name: "南宁",
+url2_2_name:"",
+url1:"http://nn.house.163.com/",
+url2:"http://nn.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0266_163ws1.html",
+src2:"/special/00774ISL/0266_163ws2.html",
+src3:"",
+str:"nn"
+},{
+name: "泉州",
+url2_2_name:"",
+url1:"http://qz.house.163.com/",
+url2:"http://xf.house.163.com/qz/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0275_163ws1.html",
+src2:"/special/00774ISL/0275_163ws2.html",
+src3:"",
+str:"qz"
+},{
+name: "菏泽",
+url2_2_name:"",
+url1:"http://heze.house.163.com/",
+url2:"http://heze.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0289_163ws1.html",
+src2:"/special/00774ISL/0289_163ws2.html",
+src3:"",
+str:"heze"
+},{
+name: "威海",
+url2_2_name:"",
+url1:"http://weihai.house.163.com/",
+url2:"http://weihai.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0270_163ws1.html",
+src2:"/special/00774ISL/0270_163ws2.html",
+src3:"",
+str:"weihai"
+},{
+name: "淮安",
+url2_2_name:"",
+url1:"http://ha.house.163.com/",
+url2:"http://xf.house.163.com/ha/search/0-0-0-0-0-0-0-0-0-0-1.html",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0313_163ws1.html",
+src2:"/special/00774ISL/0313_163ws2.html",
+src3:"",
+str:"ha"
+},{
+name: "宜春",
+url2_2_name:"",
+url1:"http://yichun.house.163.com/",
+url2:"http://yichun.house.163.com/xf/",
+url2_2:"",
+url3:"",
+src1:"/special/00774ISL/0314_163ws1.html",
+src2:"/special/00774ISL/0314_163ws2.html",
+src3:"",
+str:"yichun"
+},{
+             name: "合肥", 
+             url2_2_name:"", 
+             url1: "http://hf.house.163.com/", 
+             url2: "http://hf.house.163.com/xf", 
+             url2_2:"", 
+             url_3_name:"房产论坛",
+             url3:"http://bbs.gz.house.163.com/", 
+             src1: "/special/00774ISL/0217_163ws1.html", 
+             src2: "/special/00774ISL/0217_163ws2.html", 
+             src3: "/special/00774ISL/0217_163ws3.html", 
+             str:"hf"
+},{
+name: "沧州",
+url2_2_name:"",
+url1:"http://cangzhou.house.163.com/",
+url2:"http://cangzhou.house.163.com/xf/",
+url2_2:"",
+url_3_name:"楼盘大全",
+url3:"http://xf.house.163.com/bj/search#163-3-LPDQ",
+src1:"/special/00774ISL/0254_163ws1.html",
+src2:"/special/00774ISL/0254_163ws2.html",
+src3:"/special/00774IMH/n_house_bj_03_201405.html",
+str:"cangzhou"
+}
+        ],
+        province: [{
+            name: "北京市|河南省|内蒙古|陕西省|黑龙江省|辽宁省|吉林省",
+            str:"bj"
+        }, {
+            name: "上海市|安徽省|江西省",
+            str:"sh"
+        }, {
+            name: "浙江省",
+            str:"hz"
+        }, {
+            name: "河北省",
+            str:"sjz"
+        }, {
+            name: "云南省",
+            str:"yn"
+        }, {
+            name: "四川省|西藏",
+            str:"cd"
+        }, {
+            name: "福建省",
+            str:"fj"
+        }, {
+            name: "山西省",
+            str:"ty"
+        },{
+            name: "山东省",
+            str:"jn"
+        },{
+            name: "江苏省",
+            str:"nj"
+        }, {
+            name: "重庆市",
+            str:"cq"
+        }, {
+            name: "天津市",
+            str:"tj"
+        }, {
+            name: "海南省",
+            str:"hn"
+        },{
+            name: "广西",
+            str:"gx"
+        },{
+            name: "湖北省|广东省|贵州省|甘肃省|青海省|宁夏省|新疆",
+            str:"gz"
+        }],
+        defaultCity: {//默认为广州
+            str:"gz"
+        },
+        vars:{
+            cityLen:"",
+            provinceLen:"",
+            tab_1:$("#layout-house .tab-hd-con a")[0], 
+            tab_2:$("#layout-house .tab-hd-con a")[1],
+            tab_2_2:$("#layout-house .tab-hd-con a")[2],
+            tab_3:$("#layout-house .tab-hd-con a")[3],
+            content_1:$("#layout-house div.tab-bd-con")[0], 
+            content_2:$("#layout-house div.tab-bd-con")[1],
+            content_3:$("#layout-house div.tab-bd-con")[2]
+        }
+    }
+var House = {
+    setLocalCity: function(locCode) {
+        var i = -1,
+                name_1, url_1, url_2, url_2_2, url2_2_name, url_3, url_3_name, loadContent1, loadContent2, loadContent3, zytrackStr, zytrackName;
+        while (++i < HouseConfig.vars.cityLen) {
+            if (locCode == HouseConfig.city[i].str) {
+                HouseConfig.city[i].name.length > 2 ? name_1 = HouseConfig.city[i].name: name_1 = HouseConfig.city[i].name + "房产";
+                url_1 = HouseConfig.city[i].url1;
+                url2_2_name = HouseConfig.city[i].url2_2_name;
+                HouseConfig.city[i].url2 ? url_2 = HouseConfig.city[i].url2: url_2 = HouseConfig.city[0].url2;
+                url_2_2 = HouseConfig.city[i].url2_2;
+                HouseConfig.city[i].url3 ? url_3 = HouseConfig.city[i].url3: url_3 = HouseConfig.city[0].url3;
+                url_3_name = HouseConfig.city[i].url_3_name || "房产论坛";
+                loadContent1 = HouseConfig.city[i].src1;
+                HouseConfig.city[i].src2 ? loadContent2 = HouseConfig.city[i].src2: loadContent2 = HouseConfig.city[0].src2;
+                HouseConfig.city[i].src3 ? loadContent3 = HouseConfig.city[i].src3: loadContent3 = HouseConfig.city[0].src3;
+                if (HouseConfig.city[i].zystr) {
+                    zytrackStr = HouseConfig.city[i].zystr;
+                    zytrackName = HouseConfig.city[i].name;
+                }
+            }
+        }
+        HouseConfig.vars.tab_1.innerHTML = name_1;
+        HouseConfig.vars.tab_1.href = url_1;
+        HouseConfig.vars.tab_2.href = url_2;
+        HouseConfig.vars.tab_2_2.innerHTML = url2_2_name;
+        HouseConfig.vars.tab_2_2.href = url_2_2;
+        HouseConfig.vars.tab_3.href = url_3;
+        HouseConfig.vars.tab_3.innerHTML = url_3_name;
+        function house_content_zytrack(){
+            if (zytrackStr) {
+                var links = $("#layout-house div.tab-bd-con")[0].getElementsByTagName("a");
+                var linkslen = links.length;
+                var str = "163.com";
+                for (var i = 0; i < linkslen; i++) {
+                    if ($(links[i]).getAttribute("href").indexOf(str) == -1) {
+                        $(links[i]).addCss("for-zytrack");
+                    }
+                }
+                neteaseClickTracker($(".for-zytrack"), false, "http://click.house.163.com/" + zytrackStr, zytrackName + "中原", "house8zy");
+            }
+        }
+        function house_content_subtab(){
+            if ($(".house-subtab").length > 0) {
+                new NTES.ui.Slide($(".house-subtab-hd  div.switchover"), $(".house-subtab-bd > div.js-house-subtab-bd-con-1"), "current", "click");
+                if ($(".house-subtab-hd-more").length > 0) {
+                    $(".house-subtab-hd  div.switchover").addEvent("click",
+                            function() {
+                                for (var i = 0; i < $(".house-subtab-bd > div.js-house-subtab-bd-con-2").length; i++) {
+                                    $($(".house-subtab-bd > div.js-house-subtab-bd-con-2")[i]).removeCss("current");
+                                    $(".house-subtab-hd-more").removeCss("house-subtab-hd-more-active");
+                                }
+                            });
+                    function PopUpLayer(ctrl, content) {
+                        var timerId;
+                        var hide = function() {
+                            content.style.display = "none";
+                        };
+                        this.hide = function(event) {
+                            timerId = setTimeout(hide, 150);
+                        };
+                        ctrl.addEvent("click",
+                                function() {
+                                    content.style.display = "block";
+                                    $(".house-subtab-hd-more").addCss("house-subtab-hd-more-active");
+                                    for (var i = 0; i < $(".house-subtab-hd  div.switchover").length; i++) {
+                                        $($(".house-subtab-hd  div.switchover")[i]).removeCss("current");
+                                    }
+                                });
+                        ctrl.addEvent("mouseout", this.hide);
+                        content.addEvent("mouseout", this.hide);
+                        content.addEvent("mouseover",
+                                function() {
+                                    clearTimeout(timerId);
+                                    $("#house-pop-moredetail  a").addEvent("click",function() {
+                                        for (var i = 0; i < $(".house-subtab-bd > div.js-house-subtab-bd-con-1").length; i++) {
+                                            $($(".house-subtab-bd > div.js-house-subtab-bd-con-1")[i]).removeCss("current");
+                                        }
+                                    });
+                                    new NTES.ui.Slide($("#house-pop-moredetail  a"), $(".house-subtab-bd > div.js-house-subtab-bd-con-2"), "current", "click");
+                                });
+                    }
+                    var housePopLayer = new PopUpLayer($("#house-pop-more"), $("#house-pop-moredetail"));
+                }
+            }
+        }
+        function house_content_search(){
+            if($(".house-search").length > 0){
+                // 新房搜索
+                var houseCityKeyName = locCode;
+                NTES.ajax.importJs("http://xf.house.163.com/" + houseCityKeyName + "/xf/include/" + houseCityKeyName + "/xf_search.html",
+                        function() {
+                            var newHouseForm = function(fobj, keyword, order) {
+                                var formSearch = fobj;
+                                var selKeyword = keyword;
+                                selKeyword.defaultVal = selKeyword.value;
+                                var autoclpT2 = '';
+                                var keyworldchar = '';
+                                var cache = new Array();
+                                var objt = {};
+                                var loaded = false;
+                                var loadedli = {};
+                                var linow = 0;
+                                var liLen = 0;
+                                formSearch.addEvent("submit",
+                                        function() {
+                                            if (selKeyword.value == selKeyword.defaultVal) {
+                                                selKeyword.value = '';
+                                            }
+                                            var url = "http://xf.house.163.com/" + houseCityKeyName + "/search/0-0-0-0-0-0-0-0-0-1-1.html";
+                                            if (selKeyword.value) url += "?keyword=" + selKeyword.value.trim();
+                                            url = encodeURI(url);
+                                            url = encodeURI(url);
+                                            window.open(url);
+                                            return false;
+                                        });
+                                var iniHtml = function() {
+                                    clearTimeout(autoclpT2);
+                                    var data = cache["'" + keyworldchar + "'"];
+                                    var len = data.length;
+                                    if (len > 0) {
+                                        var i = 0;
+                                        var html = '';
+                                        while (i < len) {
+                                            html = html + '<li>' + data[i] + '</li>';
+                                            i++;
+                                        }
+                                        objt[0].innerHTML = html;
+                                        NTES(objt).addCss("display:block;");
+                                        var li = NTES('li', NTES(objt));
+                                        li.addEvent("mouseover",
+                                                function() {
+                                                    NTES(this).addCss('on');
+                                                });
+                                        li.addEvent("mouseout",
+                                                function() {
+                                                    NTES(this).removeCss('on');
+                                                });
+                                        li.addEvent("click",
+                                                function() {
+                                                    NTES(li).removeCss('active');
+                                                    NTES(this).addCss('active');
+                                                    selKeyword.value = this.innerHTML;
+                                                    var url = "http://xf.house.163.com/" + houseCityKeyName + "/search/0-0-0-0-0-0-0-0-0-1-1.html";
+                                                    if (selKeyword.value) url += "?keyword=" + selKeyword.value;
+                                                    url = encodeURI(url);
+                                                    url = encodeURI(url);
+                                                    window.open(url);
+                                                    NTES(objt).addCss("display:none;");
+                                                });
+                                        selKeyword.addEvent("mouseover",function(e) {
+                                            clearTimeout(autoclpT2);
+                                            NTES(objt).addCss("display:block;");
+                                        });
+                                        selKeyword.addEvent("mouseout",function(e) {
+                                            clearTimeout(autoclpT2);
+                                            autoclpT2 = setTimeout(function() {
+                                                        NTES(objt).addCss("display:none;");
+                                                    },
+                                                    300);
+                                        });
+                                        objt.addEvent("mouseout",function(e) {
+                                            clearTimeout(autoclpT2);
+                                            autoclpT2 = setTimeout(function() {
+                                                        NTES(objt).addCss("display:none;");
+                                                    },
+                                                    300);
+                                        });
+                                        objt.addEvent("mouseover",function(e) {
+                                            clearTimeout(autoclpT2);
+                                        });
+                                        NTES('li', objt).addEvent("mouseover",function(e) {
+                                            clearTimeout(autoclpT2);
+                                        });
+                                    } else {
+                                        NTES(objt).addCss("display:none;");
+                                        selKeyword.removeEvent("mouseover")
+                                    }
+                                }
+                                var autoComplete = function() {
+                                    var oNewNode = document.createElement("div");
+                                    replaceNode(oNewNode, selKeyword);
+                                    oNewNode.appendChild(selKeyword);
+                                    var oNewNodeUl = document.createElement("ul");
+                                    oNewNodeUl.className = 'autocomplete-tips';
+                                    oNewNode.appendChild(oNewNodeUl);
+                                    oNewNode.className = 'autocomplete';
+                                    var url = 'http://xf.house.163.com/' + houseCityKeyName + '/search!list.action?q=';
+                                    var t = '';
+                                    objt = NTES('.autocomplete-tips', formSearch);
+                                    selKeyword.addEvent("keyup",
+                                            function(e) {
+                                                keyworldchar = this.value;
+                                                if (e.keyCode != 38 && e.keyCode != 40) {
+                                                    if (typeof(cache["'" + keyworldchar + "'"]) == 'undefined') {
+                                                        t = setTimeout(function() {
+                                                                    var url2 = url + keyworldchar + '&callback=setAutocompleteData' + order;
+                                                                    NTES.ajax.importJs(url2,
+                                                                            function() {});
+                                                                },
+                                                                300);
+                                                    } else {
+                                                        iniHtml();
+                                                        loaded = true;
+                                                        linow = 0;
+                                                        loadedli = NTES('li', NTES(objt));
+                                                        liLen = loadedli.length;
+                                                    }
+                                                }
+                                                if ((e.keyCode == 38 || e.keyCode == 40) && loaded && liLen > 0) {
+                                                    if (linow < 0) {
+                                                        linow = liLen - 1
+                                                    }
+                                                    if (linow >= liLen) {
+                                                        linow = 0
+                                                    }
+                                                    NTES(loadedli).removeCss('active');
+                                                    NTES(loadedli[linow]).addCss('active');
+                                                    selKeyword.value = NTES(loadedli[linow]).innerHTML;
+                                                    if (e.keyCode == 38) { //向上
+                                                        linow--;
+                                                    }
+                                                    if (e.keyCode == 40) { //向上
+                                                        linow++;
+                                                    }
+                                                    NTES(objt).addCss("display:block;");
+                                                }
+                                            });
+                                    selKeyword.addEvent("keydown",function() {
+                                        clearTimeout(t);
+                                    });
+                                }
+                                function setData(data) {
+                                    if (data != '') {
+                                        cache["'" + keyworldchar + "'"] = data;
+                                    } else {
+                                        cache["'" + keyworldchar + "'"] = [];
+                                    }
+                                    iniHtml();
+                                    loaded = true;
+                                    linow = 0;
+                                    loadedli = NTES('li', NTES(objt));
+                                    liLen = loadedli.length;
+                                }
+                                this.setData = function(data) {
+                                    setData(data);
+                                }
+                                function replaceNode(newNode, oldNode) {
+                                    if (oldNode.replaceNode) {
+                                        oldNode.replaceNode(newNode);
+                                    } else if (oldNode.parentNode.replaceChild) {
+                                        oldNode.parentNode.replaceChild(newNode, oldNode);
+                                    }
+                                    return newNode;
+                                }
+                                if (selKeyword.value != "") {
+                                    autoComplete();
+                                }
+                            }
+                            window.houseSearchxf = new Array();
+                            var houseSearchFunEval = '';
+                            NTES.dom.eachNode(NTES('form.houseSearchxf'),
+                                    function(i) {
+                                        var keyword = NTES.one('input.house-search-ipt', this);
+                                        houseSearchxf[i] = new newHouseForm(NTES(this), keyword, i);
+                                        houseSearchFunEval = houseSearchFunEval + "window.setAutocompleteData" + i + "=function(data){data=(data['list']).split(',');houseSearchxf[" + i + "].setData(data);}";
+                                    });
+                            eval(houseSearchFunEval);
+                        },
+                        "gbk");
+                //end
+            }
+        }
+        function house_content_scrollBox(){
+            var scrollWraps = $(".H-house-scrollBox");
+            scrollWraps.each(function(i, elm) {
+                elm = $(elm);
+                var currentNum = $(".house-numCount", elm).get(0);
+                new NTES.ui.Carousel(null, $(".H-house-scrollbBody li", elm), "current", {
+                    prev: $(".house-scrlPrev", elm),
+                    next: $(".house-scrlNext", elm),
+                    event: "click",
+                    interval: 5000,
+                    duration: 2000,
+                    auto: false,
+                    onSwitch: function(i, count) {
+                        i = parseInt(i);
+                        i = i || 0;
+                        currentNum.innerHTML = parseInt(i);
+                    }
+                });
+            });
+        }
+        NTES.ajax.send(loadContent1, "GET", null, {
+            onSuccess: function(xhr) {
+                HouseConfig.vars.content_1.innerHTML = xhr.responseText;
+                house_content_zytrack();
+            }
+        });
+        NTES.ajax.send(loadContent2, "GET", null, {
+            onSuccess: function(xhr) {
+                HouseConfig.vars.content_2.innerHTML = xhr.responseText;
+                house_content_subtab();
+                house_content_search();
+                house_content_scrollBox();
+            }
+        });
+        NTES.ajax.send(loadContent3, "GET", null, {
+            onSuccess: function(xhr) {
+                HouseConfig.vars.content_3.innerHTML = xhr.responseText;
+                house_content_subtab();
+                house_content_search();
+                house_content_scrollBox();
+            }
+        });
+    },
+    init: function() {
+        HouseConfig.vars.cityLen = HouseConfig.city.length;
+        HouseConfig.vars.provinceLen = HouseConfig.province.length;
+        //select current city
+        var selectcitys = $("#H-house-selectcity li");
+        selectcitys.addEvent("mouseover",
+                function(e) {
+                    this.style.background = "#333333";
+                    this.style.color = "#ffffff";
+                });
+        selectcitys.addEvent("mouseout",
+                function(e) {
+                    this.style.background = "#f7f7f7";
+                    this.style.color = "#666666";
+                });
+        selectcitys.addEvent("click",
+                function(e) {
+                    var str = $(this).getAttribute("d_code");
+                    House.setLocalCity(str);
+                    $("#H-house-selectcity").style.display = "none";
+                });
+        //end
+        NTES.ajax.importJs(HouseConfig.ip,
+                function() {
+                    var locStr = "";
+                    var j = -1;
+                    while (++j < HouseConfig.vars.cityLen) {
+                        if (localAddress.city.indexOf(HouseConfig.city[j].name) != -1) {
+                            locStr = HouseConfig.city[j].str;
+                        }
+                    }
+                    if (!locStr) {
+                        var i = -1;
+                        while (++i < HouseConfig.vars.provinceLen) {
+                            if (HouseConfig.province[i].name.indexOf(localAddress.province) != -1) {
+                                locStr = HouseConfig.province[i].str;
+                            }
+                        }
+                    }
+                    if (!locStr) {
+                        locStr = HouseConfig.defaultCity.str;
+                    }
+                    House.setLocalCity(locStr);
+                });
+        //end
+        //买房跳转
+        //del
+        //end
+    }
+}
+House.init();
+});
+//end  house 9.24
+</script>
+<div class="float-bar" style="width:960px;position:fixed;bottom:0;left:50%;margin-left:-480px;z-index:1000;_display:none;">
+        <a href="http://www.163.com/taidu/"><img src="http://img6.cache.netease.com/cnews/2014/10/24/20141024122041c2b92.png"></a>
+    </div>
+<div id="ssid1"></div>
+<!-- 浮层 视频 开始 -->
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://g.163.com/r?site=netease&affiliate=homepage&cat=homepage&type=richmedia&location=1"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://g.163.com/jr?site=netease&affiliate=homepage&cat=homepage&type=adend&location=1"></SCRIPT>
+<!-- 浮层 视频 结束 -->
+<!-- 超级对联自动投放代码开始 -->
+<script type="text/javascript">
+adInfoTempDL = 
+{
+ //isIFrame1:true,
+ //isIFrame2:true,
+ //isIFrame3:true,
+ lsSrc1 : "http://img1.126.net/channel12/015842/20300_1122.jpg",
+ rsSrc1 : "http://img1.126.net/channel12/015842/20300_1122.jpg",
+ lbSrc1 : "http://img1.126.net/channel12/015842/110300_a1122l.swf",
+ rbSrc1 : "http://img1.126.net/channel12/015842/110300_a1122r.swf",
+ lgSrc1 : "http://img1.126.net/channel12/015842/120400_a1122l.swf",
+ rgSrc1 : "http://img1.126.net/channel12/015842/120400_a1122r.swf",
+ url1: "",
+ lsSrc2 : "http://img1.126.net/channel12/015842/20300_1122.jpg",
+ rsSrc2 : "http://img1.126.net/channel12/015842/20300_1122.jpg",
+ lbSrc2 : "http://img1.126.net/channel12/015842/110300_a1122l.swf",
+ rbSrc2 : "http://img1.126.net/channel12/015842/110300_a1122r.swf",
+ lgSrc2 : "http://img1.126.net/channel12/015842/120400_a1122l.swf",
+ rgSrc2 : "http://img1.126.net/channel12/015842/120400_a1122r.swf",
+ url2: "",
+ lsSrc3 : "http://img1.126.net/channel4/015842/yg20300l_1117.jpg",
+ rsSrc3 : "http://img1.126.net/channel4/015842/yg20300r_1117.jpg",
+ lbSrc3 : "http://img1.126.net/channel4/015842/yg110300l_1117.swf",
+ rbSrc3 : "http://img1.126.net/channel4/015842/yg110300r_1117.swf",
+ lgSrc3 : "http://img1.126.net/channel4/015842/yg120400l_1117.swf",
+ rgSrc3 : "http://img1.126.net/channel4/015842/yg120400r_1117.swf",
+ url3: "",
+ loop:3,
+ top:80
+}
+</script>
+<script language="javascript" src="http://img2.126.net/ntesrich/auto/indexU/dlbox-index-v1.0.6-140704.js"></script>
+<!-- 超级对联自动投放代码结束 -->
+<!--广告顺序管理开始-->
+<script language="javascript" src="http://img2.126.net/ntesrich/auto/adbox/adbox-v1.1.2-120705.js"></script>
+<script language="javascript" src="http://img2.126.net/ntesrich/2013/1210/adControl-indexx-v1.0.2-131210.js"></script>
+<!--广告顺序管理结束--> 
+ <!-- 底部弹窗开始 -->
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://g.163.com/jr?site=netease&affiliate=homepage&cat=homepage&type=popup&location=1"></SCRIPT>
+<!-- 底部弹窗结束 -->
+<img src="http://adgeo.163.com/ad_cookies" width="0" height="0" style="position:absolute;">
+
+<!-- 即时消息 -->
+<script>
+(function(){function e(e,n,r,i){var r=r||500,s=i||function(){},o,u=parseInt(t(e,"height"),10);e.toggled?o=e.originalHeight:(o=u,e.originalHeight=o);var a=Math.round(r/o);n=="show"&&(e.style.height="0"),e.style.display="block",e.toggled=!0;var f=o;for(var l=f;l>=0;l--)(function(t){var r=n=="show"?t*a:(f-t)*a;setTimeout(function(){(t==0&&n=="hide"||t==f&&n=="show")&&s(),e.style.height=t+"px";var r=t/f;e.style.opacity=r,e.style.filter="alpha(opacity="+r*100+")"},r)})(l)}function t(e,t){if(e.style[t])return e.style[t];if(e.currentStyle)return e.currentStyle[t];if(document.defaultView&&document.defaultView.getComputedStyle){t=t.replace(/([A-Z])/g,"-$1"),t=t.toLowerCase();var n=document.defaultView.getComputedStyle(e,"");return n&&n.getPropertyValue(t)}return null}function n(e,t,n){var r=function(e,t){try{return e.contains?e!=t&&e.contains(t):!!(e.compareDocumentPosition(t)&16)}catch(n){}},i=function(e){var t=e.currentTarget,i=e.relatedTarget;!r(t,i)&&t!=i&&n.call(e.currentTarget,e)};e.addEventListener?t=="mouseenter"?e.addEventListener("mouseover",i,!1):t=="mouseleave"?e.addEventListener("mouseout",i,!1):e.addEventListener(t,n,!1):e.attachEvent("on"+t,n)}function r(t){var r=this;r.cfg=t;var i=function(){n(r.cfg.closeBtn,"click",function(){r.close()}),n(r.cfg.wrap,"mouseenter",function(){r._timingClose("stop")}),n(r.cfg.wrap,"mouseleave",function(){r._timingClose("start",3)}),n(window,"focus",function(){r._pollStop=!1}),n(window,"blur",function(){r._pollStop=!0}),window[r.cfg.pollCallback]=r._push,window[r.cfg.contentCallback]=r._fillContent,r.start()},s=function(e,t){var n="popush_scriptloader";document.getElementById(n)!==null&&document.body.removeChild(document.getElementById(n));var i=document.createElement("script");i.id=n,i.type="text/javascript",i.async=!0,i.src=r.cfg.preventCache?e+"?"+Math.round(Math.random()*1e10):e,i.onload=t||function(){return!1},document.body.appendChild(i)},o=function(){var e=location.host.split(".").reverse()[2],t="?id="+r.cfg.id+"&cname="+e+"&rnd="+Math.round(Math.random()*1e10);(new Image).src=(r.cfg.countUrl||"count.php")+t};r._getDisplayState=function(){return!r._state||r._state=="hide"?"hide":"show"},r._display=function(t){if(r._getDisplayState()==t)return!1;e(r.cfg.contentWrap,t),r._state=t},r._timingClose=function(e,t){if(r._getDisplayState()=="hide")return!1;var t=t||r.cfg.hideAfter;e=="start"?r._closeTimer=setTimeout(function(){r._display("hide")},t*1e3):e=="stop"&&typeof r._closeTimer!="undefined"&&clearTimeout(r._closeTimer)},r.close=function(){if(!-[1,]&&!window.XMLHttpRequest){r.cfg.wrap.style.display="none";return !1;}r._getDisplayState()=="show"?r._display("hide"):r.cfg.wrap.style.display="none"},r._fillContent=function(e){r.contentCache=e,r.cfg.contentWrap.innerHTML=e,r._display("show"),r._timingClose("start")},r.manualShow=function(){if(r._getDisplayState()=="show")return!1;r.contentCache?r._fillContent(r.contentCache):s(r.cfg.contentUrl)},r._push=function(e){var t=Math.round((new Date).valueOf()/1e3),n=parseInt(e,10),i=t-n,u=NTES.cookie.get("PopPushData");if(u==n)return!1;if(r.cfg.oldTime&&i>r.cfg.oldTime)return!1;s(r.cfg.contentUrl),NTES.cookie.set("PopPushData",e,"30m",".163.com","/"),o()},r._poll=function(){r._pollStop||s(r.cfg.pollUrl)},r.start=function(){r._pollStop=!1,r._poll(),window.setInterval(r._poll,r.cfg.pollCycle*1e3)},i()}window.PopPush=r})()
+</script>
+<style type="text/css">
+#instant-news{width:300px;position:fixed;left:40px;bottom:0;z-index:100;
+_position: absolute;
+_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-172));
+}
+#instant-news-close{color:#B2b2b5;font-size:24px;font-weight:400;position:absolute;top:3px;right:4px;text-align:center;cursor:pointer;margin:0;padding:0;_display:none;}
+#instant-news-content{height:210px;padding:0;overflow:hidden;display:none;}
+</style>
+<div id="instant-news"><div id="instant-news-close">×</div><div id="instant-news-content"></div></div>
+<script>
+var wholeSiteNewsPushBgImgObj = new Image();wholeSiteNewsPushBgImgObj.src="http://img1.cache.netease.com/news/img14/wsw/bg-3.png";
+(function(N){
+    var t = N.cookie.get("PopPushData");
+    if(t && t != "") N.cookie.set("PopPushData", parseInt(t, 10), "30m", ".163.com", "/");
+})(window.NTES);
+var instant_news_push = new PopPush({
+    id: "instantnews",
+    wrap: document.getElementById('instant-news'),
+    contentWrap: document.getElementById('instant-news-content'),
+    closeBtn: document.getElementById('instant-news-close'),
+    pollUrl: "http://www.163.com/special/0077450P/hot_pop_js.js",
+    pollCallback: "latestInstantNews",
+    contentUrl: "http://temp.163.com/special/00804IKG/instant_news_content_cb.js",
+    contentCallback: "instantNewsContent",
+    pollCycle: 120,
+    hideAfter: 30,
+    oldTime: 7200,
+    countUrl: "http://temp.163.com/special/hot_pop_content/",
+    preventCache: false
+});
+</script>
+</body>
+</html>
